@@ -7,8 +7,10 @@ css
 Datatrail
 DataTrail
 dropdown
+FH
 GDSCN
 GitHub
+Globus
 impactful
 ITCR
 itcrtraining
@@ -21,6 +23,7 @@ NCI
 NHGRI
 ottrpal
 Pandoc
+SciComp
 UE
 UE5
 reproducibility

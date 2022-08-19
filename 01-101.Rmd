@@ -29,4 +29,6 @@ Confirm you have an account by submitting a SciComp ticket.
 
 ## Logging in via `ssh`
 
-# File upload and download with Globus
+# File upload and download
+
+## Globus
