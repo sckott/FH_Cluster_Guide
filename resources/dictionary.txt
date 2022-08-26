@@ -11,6 +11,7 @@ FH
 GDSCN
 GitHub
 Globus
+HutchNet
 impactful
 ITCR
 itcrtraining
@@ -28,4 +29,6 @@ UE
 UE5
 reproducibility
 underserved
+VPN
+Webmail
 www
