@@ -1,5 +1,6 @@
 what-is-a-cluster
 account-setup
+check-your-hutchnet-id
 contacting-scicomp
 terminal-setup
 what-is-a-terminal
