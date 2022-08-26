@@ -11,9 +11,23 @@ ottrpal::set_knitr_image_path()
 
 You will need an account to log in to the cluster.
 
+## Check your HutchNet ID
+
+A HutchNet ID is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at the Center (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems. 
+
+For example, if my email is jsmith3@fredhutch.org, my HutchNet ID is `jsmith3`.
+
+<div class = "notice">
+If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). Non-employees is a generic administrative term for affiliates, students, contractors, etc.
+</div>
+
+Please see the Service Desk site on CenterNet for more information about [HutchNet ID](https://centernet.fredhutch.org/cn/u/center-it/help-desk.html) including password rotation, etc.
+
 ## Contacting SciComp
 
 Confirm you have an account by submitting a SciComp ticket.
+
+You are now ready to get started!
 
 # Terminal Setup
 
