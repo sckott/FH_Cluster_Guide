@@ -302,6 +302,14 @@ div.reflection{
   background-image: url("../assets/box_images/thinking_face.png");
 }
 
+div.funfact{
+  border: 4px #89C348;
+  background-size: 90px;
+  background-position: 15px center;
+  background-color: #e8ebee;
+  background-image: url("../assets/box_images/thinking_face.png");
+}
+
 
 /* .book .book-body .page-wrapper .page-inner section.normal is needed
    to override the styles produced by gitbook, which are ridiculously
