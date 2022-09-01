@@ -304,7 +304,7 @@ div.reflection{
 
 div.terminal{
   border: 4px #89C348;
-  background-size: 70px;
+  background-size: 30px;
   background-position: 15px center;
   background-color: #e8ebee;
   background-image: url("../assets/box_images/terminal.png");
