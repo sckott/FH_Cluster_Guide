@@ -40,7 +40,7 @@ If one of your collaborators requires access to the Fred Hutch network you can s
 
 To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account. 
 
-The Scientific Computing Team (SciComp) tries to set users up ahead of time, especially if those users come from a compute-heavy lab group. However, not everyone is set up automatically. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
+The Scientific Computing Team (SciComp) tries to set some users up ahead of time. However, not everyone is set up automatically. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
 
 <div class = "warning">
 Errors similar to “Invalid account or account/partition” typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you use the form above.
