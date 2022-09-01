@@ -4,6 +4,7 @@ Bloomberg
 Bookdown
 Coursera
 css
+ctrl
 Datatrail
 DataTrail
 dropdown
@@ -25,6 +26,7 @@ NCI
 NHGRI
 ottrpal
 Pandoc
+PuTTY
 SciComp
 Slurm
 UE

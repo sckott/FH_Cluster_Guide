@@ -40,7 +40,7 @@ If one of your collaborators requires access to the Fred Hutch network you can s
 
 To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account. 
 
-The Scientific Comupting Team (SciComp) tries to set users up ahead of time, especially if those users come from a compute-heavy lab group. However, not everyone is set up automatically. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
+The Scientific Computing Team (SciComp) tries to set users up ahead of time, especially if those users come from a compute-heavy lab group. However, not everyone is set up automatically. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
 
 <div class = "warning">
 Errors similar to “Invalid account or account/partition” typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you use the form above.
@@ -97,8 +97,21 @@ SSH is a secure way to remotely connect to another computer or network of comput
 
 ## Logging in via `ssh`
 
-    1. You will need to connect to the Fred Hutch VPN or be located on campus. This is the first layer of security.
-    2. Next you will type the following commands:
+1. You will need to connect to the Fred Hutch VPN or be located on campus. This is the first layer of security.  
+1. Next you will type the following commands:  
+    ```
+    Commands
+    ```
+    
+1. Enter your password, No`*` or symbols will show up, so type it in carefully!
+1. You are now logged in! You can type "yes" when you see a message that looks like this:
+    ```
+    Message
+    ```
+  
+Congratulations! You are now logged in to the Fred Hutch cluster!
+
+
 
 # File upload and download
 
