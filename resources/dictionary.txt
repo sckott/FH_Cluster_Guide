@@ -18,6 +18,7 @@ itcrtraining
 ITN
 fyi
 Leanpub
+MacOS
 Markua
 mentorship
 NCI
@@ -25,6 +26,7 @@ NHGRI
 ottrpal
 Pandoc
 SciComp
+Slurm
 UE
 UE5
 reproducibility
