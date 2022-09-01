@@ -14,13 +14,14 @@ Now that we have a team of workers, the next challenge is task management. A hom
 How is the cluster different from a laptop or desktop? First, you might use an operating system like Windows or MacOS. The Fred Hutch server is a Linux system. Second, because many people use the cluster for many tasks, there isn't a central screen and keyboard. You access the cluster remotely from your computer! We will talk more about how to connect to the cluster in a [following chapter](#terminal).
 
 <div class = "dictionary">
-**Computing cluster**
-def: A set of computers networked together to perform large tasks.
+**Computing cluster**  
+  
+A set of computers networked together to perform large tasks.
 </div>
 
 # Account Setup
 
-You will need an account to log in to the cluster.
+You will need an account to log in to the cluster. This ensures that data stays protected.
 
 ## Check your HutchNet ID
 
@@ -32,26 +33,28 @@ For example:
 - my HutchNet ID is `jsmith3`.  
 
 <div class = "notice">
-If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). Non-employees is a generic administrative term for affiliates, students, contractors, etc.
+If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). Non-employee is a generic administrative term for affiliates, students, contractors, etc.
 </div>
 
 ## Contacting the SciComp Team
 
-To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
+To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account. 
+
+The Scientific Comupting Team (SciComp) tries to set users up ahead of time, especially if those users come from a compute-heavy lab group. However, not everyone is set up automatically. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
 
 <div class = "warning">
-The Scientific Comupting Team (SciComp) tries to set users up ahead of time, especially if those users come from a compute-heavy lab group. However, not everyone is set up automatically. Errors similar to “Invalid account or account/partition” typically indicate that this association hasn’t been set up. This is a quick fix if you use the form above.
+Errors similar to “Invalid account or account/partition” typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you use the form above.
 </div>
 
 Now, let's set up our Terminal!
 
 # Terminal Setup {#terminal}
 
-The next step to get on the cluster is getting familiar with your Terminal. Read on to learn more about the Terminal.
+The next step is getting familiar with your Terminal. This is your portal to the cluster.
 
 ## What is a terminal?
 
-The Terminal is a [command line interface](https://www.codecademy.com/article/command-line-interface). In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a graphical user interface (GUI). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to either [Windows](#windows) or [MacOS or Linux](#mac-or-linux) sections below.
+The Terminal is a [command line interface](https://www.codecademy.com/article/command-line-interface). In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a graphical user interface (GUI). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to either [Windows](#windows) or [MacOS / Linux](#mac-or-linux) sections below.
 
 <div class = "terminal">
 "Terminal" used to be synonymous with computer. It was the only way to tell your computer to do something. With the creation of operating systems like Windows and MacOS, computers became much easier to use and exploded in popularity! Your colleagues are almost always referring to the application when they say "terminal".
@@ -61,11 +64,11 @@ The Terminal is a [command line interface](https://www.codecademy.com/article/co
 
 You will need to install a Terminal application called **PuTTY** to connect to the Fred Hutch Cluster.
   
-    1. [Click here to download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
-    1. Double-click on the downloaded file to start the installation and Setup Wizard.
-    1. Once the installer is finished, click on the PuTTY application to make sure a window opens. It will look like this:
+1. [Click here to download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
+1. Double-click on the downloaded file to start the installation and Setup Wizard.
+1. Once the installer is finished, click on the PuTTY application to make sure a window opens. It will look like this:
    
-    **[SCREENSHOT]**
+[SCREENSHOT]
 
 ## Mac/Linux Setup {#mac-or-linux}
 
@@ -73,16 +76,16 @@ Mac and Linux machines already come with a Terminal installed.
 
 **Mac Setup**
 
-    1. Go to Finder > Applications > Utilities > Terminal and double-click. 
-    1. Your Terminal should look like this:
+1. Go to Finder > Applications > Utilities > Terminal and double-click. 
+1. Your Terminal should look like this:
     
-    **[SCREENSHOT]**
+[SCREENSHOT]
     
 **Linux Setup**
 
-    1. Press ctrl + alt + T. Your open Terminal window should look like this:
+1. Press ctrl + alt + T. Your open Terminal window should look like this:
 
-    **[SCREENSHOT]**
+[SCREENSHOT]
 
 # Logging In
 
