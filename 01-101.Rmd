@@ -97,7 +97,7 @@ SSH is a secure way to remotely connect to another computer or network of comput
 
 ## Logging in via `SSH`
 
-1. You will need to connect to the Fred Hutch VPN or be located on campus. This is the first layer of security.  
+1. You will need to connect to the [Fred Hutch VPN](https://centernet.fredhutch.org/cn/u/center-it/help-desk/vpn.html). This is the first layer of security.  
 1. Next you will type the following commands:  
     ```
     Commands
