@@ -387,7 +387,7 @@ jobs:
       - name: Run bookdown render
         id: bookdown
         run: |
-          Rscript -e "install.packages("xfun", version = 0.19)"
+          Rscript -e "install.packages('xfun', version = 0.19)"
           Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
 
       # Run TOC-less version
