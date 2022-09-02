@@ -7,9 +7,25 @@ ottrpal::set_knitr_image_path()
 
 # What is a Cluster?
 
+A computing cluster is a set of many computers networked together. Because there are many computers working together, the network is able to handle computationally expensive tasks, like genome assemblies or advanced algorithms. Imagine you're building a house. It would take a long time by yourself! It's much better to have many builders working together.
+
+Now that we have a team of workers, the next challenge is task management. A home construction team will need a manager to help delegate tasks. Similarly, the computing cluster uses management software to prioritize tasks, delegate workers (resources), and check on progress. The Fred Hutch cluster uses a common management and scheduling tool called [Slurm](https://slurm.schedmd.com/overview.html).
+
+```{r, echo=FALSE, fig.alt='Your computer has 1 node, 8 CPUs, and 8 gigabytes of memory. The Hutch cluster has nearly 600 nodes, 4000 CPUs, and 40 terabytes of memory.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_18")
+```
+
+How is the cluster different from a laptop or desktop? First, you might use an operating system like Windows or MacOS. The Fred Hutch server is a Linux system. Second, because many people use the cluster for many tasks, there isn't a central screen and keyboard. You access the cluster remotely from your computer! We will talk more about how to connect to the cluster in a [following chapter](#terminal).
+
+<div class = "dictionary">
+**Computing cluster**  
+  
+A set of computers networked together to perform large tasks.
+</div>
+
 # Account Setup
 
-You will need an account to log in to the cluster.
+You will need an account to log in to the cluster. This ensures that data stays protected.
 
 ## Check your HutchNet ID
 
@@ -21,33 +37,145 @@ For example:
 - my HutchNet ID is `jsmith3`.  
 
 <div class = "notice">
-If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). Non-employees is a generic administrative term for affiliates, students, contractors, etc.
+If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). Non-employee is a generic administrative term for affiliates, students, contractors, etc.
 </div>
 
-## Contacting SciComp
+## Contacting the SciComp Team
 
-To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
+To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account. 
+
+The Scientific Computing Team (SciComp) tries to set some users up ahead of time. However, not everyone is set up automatically. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
 
 <div class = "warning">
-We try to set users up ahead of time if we suspect they will need to use the cluster. However, not everyone is set up automatically. Errors similar to “Invalid account or account/partition” typically indicate that this association hasn’t been set up. This is a quick fix if you use the form above.
+Errors similar to “Invalid account or account/partition” typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you use the form above.
 </div>
 
 Now, let's set up our Terminal!
 
-# Terminal Setup
+# Terminal Setup {#terminal}
+
+The next step is getting familiar with your Terminal. This is your portal to the cluster.
 
 ## What is a terminal?
 
-## Windows Setup
+The Terminal is a [command line interface](https://www.codecademy.com/article/command-line-interface). In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a graphical user interface (GUI). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the [Windows](#windows), [MacOS](#mac), or [Linux](#linux) sections below.
 
-## Mac/unix Setup
+<div class = "terminal">
+"Terminal" used to be synonymous with "computer". With the creation of operating systems like Windows and MacOS, computers became much easier to use and exploded in popularity! Your colleagues are almost always referring to the command line application when they say "Terminal".
+</div>
+
+## Windows Setup {#windows}
+
+<details><summary>Click to view steps</summary><p>
+
+You will need to install a Terminal application called [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to connect to the Fred Hutch Cluster.
+
+1. Install PuTTY through the Hutch "Software Center".
+1. Once the installer is finished, click on the PuTTY application to make sure a window opens. It will look like this:
+   
+[SCREENSHOT]
+
+</p></details>
+
+## Mac Setup {#mac}
+
+<details><summary>Click to view steps</summary><p>
+
+Mac machines come with a Terminal installed. 
+
+1. Go to Finder > Applications > Utilities > Terminal and double-click. 
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Utilities directory. The Terminal app is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_9")
+    ```
+
+1. Your Terminal should look like this:
+    
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Mac Terminal.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_2")
+    ```
+
+</p></details>
+    
+## Linux Setup {#linux}
+
+<details><summary>Click to view steps</summary><p>
+
+The commonly used Linux distribution, Ubuntu, already comes with a Terminal installed. 
+
+1. Press ctrl + alt + T. Your open Terminal window should look like this:
+
+[SCREENSHOT]
+
+1. Update the Terminal and prepare it for connecting to the cluster by running:
+
+```
+sudo apt install openssh-server
+```
+
+Enter your password and enter `Y` when prompted.
+
+</p></details>
 
 # Logging In
 
-## What is `ssh`?
+Now that you have your Terminal application ready, you want to connect to the cluster. You will do this using a method called [SSH](https://www.ssh.com/academy/ssh/protocol), which stands for "Secure SHell".
 
-## Logging in via `ssh`
+## What is `SSH`?
+
+SSH is a secure way to remotely connect to another computer or network of computers. In other words, SSH helps us protect your data and the data on the Fred Hutch cluster through authentication.
+
+Before moving on, you will need to connect to the [Fred Hutch VPN](https://centernet.fredhutch.org/cn/u/center-it/help-desk/vpn.html). This is the first layer of security. The next set of steps are specific to your operating system.  
+
+## Windows Login 
+
+<details><summary>Click to view steps</summary><p>
+
+Simply use PuTTY to connect to the host name `rhino`.
+
+[SCREENSHOT]
+
+Congratulations! You are now logged in to the Fred Hutch cluster!
+
+</p></details>
+
+## Mac Login
+
+<details><summary>Click to view steps</summary><p>
+
+1. Type the following commands, substituting in your HutchNet ID:  
+
+    ```
+    ssh -Y HutchID@rhino
+    ```
+1. You will see a message that looks like `The authenticity of host 'rhino (XXX.XXX.XX.XX)' can't be established.` Type in `yes` and hit enter.
+1. Enter your password, No`*` or symbols will show up, so type it in carefully!
+1. You are now logged in! There should be a login message, with your name at the bottom.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Mac Terminal.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_43")
+    ```
+    
+Congratulations! You are now logged in to the Fred Hutch cluster!
+
+</p></details>
+    
+## Linux Login
+
+<details><summary>Click to view steps</summary><p>
+
+Congratulations! You are now logged in to the Fred Hutch cluster!
+
+</p></details>
+
+# Tour your space
+
+# Submit your first job
+
+# Interactive cluster
 
 # File upload and download
 
 ## Globus
+
+

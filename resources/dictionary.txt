@@ -4,6 +4,7 @@ Bloomberg
 Bookdown
 Coursera
 css
+ctrl
 Datatrail
 DataTrail
 dropdown
@@ -18,13 +19,16 @@ itcrtraining
 ITN
 fyi
 Leanpub
+MacOS
 Markua
 mentorship
 NCI
 NHGRI
 ottrpal
 Pandoc
+PuTTY
 SciComp
+Slurm
 UE
 UE5
 reproducibility
