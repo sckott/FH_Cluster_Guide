@@ -18,3 +18,5 @@ interactive-cluster
 file-upload-and-download
 globus
 resource-optimization
+help
+feedback
