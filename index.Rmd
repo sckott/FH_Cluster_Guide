@@ -11,6 +11,7 @@ favicon: assets/favicon.ico
 output:
     bookdown::pdf_document2:
       keep_tex: true
+      toc: true
 ---
 
 ```{r include=FALSE}
@@ -18,7 +19,6 @@ output:
 knitr::write_bib(c(
   .packages(), "bookdown", "knitr", "rmarkdown"
 ), "packages.bib")
-install.packages("xfun", version = 0.32)
 ```
 
 # About this Course {-}
