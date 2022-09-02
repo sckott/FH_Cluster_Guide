@@ -10,7 +10,6 @@ description: Description about Course/Book.
 favicon: assets/favicon.ico
 output:
     bookdown::pdf_document2:
-      keep_tex: true
       toc: true
 ---
 
