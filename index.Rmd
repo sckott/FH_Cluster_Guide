@@ -18,6 +18,7 @@ output:
 knitr::write_bib(c(
   .packages(), "bookdown", "knitr", "rmarkdown"
 ), "packages.bib")
+install.packages("xfun")
 ```
 
 # About this Course {-}
