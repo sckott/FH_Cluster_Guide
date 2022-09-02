@@ -1,8 +1,23 @@
 # (PART\*) Appendix {-}
 
-# Where to get help {-}
+# Where to get help {#help}
 
-Tickets?
+We want to help! Here are some ways you can get help for your work on the cluster.
+
+## Submit a Ticket {-}
+
+Submitting a good ticket helps the SciComp Team address your needs quickly and efficiently. We suggest you submit the following in a ticket:
+
+1.  
+1.  
+1.  
+
+## Visit the SciWiki {-}
+
+The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputing/comp_index/) is full of useful tips and guides.
+
+# Provide Feedback {#feedback}
+
+Please submit an issue at our [GitHub repo](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
 
 # FAQ {-}
-

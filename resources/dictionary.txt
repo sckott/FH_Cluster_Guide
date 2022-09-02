@@ -28,6 +28,8 @@ ottrpal
 Pandoc
 PuTTY
 SciComp
+SciWiki
+SHell
 Slurm
 UE
 UE5
