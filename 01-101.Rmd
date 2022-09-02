@@ -86,13 +86,13 @@ Mac machines come with a Terminal installed.
 1. Go to Finder > Applications > Utilities > Terminal and double-click. 
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Utilities directory. The Terminal app is highlighted.'}
-    ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_9")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_9")
     ```
 
 1. Your Terminal should look like this:
     
     ```{r, echo=FALSE, fig.alt='Screenshot of the Mac Terminal.'}
-    ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_2")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_2")
     ```
 
 </p></details>
@@ -153,7 +153,7 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 1. You are now logged in! There should be a login message, with your name at the bottom.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Mac Terminal.'}
-    ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_43")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_43")
     ```
     
 Congratulations! You are now logged in to the Fred Hutch cluster!
