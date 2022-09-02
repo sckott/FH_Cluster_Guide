@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 What is a Cluster? | FH Cluster Guide</title>
+  <title>Chapter 3 Terminal Setup | FH Cluster Guide</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 What is a Cluster? | FH Cluster Guide" />
+  <meta property="og:title" content="Chapter 3 Terminal Setup | FH Cluster Guide" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 What is a Cluster? | FH Cluster Guide" />
+  <meta name="twitter:title" content="Chapter 3 Terminal Setup | FH Cluster Guide" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="index.html"/>
-<link rel="next" href="account-setup.html"/>
+<link rel="prev" href="account-setup.html"/>
+<link rel="next" href="logging-in.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -141,15 +141,68 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="what-is-a-cluster" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> What is a Cluster?</h1>
-<p>A computing cluster is a set of many computers networked together. Because there are many computers working together, the network is able to handle computationally expensive tasks, like genome assemblies or advanced algorithms. Imagine you’re building a house. It would take a long time by yourself! It’s much better to have many builders working together.</p>
-<p>Now that we have a team of workers, the next challenge is task management. A home construction team will need a manager to help delegate tasks. Similarly, the computing cluster uses management software to prioritize tasks, delegate workers (resources), and check on progress. The Fred Hutch cluster uses a common management and scheduling tool called <a href="https://slurm.schedmd.com/overview.html">Slurm</a>.</p>
-<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_18.png" title="Your computer has 1 node, 8 CPUs, and 8 gigabytes of memory. The Hutch cluster has nearly 600 nodes, 4000 CPUs, and 40 terabytes of memory." alt="Your computer has 1 node, 8 CPUs, and 8 gigabytes of memory. The Hutch cluster has nearly 600 nodes, 4000 CPUs, and 40 terabytes of memory." width="480" /></p>
-<p>How is the cluster different from a laptop or desktop? First, you might use an operating system like Windows or MacOS. The Fred Hutch server is a Linux system. Second, because many people use the cluster for many tasks, there isn’t a central screen and keyboard. You access the cluster remotely from your computer! We will talk more about how to connect to the cluster in a <a href="terminal.html#terminal">following chapter</a>.</p>
-<div class="dictionary">
-<p><strong>Computing cluster</strong></p>
-<p>A set of computers networked together to perform large tasks.</p>
+<div id="terminal" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Terminal Setup</h1>
+<p>The next step is getting familiar with your Terminal. This is your portal to the cluster.</p>
+<div id="what-is-a-terminal" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> What is a terminal?</h2>
+<p>The Terminal is a <a href="https://www.codecademy.com/article/command-line-interface">command line interface</a>. In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don’t have a graphical user interface (GUI). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the <a href="terminal.html#windows">Windows</a>, <a href="terminal.html#mac">MacOS</a>, or <a href="terminal.html#linux">Linux</a> sections below.</p>
+<div class="terminal">
+<p>“Terminal” used to be synonymous with “computer”. With the creation of operating systems like Windows and MacOS, computers became much easier to use and exploded in popularity! Your colleagues are almost always referring to the command line application when they say “Terminal”.</p>
+</div>
+</div>
+<div id="windows" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Windows Setup</h2>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>You will need to install a Terminal application called <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a> to connect to the Fred Hutch Cluster.</p>
+<ol style="list-style-type: decimal">
+<li>Install PuTTY through the Hutch “Software Center”.</li>
+<li>Once the installer is finished, click on the PuTTY application to make sure a window opens. It will look like this:</li>
+</ol>
+<p>[SCREENSHOT]</p>
+</p>
+</details>
+</div>
+<div id="mac" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Mac Setup</h2>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>Mac machines come with a Terminal installed.</p>
+<ol style="list-style-type: decimal">
+<li><p>Go to Finder &gt; Applications &gt; Utilities &gt; Terminal and double-click.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_9.png" title="Screenshot of the Utilities directory. The Terminal app is highlighted." alt="Screenshot of the Utilities directory. The Terminal app is highlighted." width="480" /></p></li>
+<li><p>Your Terminal should look like this:</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_2.png" title="Screenshot of the Mac Terminal." alt="Screenshot of the Mac Terminal." width="480" /></p></li>
+</ol>
+</p>
+</details>
+</div>
+<div id="linux" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Linux Setup</h2>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>The commonly used Linux distribution, Ubuntu, already comes with a Terminal installed.</p>
+<ol style="list-style-type: decimal">
+<li>Press ctrl + alt + T. Your open Terminal window should look like this:</li>
+</ol>
+<p>[SCREENSHOT]</p>
+<ol style="list-style-type: decimal">
+<li>Update the Terminal and prepare it for connecting to the cluster by running:</li>
+</ol>
+<pre><code>sudo apt install openssh-server</code></pre>
+<p>Enter your password and enter <code>Y</code> when prompted.</p>
+</p>
+</details>
 </div>
 </div>
 <hr>
@@ -165,8 +218,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="account-setup.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="account-setup.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="logging-in.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

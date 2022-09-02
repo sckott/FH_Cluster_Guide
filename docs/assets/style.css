@@ -253,7 +253,7 @@ li.appendix span, li.part span { /* for TOC part names */
 /* Sidebar formating --------------------------------------------*/
 /* from r-pkgs.org*/
 
-div.notice, div.warning, div.github, div.dictionary, div.reflection {
+div.notice, div.warning, div.github, div.dictionary, div.reflection, div.terminal {
   border-style: solid;
   padding: 1em;
   margin: 1em 0;
@@ -300,6 +300,14 @@ div.reflection{
   background-position: 15px center;
   background-color: #e8ebee;
   background-image: url("../assets/box_images/thinking_face.png");
+}
+
+div.terminal{
+  border: 4px #89C348;
+  background-size: 70px;
+  background-position: 15px center;
+  background-color: #e8ebee;
+  background-image: url("../assets/box_images/terminal.png");
 }
 
 
