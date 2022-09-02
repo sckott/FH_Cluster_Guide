@@ -9,7 +9,8 @@ link-citations: yes
 description: Description about Course/Book.
 favicon: assets/favicon.ico
 output:
-    bookdown::pdf_document2
+    bookdown::pdf_document2:
+      keep_tex: true
 ---
 
 ```{r include=FALSE}
