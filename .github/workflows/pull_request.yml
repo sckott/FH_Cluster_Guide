@@ -390,7 +390,7 @@ jobs:
           Rscript -e "remove.packages('xfun'); install.packages('https://cran.r-project.org/src/contrib/xfun_0.32.tar.gz', type = 'source'); install.packages('tinytex')"
           # apt-get update
           # apt-get install -y texlive-latex-base --fix-missing
-          Rscript -e "update.packages(ask = FALSE, checkBuilt = TRUE); tinytex::tlmgr_update()"
+          Rscript -e "tinytex::install_tinytex(); update.packages(ask = FALSE, checkBuilt = TRUE); tinytex::tlmgr_update()"
           Rscript -e "tinytex::reinstall_tinytex()"
           Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
 
