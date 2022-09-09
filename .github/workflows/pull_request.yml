@@ -388,6 +388,7 @@ jobs:
         id: bookdown
         run: |
           Rscript -e "remove.packages('xfun'); install.packages('https://cran.r-project.org/src/contrib/xfun_0.32.tar.gz', type = 'source')"
+          apt-get update
           apt-get install -y texlive-latex-base --fix-missing
           Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
 
