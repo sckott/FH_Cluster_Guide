@@ -174,8 +174,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_60")
     ```
 
-[SCREENSHOT]
-
 Congratulations! You are now logged in to the Fred Hutch cluster!
 
 </p></details>
