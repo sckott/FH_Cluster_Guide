@@ -15,4 +15,6 @@ bookdown::gitbook:
     edit: https://github.com/fhdsl/FH_Cluster_Guide/edit/main/%s
     download: ["pdf", "rmd"]
     sharing: false
-bookdown::pdf_document2: default
+bookdown::pdf_book:
+  keep_tex: true
+  
