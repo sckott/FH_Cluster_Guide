@@ -41,7 +41,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 
 
 ```
-## ─ Session info ───────────────────────────────────────────────────────────────
+## - Session info ---------------------------------------------------------------
 ##  setting  value                       
 ##  version  R version 4.0.2 (2020-06-22)
 ##  os       Ubuntu 20.04.3 LTS          
@@ -51,9 +51,9 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-09-02                  
+##  date     2022-09-09                  
 ## 
-## ─ Packages ───────────────────────────────────────────────────────────────────
+## - Packages -------------------------------------------------------------------
 ##  package     * version    date       lib source                            
 ##  assertthat    0.2.1      2019-03-21 [1] RSPM (R 4.0.3)                    
 ##  bookdown      0.24       2022-02-15 [1] Github (rstudio/bookdown@88bc4ea) 
@@ -69,7 +69,6 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  fs            1.5.0      2020-07-31 [1] RSPM (R 4.0.3)                    
 ##  glue          1.6.1      2022-01-22 [1] CRAN (R 4.0.2)                    
 ##  htmltools     0.5.0      2020-06-16 [1] RSPM (R 4.0.1)                    
-##  jquerylib     0.1.4      2021-04-26 [1] CRAN (R 4.0.2)                    
 ##  knitr         1.33       2022-02-15 [1] Github (yihui/knitr@a1052d1)      
 ##  lifecycle     1.0.0      2021-02-15 [1] CRAN (R 4.0.2)                    
 ##  magrittr      2.0.2      2022-01-26 [1] CRAN (R 4.0.2)                    
@@ -91,7 +90,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  testthat      3.0.1      2022-02-15 [1] Github (R-lib/testthat@e99155a)   
 ##  usethis       2.1.5.9000 2022-02-15 [1] Github (r-lib/usethis@57b109a)    
 ##  withr         2.3.0      2020-09-22 [1] RSPM (R 4.0.2)                    
-##  xfun          0.26       2022-02-15 [1] Github (yihui/xfun@74c2a66)       
+##  xfun          0.32       2022-08-10 [1] CRAN (R 4.0.2)                    
 ##  yaml          2.2.1      2020-02-01 [1] RSPM (R 4.0.3)                    
 ## 
 ## [1] /usr/local/lib/R/site-library

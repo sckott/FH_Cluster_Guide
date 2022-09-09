@@ -21,3 +21,18 @@ The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputi
 Please submit an issue at our [GitHub repo](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
 
 # FAQ {-}
+
+Here are some issues you might encounter.
+
+## How can I manually install PuTTY? {#manual-putty}
+
+<details><summary>Click to view steps</summary><p>
+
+1. Click [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to install the latest version of PuTTY. You will choose the 64-bit x86 installation with few exceptions.
+
+    
+    \includegraphics[width=1\linewidth]{faq_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_6} 
+
+1. Click through to install via the Setup Wizard.
+
+</p></details>

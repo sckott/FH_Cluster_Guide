@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-09-02" />
+<meta name="date" content="2022-09-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,9 +69,6 @@
       <nav role="navigation">
 
 <ul class="summary">
-<a href="https://anvilproject.org/" target="_blank"><img src="assets/logo-fhdasl.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
-
-<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
 <li class="part"><span><b>Cluster 101</b></span></li>
 <li class="chapter" data-level="1" data-path="what-is-a-cluster.html"><a href="what-is-a-cluster.html"><i class="fa fa-check"></i><b>1</b> What is a Cluster?</a></li>
@@ -110,13 +107,18 @@
 <li class="chapter" data-level="" data-path="help.html"><a href="help.html#visit-the-sciwiki"><i class="fa fa-check"></i>Visit the SciWiki</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="feedback.html"><a href="feedback.html"><i class="fa fa-check"></i><b>11</b> Provide Feedback</a></li>
-<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>FAQ</a></li>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>FAQ</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="faq.html"><a href="faq.html#manual-putty"><i class="fa fa-check"></i><b>11.1</b> How can I manually install PuTTY?</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
 <p style="text-align:center;"> <a href="http://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<a href="http://hutchdatascience.org/"><img src="https://hutchdatascience.org/images/FHDataScienceLab_RecDropped.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+
 </ul>
 
       </nav>
@@ -163,12 +165,21 @@
 Click to view steps
 </summary>
 <p>
-<p>You will need to install a Terminal application called <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a> to connect to the Fred Hutch Cluster.</p>
+<p>You will need to install a Terminal application called PuTTY to connect to the Fred Hutch Cluster.</p>
 <ol style="list-style-type: decimal">
-<li>Install PuTTY through the Hutch “Software Center”.</li>
-<li>Once the installer is finished, click on the PuTTY application to make sure a window opens. It will look like this:</li>
+<li><p>You should then see PuTTY available in the Software Center. Click “Install” and go through the Setup Wizard.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_15.png" title="The Software Center application lists available apps, including PuTTY." alt="The Software Center application lists available apps, including PuTTY." width="100%" /></p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_20.png" title="The PuTTY page inside Software Center. The Install button is highlighted." alt="The PuTTY page inside Software Center. The Install button is highlighted." width="100%" /></p></li>
 </ol>
-<p>[SCREENSHOT]</p>
+<div class="notice">
+<p>You can also <a href="faq.html#manual-putty">install PuTTY manually</a> if you don’t see it in the Software Center.</p>
+</div>
+<ol style="list-style-type: decimal">
+<li><p>PuTTY should now be available in your applications. Click on PuTTY to open.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_28.png" title="The PuTTY application now appears in the Windows app menu." alt="The PuTTY application now appears in the Windows app menu." width="100%" /></p></li>
+<li><p>You should now see the PuTTY Configuration menu.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_35.png" title="The PuTTY configuration menu is open." alt="The PuTTY configuration menu is open." width="100%" /></p></li>
+</ol>
 </p>
 </details>
 </div>
@@ -182,9 +193,9 @@ Click to view steps
 <p>Mac machines come with a Terminal installed.</p>
 <ol style="list-style-type: decimal">
 <li><p>Go to Finder &gt; Applications &gt; Utilities &gt; Terminal and double-click.</p>
-<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_9.png" title="Screenshot of the Utilities directory. The Terminal app is highlighted." alt="Screenshot of the Utilities directory. The Terminal app is highlighted." width="480" /></p></li>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_9.png" title="Screenshot of the Utilities directory. The Terminal app is highlighted." alt="Screenshot of the Utilities directory. The Terminal app is highlighted." width="100%" /></p></li>
 <li><p>Your Terminal should look like this:</p>
-<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_2.png" title="Screenshot of the Mac Terminal." alt="Screenshot of the Mac Terminal." width="480" /></p></li>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_2.png" title="Screenshot of the Mac Terminal." alt="Screenshot of the Mac Terminal." width="100%" /></p></li>
 </ol>
 </p>
 </details>
@@ -238,25 +249,15 @@ Click to view steps
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
+"sharing": false,
 "fontsettings": {
 "theme": "white",
 "family": "sans",
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/fhdsl/FH_Cluster_Guide/edit/main/01-101.Rmd",
+"text": "Edit"
 },
 "history": {
 "link": null,
@@ -266,7 +267,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["Cluster_Guide.pdf", "https://github.com/fhdsl/FH_Cluster_Guide/raw/main/01-101.Rmd"],
 "search": {
 "engine": "fuse",
 "options": null
