@@ -68,12 +68,36 @@ The Terminal is a [command line interface](https://www.codecademy.com/article/co
 
 <details><summary>Click to view steps</summary><p>
 
-You will need to install a Terminal application called [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to connect to the Fred Hutch Cluster.
+You will need to install a Terminal application called PuTTY to connect to the Fred Hutch Cluster.
 
-1. Install PuTTY through the Hutch "Software Center".
-1. Once the installer is finished, click on the PuTTY application to make sure a window opens. It will look like this:
+1. Click [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to install the latest version of PuTTY. You will choose the 64-bit x86 installation with few exceptions.
+
+    ```{r, echo=FALSE, fig.alt='The PuTTY latest version installation website.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_6")
+    ```
+
+1. Click through to install via the Setup Wizard.
+1. You should then see PuTTY available in the Software Center. You might need to click "Install" finish the installation here.
+
+    ```{r, echo=FALSE, fig.alt='The Software Center application lists available apps, including PuTTY.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_15")
+    ```
+
+    ```{r, echo=FALSE, fig.alt='The PuTTY page inside Software Center. The Install button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_20")
+    ```
+
+1. PuTTY should now be available in your applications. Click on PuTTY to open.
+
+    ```{r, echo=FALSE, fig.alt='The PuTTY page inside Software Center. The Install button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_28")
+    ```
    
-[SCREENSHOT]
+1. PuTTY should now be available in your applications. Click on PuTTY to open.
+
+    ```{r, echo=FALSE, fig.alt='The PuTTY application now appears in the Windows app menu.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_28")
+    ```
 
 </p></details>
 
