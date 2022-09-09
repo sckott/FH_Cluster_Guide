@@ -80,6 +80,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_20")
     ```
 
+<div class = "notice">
+You can also [install PuTTY manually](faq.html#manual-putty) if you don't see it in the Software Center.
+</div>
+
 1. PuTTY should now be available in your applications. Click on PuTTY to open.
 
     ```{r, echo=FALSE, fig.alt='The PuTTY application now appears in the Windows app menu.', out.width = '100%'}
