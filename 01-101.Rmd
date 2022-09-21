@@ -29,7 +29,7 @@ You will need an account to log in to the cluster. This ensures that data stays 
 
 ## Check your HutchNet ID
 
-A [HutchNet ID](https://centernet.fredhutch.org/cn/u/center-it/help-desk.html) is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at the Center (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems. 
+Your [HutchNet ID](https://centernet.fredhutch.org/cn/u/center-it/help-desk.html) is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at the Center (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems. 
 
 For example:  
 
@@ -80,9 +80,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_20")
     ```
 
-<div class = "notice">
-You can also [install PuTTY manually](faq.html#manual-putty) if you don't see it in the Software Center.
-</div>
+    <div class = "notice">
+    You can also [install PuTTY manually](faq.html#manual-putty) if you don't see it in the Software Center.
+    </div>
 
 1. PuTTY should now be available in your applications. Click on PuTTY to open.
 
