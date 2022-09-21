@@ -222,7 +222,7 @@ Copy and paste the following into the terminal, and hit return:
 wget https://raw.githubusercontent.com/FredHutch/slurm-examples/master/introduction/1-hello-world/01.sh
 ```
 
-_What just happened?_ We used the `wget` command to download a script from Github. This means we don't have to write the script from scratch. Let's confirm that we can see the file we just downloaded. We can use the `ls` (list files) command for this. Type `ls` and hit return:
+_What just happened?_ We used the `wget` command to download a script from GitHub. This means we don't have to write the script from scratch. Let's confirm that we can see the file we just downloaded. We can use the `ls` (list files) command for this. Type `ls` and hit return:
 
 ```
 ls

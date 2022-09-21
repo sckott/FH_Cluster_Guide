@@ -14,6 +14,7 @@ GDSCN
 GitHub
 Globus
 helpdesk
+hostname
 HutchNet
 HutchNetID
 impactful
@@ -40,4 +41,5 @@ reproducibility
 underserved
 VPN
 Webmail
+wifi
 www

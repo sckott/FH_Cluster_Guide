@@ -47,7 +47,7 @@ Here are some issues you might encounter.
 
 This error means that your computer is having trouble connecting to rhino. Ensure one of the following is true:
 
-1. You are connected to the Fred Hutch WiFi network on campus.
+1. You are connected to the Fred Hutch wifi network on campus.
 1. You are connected to the Fred Hutch VPN
 1. You are plugged into an ethernet cable on campus that taps into the Fred Hutch network. Note that not all ethernet wall jacks have this capability, so try another jack if you are having trouble. Please email the IT helpdesk and include your office number and the number on the jack if you find a jack that isn't working.
 
