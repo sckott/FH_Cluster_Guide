@@ -52,3 +52,11 @@ This error means that your computer is having trouble connecting to rhino. Ensur
 1. You are plugged into an ethernet cable on campus that taps into the Fred Hutch network. Note that not all ethernet wall jacks have this capability, so try another jack if you are having trouble. Please email the IT helpdesk and include your office number and the number on the jack if you find a jack that isn't working.
 
 </p></details>
+
+### `ssh: connect to host rhino port 22: Undefined error: 0` {-}
+
+<details><summary>Click to view steps</summary><p>
+
+This likely indicates a disruption to your internet connection and/or VPN. Ensure you are connected to the internet and connected to the Fred Hutch network on campus or the VPN.
+
+</p></details>
