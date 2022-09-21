@@ -257,7 +257,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 ## Submit the script
 
-Finally, use the following command to submit the script and run the job. You should see a message like `Submitted batch job 12345678` (your number will vary). 
+We use the `sbatch` command to submit a script and start running a job on the cluster. Copy the following and hit return. You should see a message like `Submitted batch job 12345678`. Your number will vary because this is a unique job identifier.
 
 ```
 sbatch 01.sh
@@ -265,7 +265,7 @@ sbatch 01.sh
 
 ## Check the output
 
-Type `ls` again. You should now see a log file like `slurm-12345678.out`. Let's look at this file. We should see our message has been printed to the `.out` file!
+Type `ls` again. You should now see a log file like `slurm-12345678.out` listed alongside your script `01.sh`. Let's use `cat` to inspect the output in the log file. We should see our message has been printed!
 
 ```
 cat slurm-<your-number-here>.out
@@ -287,6 +287,10 @@ This command lists the files in the current directory.
 **cat <filename>**
 
 This command prints the contents of a specific file <filename>.
+
+**sbatch <filename>.sh**
+
+This command submits a job to the cluster with instructions specified in <filename>.sh
 </div>
 
 # Organize your space
