@@ -271,34 +271,35 @@ Type `ls` again. You should now see a log file like `slurm-12345678.out` listed 
 cat slurm-<your-number-here>.out
 ```
 
-```{r, echo=FALSE, fig.alt='Screenshot of ls command shows a log file has been added.', out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_14")
-```
-
-```{r, echo=FALSE, fig.alt='Screenshot of cat command shows that the Hello World message has successfully printed.', out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_9")
+```{r, echo=FALSE, fig.alt='Screenshot of ls and cat command shows that the Hello World message has successfully printed.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_22")
 ```
 
 <div class = "dictionary">
-**ls**  
+`ls` 
   
 This command lists the files in the current directory.
 
-**cat <filename>**
+`cat` _filename_
 
 This command prints the contents of a specific file <filename>.
 
-**sbatch <filename>.sh**
+`sbatch` _filename.sh_
 
 This command submits a job to the cluster with instructions specified in <filename>.sh
 </div>
 
-# Organize your space
+# File upload and download
+
+Exchanging files with the cluster is very important. You can imagine scenarios where:
+
+- You want to download log files or output files
+- You want to upload a custom `.sh` script file
+- You want to upload other files
+
+Upload and download is performed using [Globus](https://www.globus.org/). 
 
 # Interactive cluster
 
-# File upload and download
-
-## Globus
 
 
