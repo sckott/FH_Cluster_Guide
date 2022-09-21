@@ -28,12 +28,27 @@ Here are some issues you might encounter.
 
 <details><summary>Click to view steps</summary><p>
 
-1. Click [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to install the latest version of PuTTY. You will choose the 64-bit x86 installation with few exceptions.
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "appendix/_manual_PuTTY_install.Rmd",
+  repo_name = "fhdsl/FH_Cluster_Guide"
+)
+```
 
-    ```{r, echo=FALSE, fig.alt='The PuTTY latest version installation website.', out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_6")
-    ```
+</p></details>
 
-1. Click through to install via the Setup Wizard.
+# Troubleshooting Help {-}
+
+Here are some issues you might encounter.
+
+### `ssh: Could not resolve hostname rhino: nodename nor servname provided, or not known` {-}
+
+<details><summary>Click to view steps</summary><p>
+
+This error means that your computer is having trouble connecting to rhino. Ensure one of the following is true:
+
+1. You are connected to the Fred Hutch wifi network on campus.
+1. You are connected to the Fred Hutch VPN
+1. You are plugged into an ethernet cable on campus that taps into the Fred Hutch network. Note that not all ethernet wall jacks have this capability, so try another jack if you are having trouble. Please email the IT helpdesk and include your office number and the number on the jack if you find a jack that isn't working.
 
 </p></details>
