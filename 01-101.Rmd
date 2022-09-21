@@ -222,16 +222,30 @@ Copy and paste the following into the terminal, and hit return:
 wget https://raw.githubusercontent.com/FredHutch/slurm-examples/master/introduction/1-hello-world/01.sh
 ```
 
+```{r, echo=FALSE, fig.alt='Screenshot of wget command output, showing successful file download.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_0_0")
+```
+
 _What just happened?_ We used the `wget` command to download a script from GitHub. This means we don't have to write the script from scratch. Let's confirm that we can see the file we just downloaded. We can use the `ls` (list files) command for this. Type `ls` and hit return:
 
 ```
 ls
 ```
 
-You should see the file `01.sh` in your home directory. The `.sh` ending means this is a script meant to run from the command line. Let's next inspect the script. 
+You should see the file `01.sh` in your home directory. The `.sh` ending means this is a script meant to run from the command line. 
+
+```{r, echo=FALSE, fig.alt='Screenshot of ls command showing that the file is in the working directory.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_0_6")
+```
+
+Let's next inspect the script.
 
 ```
 cat 01.sh
+```
+
+```{r, echo=FALSE, fig.alt='Screenshot of cat command showing the two lines contained in the script described below.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_2")
 ```
 
 The `cat` command, followed by a file name, lists the entire contents of a specific file.
@@ -245,10 +259,20 @@ Finally, use the following command to submit the job. You should see a message l
 sbatch 01.sh
 ```
 
-Type `ls` again. You should now see a log file like `slurm-12345678.out`. Let's look at this file. We should see our message has been printed to the `.out` file!
+Type `ls` again. You should now see a log file like `slurm-12345678.out`. 
+
+```{r, echo=FALSE, fig.alt='Screenshot of ls command shows a log file has been added.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_14")
+```
+
+Let's look at this file. We should see our message has been printed to the `.out` file!
 
 ```
 cat slurm-<your-number-here>.out
+```
+
+```{r, echo=FALSE, fig.alt='Screenshot of cat command shows that the Hello World message has successfully printed.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_9")
 ```
 
 <div class = "dictionary">
