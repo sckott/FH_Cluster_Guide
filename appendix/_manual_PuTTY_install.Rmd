@@ -1,8 +1,0 @@
-
-1. Click [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to install the latest version of PuTTY. You will choose the 64-bit x86 installation with few exceptions.
-
-    ```{r, echo=FALSE, fig.alt='The PuTTY latest version installation website.', out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15643d101eb_4_6")
-    ```
-
-1. Click through to install via the Setup Wizard.
