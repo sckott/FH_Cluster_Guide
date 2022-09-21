@@ -8,11 +8,14 @@ ctrl
 Datatrail
 DataTrail
 dropdown
+ethernet
 FH
 GDSCN
 GitHub
 Globus
+helpdesk
 HutchNet
+HutchNetID
 impactful
 ITCR
 itcrtraining
