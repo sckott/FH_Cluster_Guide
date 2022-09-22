@@ -61,3 +61,15 @@ This error means that your computer is having trouble connecting to rhino. Ensur
 This likely indicates a disruption to your internet connection and/or VPN. Ensure you are connected to the internet and connected to the Fred Hutch network on campus or the VPN.
 
 </p></details>
+
+### `Connection failed` message in Cyberduck {-}
+
+<details><summary>Click to view steps</summary><p>
+
+This likely indicates a disruption to your internet connection and/or VPN. Ensure you are connected to the internet and connected to the Fred Hutch network on campus or the VPN.
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Cyberduck Connection failed popup windpw.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_16")
+```
+
+</p></details>
