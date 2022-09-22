@@ -391,5 +391,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 # Interactive cluster
 
+# (PART\*) Assessment {-}
 
-
+# Cluster 101 Self Test
