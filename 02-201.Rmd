@@ -1,5 +1,0 @@
-# (PART\*) Cluster 201 {-}
-
-# Resource Optimization
-
-It is best practice to... 

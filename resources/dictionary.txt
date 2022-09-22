@@ -5,14 +5,20 @@ Bookdown
 Coursera
 css
 ctrl
+Cyberduck
 Datatrail
 DataTrail
 dropdown
+ethernet
 FH
+fhcrc
 GDSCN
 GitHub
 Globus
+helpdesk
+hostname
 HutchNet
+HutchNetID
 impactful
 ITCR
 itcrtraining
@@ -29,6 +35,7 @@ Pandoc
 PuTTY
 SciComp
 SciWiki
+SFTP
 SHell
 Slurm
 UE
@@ -37,4 +44,5 @@ reproducibility
 underserved
 VPN
 Webmail
+wifi
 www
