@@ -336,14 +336,14 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ## Download and edit the script
 
 - Right click on "`01.sh`" and select "Download"
-- You will see a "Transfers" prompt open, and the "`01.sh`" file should now appear in your Downloads folder
-- Open the "`01.sh`" file
+- You will see a "Transfers" prompt open, and the `01.sh` file should now appear in your Downloads folder
+- Open the `01.sh` file
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the script opened on the users local laptop.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_41")
 ```
 
-Edit the message to include your name and save the file. Rename the file "`01-name.sh`"
+Edit the message to include your name and save the file. Rename the file `01-name.sh`
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the edited and renamed script file contents. The contents of the script now reads "Hello, Ava!".', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_45")
@@ -376,7 +376,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ```
 
 <div class = "notice">
-The job names associated with the log files generally increase in number. In other words, the greatest job number is affiliated with the most recently run job.
+The job numbers included in log file names generally increase in number. The greater the number, the more recently the job was run.
 </div>
 
 Use the `cat` command to inspect the log. The message should show the new text that you added!

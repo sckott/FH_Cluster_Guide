@@ -20,11 +20,13 @@ The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputi
 
 Please submit an issue at our [GitHub repository](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
 
-# FAQ {-}
+# FAQ / Troubleshooting
 
-Here are some issues you might encounter.
+## FAQ 
 
-## How can I manually install PuTTY? {#manual-putty}
+Here are some questions you might have.
+
+### How can I manually install PuTTY? {#manual-putty}
 
 <details><summary>Click to view steps</summary><p>
 
@@ -38,7 +40,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 </p></details>
 
-# Troubleshooting Help {-}
+## Troubleshooting
 
 Here are some issues you might encounter.
 
