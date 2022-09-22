@@ -5,11 +5,13 @@ Bookdown
 Coursera
 css
 ctrl
+Cyberduck
 Datatrail
 DataTrail
 dropdown
 ethernet
 FH
+fhcrc
 GDSCN
 GitHub
 Globus
@@ -33,6 +35,7 @@ Pandoc
 PuTTY
 SciComp
 SciWiki
+SFTP
 SHell
 Slurm
 UE
