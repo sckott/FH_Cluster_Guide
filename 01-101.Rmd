@@ -257,7 +257,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 ## Submit the script
 
-We use the `sbatch` command to submit a script and start running a job on the cluster. Copy the following and hit return. You should see a message like `Submitted batch job 12345678`. Your number will vary because this is a unique job identifier.
+We use the `sbatch` command to submit a script and start running a job on the cluster. Copy the following and hit return. You should see a message like "`Submitted batch job 12345678`". Your number will vary because this is a unique job identifier.
 
 ```
 sbatch 01.sh
@@ -294,10 +294,80 @@ This command submits a job to the cluster with instructions specified in <filena
 Exchanging files with the cluster is very important. You can imagine scenarios where:
 
 - You want to download log files or output files
-- You want to upload a custom `.sh` script file
+- You want to upload a custom `.sh` script file that you wrote on your laptop
 - You want to upload other files
 
-Upload and download is performed using [Globus](https://www.globus.org/). 
+In this course, upload and download of files is performed using [Cyberduck](https://cyberduck.io/). Cyberduck is a tool that lets us connect to the cluster securely, browse files, and transfer files securely.
+
+## Download Cyberduck
+
+Download the latest version of Cyberduck [here](https://cyberduck.io/download/).
+
+<div class = "warning">
+Note that the version of Cyberduck in the Software Center or Self Service might not be current, causing compatibility issues with some operating systems.
+</div>
+
+## Create Connection
+
+Click on "Open Connection".
+
+- From the dropdown menu, select "SFTP (SSH File Transfer Protocol)
+- For Server, type "rhino.fhcrc.org"
+- Fill in your HutchNetID for Username and fill in your password
+
+Click "Connect"
+
+```{r, echo=FALSE, fig.alt='Screenshot of .', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_28")
+```
+
+Click "Allow". You can also check the box to indicate "Always".
+
+```{r, echo=FALSE, fig.alt='Screenshot of .', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_33")
+```
+
+You should see your script file "`01.sh`" and the log file.
+
+```{r, echo=FALSE, fig.alt='Screenshot of .', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_37")
+```
+
+## Download and edit the script
+
+Right click on "`01.sh`" and select "Download". You will see a "Transfers" prompt open, and the "`01.sh`" file should now appear in your Downloads folder. Open the "`01.sh`" file.
+
+```{r, echo=FALSE, fig.alt='Screenshot of .', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_41")
+```
+
+Edit the message to your name and save the file. Rename the file "`01-name.sh`"
+
+```{r, echo=FALSE, fig.alt='Screenshot of .', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_45")
+```
+
+## Upload the new script
+
+From your Downloads folder, simply drag the file to Cyberduck.
+
+```{r, echo=FALSE, fig.alt='Screenshot of .', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_49")
+```
+
+You should now see the new script among your cluster files.
+
+```{r, echo=FALSE, fig.alt='Screenshot of .', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g15cf3fa00a4_0_6")
+```
+
+## Run the new script
+
+Return to your Terminal. Submit a job with your new script by running:
+
+```
+sbatch 01-name.sh
+```
 
 # Interactive cluster
 
