@@ -73,7 +73,7 @@
 
 \title{FH Cluster Guide}
 \author{}
-\date{\vspace{-2.5em}September 09, 2022}
+\date{\vspace{-2.5em}September 22, 2022}
 
 \begin{document}
 \maketitle
@@ -117,7 +117,7 @@ You will need an account to log in to the cluster. This ensures that data stays 
 \hypertarget{check-your-hutchnet-id}{%
 \section{Check your HutchNet ID}\label{check-your-hutchnet-id}}
 
-A \href{https://centernet.fredhutch.org/cn/u/center-it/help-desk.html}{HutchNet ID} is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at the Center (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems.
+Your \href{https://centernet.fredhutch.org/cn/u/center-it/help-desk.html}{HutchNet ID} is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at the Center (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems.
 
 For example:
 
@@ -169,12 +169,8 @@ You will need to install a Terminal application called PuTTY to connect to the F
   \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_15}
 
   \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_20}
-\end{enumerate}
 
-You can also \href{faq.html\#manual-putty}{install PuTTY manually} if you don't see it in the Software Center.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+  You can also \href{faq.html\#manual-putty}{install PuTTY manually} if you don't see it in the Software Center.
 \item
   PuTTY should now be available in your applications. Click on PuTTY to open.
 
@@ -243,7 +239,13 @@ Now that you have your Terminal application ready, you want to connect to the cl
 
 SSH is a secure way to remotely connect to another computer or network of computers. In other words, SSH helps us protect your data and the data on the Fred Hutch cluster through authentication.
 
-Before moving on, you will need to connect to the \href{https://centernet.fredhutch.org/cn/u/center-it/help-desk/vpn.html}{Fred Hutch VPN}. This is the first layer of security. The next set of steps are specific to your operating system.
+\textbf{Hostname}
+
+The hostname is the name, or label, assigned to a computer in a network. We are connecting to hostname \texttt{rhino.fhcrc.org} or \texttt{rhino} for short.
+
+Before moving on, you will need to connect to the Fred Hutch wifi network, a networked ethernet jack, or the \href{https://centernet.fredhutch.org/cn/u/center-it/help-desk/vpn.html}{Fred Hutch VPN}. This is the first layer of security.
+
+The next set of steps are specific to your operating system.
 
 \hypertarget{windows-login}{%
 \section{Windows Login}\label{windows-login}}
@@ -302,29 +304,195 @@ Click to view steps
 
 Congratulations! You are now logged in to the Fred Hutch cluster!
 
-\hypertarget{tour-your-space}{%
-\chapter{Tour your space}\label{tour-your-space}}
-
 \hypertarget{submit-your-first-job}{%
 \chapter{Submit your first job}\label{submit-your-first-job}}
 
-\hypertarget{interactive-cluster}{%
-\chapter{Interactive cluster}\label{interactive-cluster}}
+The Fred Hutch cluster uses \href{https://slurm.schedmd.com/overview.html}{Slurm} to organize and prioritize jobs. Instead of running commands directly on rhino, you will submit a script (a snippet of directions) to tell Slurm what to do.
+
+\hypertarget{download-the-script}{%
+\section{Download the script}\label{download-the-script}}
+
+We can use the \texttt{wget} command to download a script from GitHub. This means we don't have to write the script from scratch. Copy and paste the following into the terminal, and hit return:
+
+\begin{verbatim}
+wget https://raw.githubusercontent.com/FredHutch/slurm-examples/master/introduction/1-hello-world/01.sh
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_0_0}
+
+\hypertarget{confirm-the-download}{%
+\section{Confirm the download}\label{confirm-the-download}}
+
+Let's confirm that we can see the file we just downloaded. We can use the \texttt{ls} (list files) command for this. Type \texttt{ls} and hit return. You should see the file \texttt{01.sh} in your home directory. The \texttt{.sh} ending means this is a script meant to run from the command line.
+
+\begin{verbatim}
+ls
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_0_6}
+
+\hypertarget{inspect-the-script}{%
+\section{Inspect the script}\label{inspect-the-script}}
+
+Let's next inspect the script. The \texttt{cat} command, followed by a file name, lists the entire contents of a specific file.
+
+\begin{verbatim}
+cat 01.sh
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_2}
+
+\begin{itemize}
+\tightlist
+\item
+  The first line of the script, \texttt{\#!/bin/bash}, indicates that this is a command line or ``bash'' script.
+\item
+  The second line is empty, and the third line, \texttt{echo\ "Hello,\ World"} means that the computer will ``echo'', or print out, ``Hello, World''.
+\end{itemize}
+
+\hypertarget{submit-the-script}{%
+\section{Submit the script}\label{submit-the-script}}
+
+We use the \texttt{sbatch} command to submit a script and start running a job on the cluster. Copy the following and hit return. You should see a message like ``\texttt{Submitted\ batch\ job\ 12345678}''. Your number will vary because this is a unique job identifier.
+
+\begin{verbatim}
+sbatch 01.sh
+\end{verbatim}
+
+\hypertarget{check-the-output}{%
+\section{Check the output}\label{check-the-output}}
+
+Type \texttt{ls} again. You should now see a log file like \texttt{slurm-12345678.out} listed alongside your script \texttt{01.sh}. Let's use \texttt{cat} to inspect the output in the log file. We should see our message has been printed!
+
+\begin{verbatim}
+cat slurm-<your-number-here>.out
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_22}
+
+\texttt{ls}
+
+This command lists the files in the current directory.
+
+\texttt{cat} \emph{filename}
+
+This command prints the contents of a specific file .
+
+\texttt{sbatch} \emph{filename.sh}
+
+This command submits a job to the cluster with instructions specified in .sh
 
 \hypertarget{file-upload-and-download}{%
 \chapter{File upload and download}\label{file-upload-and-download}}
 
-\hypertarget{globus}{%
-\section{Globus}\label{globus}}
+Exchanging files with the cluster is very important. You can imagine scenarios where:
 
-\hypertarget{part-cluster-201}{%
-\part*{Cluster 201}\label{part-cluster-201}}
-\addcontentsline{toc}{part}{Cluster 201}
+\begin{itemize}
+\tightlist
+\item
+  You want to download log files or output files
+\item
+  You want to upload a custom \texttt{.sh} script file that you wrote on your laptop
+\item
+  You want to upload other files
+\end{itemize}
 
-\hypertarget{resource-optimization}{%
-\chapter{Resource Optimization}\label{resource-optimization}}
+In this course, upload and download of files is performed using \href{https://cyberduck.io/}{Cyberduck}. Cyberduck is a tool that lets us connect to the cluster securely, browse files, and transfer files securely.
 
-It is best practice to\ldots{}
+\hypertarget{download-cyberduck}{%
+\section{Download Cyberduck}\label{download-cyberduck}}
+
+Download the latest version of Cyberduck \href{https://cyberduck.io/download/}{here}.
+
+Note that the version of Cyberduck in the Software Center or Self Service might not be current, causing compatibility issues with some operating systems.
+
+\hypertarget{create-connection}{%
+\section{Create Connection}\label{create-connection}}
+
+Launch Cyberduck and click on ``Open Connection''.
+
+\begin{itemize}
+\tightlist
+\item
+  From the dropdown menu, select ``SFTP (SSH File Transfer Protocol)''
+\item
+  For Server, type ``rhino.fhcrc.org''
+\item
+  Fill in your HutchNetID for Username and fill in your password
+\end{itemize}
+
+Click ``Connect''
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_28}
+
+Click ``Allow''. You can also check the box to indicate ``Always''.
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_33}
+
+You should see your script file ``\texttt{01.sh}'' and the log file.
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_37}
+
+\hypertarget{download-and-edit-the-script}{%
+\section{Download and edit the script}\label{download-and-edit-the-script}}
+
+\begin{itemize}
+\tightlist
+\item
+  Right click on ``\texttt{01.sh}'' and select ``Download''
+\item
+  You will see a ``Transfers'' prompt open, and the \texttt{01.sh} file should now appear in your Downloads folder
+\item
+  Open the \texttt{01.sh} file
+\end{itemize}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_41}
+
+Edit the message to include your name and save the file. Rename the file \texttt{01-name.sh}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_45}
+
+\hypertarget{upload-the-new-script}{%
+\section{Upload the new script}\label{upload-the-new-script}}
+
+From your Downloads folder, simply drag the file to Cyberduck.
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_49}
+
+You should now see the new script among your cluster files.
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15cf3fa00a4_0_6}
+
+\hypertarget{run-the-new-script}{%
+\section{Run the new script}\label{run-the-new-script}}
+
+Return to your Terminal. Submit a job with your new script by running the following. When you type \texttt{ls} you should see a new log file!
+
+\begin{verbatim}
+sbatch 01-name.sh
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_0}
+
+The job numbers included in log file names generally increase in number. The greater the number, the more recently the job was run.
+
+Use the \texttt{cat} command to inspect the log. The message should show the new text that you added!
+
+\begin{verbatim}
+cat slurm-<your-number-here>.out
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_6}
+
+\hypertarget{interactive-cluster}{%
+\chapter{Interactive cluster}\label{interactive-cluster}}
+
+\hypertarget{part-assessment}{%
+\part*{Assessment}\label{part-assessment}}
+\addcontentsline{toc}{part}{Assessment}
+
+\hypertarget{cluster-101-self-test}{%
+\chapter{Cluster 101 Self Test}\label{cluster-101-self-test}}
 
 \hypertarget{part-appendix}{%
 \part*{Appendix}\label{part-appendix}}
@@ -358,16 +526,18 @@ The SciWiki \href{https://sciwiki.fredhutch.org/scicomputing/comp_index/}{Scient
 \hypertarget{feedback}{%
 \chapter{Provide Feedback}\label{feedback}}
 
-Please submit an issue at our \href{https://github.com/fhdsl/FH_Cluster_Guide/issues/new}{GitHub repo}. You can also click the edit button on the top of the page in question.
+Please submit an issue at our \href{https://github.com/fhdsl/FH_Cluster_Guide/issues/new}{GitHub repository}. You can also click the edit button on the top of the page in question.
+
+\hypertarget{faq-troubleshooting}{%
+\chapter{FAQ / Troubleshooting}\label{faq-troubleshooting}}
 
 \hypertarget{faq}{%
-\chapter*{FAQ}\label{faq}}
-\addcontentsline{toc}{chapter}{FAQ}
+\section{FAQ}\label{faq}}
 
-Here are some issues you might encounter.
+Here are some questions you might have.
 
 \hypertarget{manual-putty}{%
-\section{How can I manually install PuTTY?}\label{manual-putty}}
+\subsection{How can I manually install PuTTY?}\label{manual-putty}}
 
 Click to view steps
 
@@ -380,6 +550,48 @@ Click to view steps
 \item
   Click through to install via the Setup Wizard.
 \end{enumerate}
+
+\hypertarget{troubleshooting}{%
+\section{Troubleshooting}\label{troubleshooting}}
+
+Here are some issues you might encounter.
+
+\hypertarget{ssh-could-not-resolve-hostname-rhino-nodename-nor-servname-provided-or-not-known}{%
+\subsection*{\texorpdfstring{\texttt{ssh:\ Could\ not\ resolve\ hostname\ rhino:\ nodename\ nor\ servname\ provided,\ or\ not\ known}}{ssh: Could not resolve hostname rhino: nodename nor servname provided, or not known}}\label{ssh-could-not-resolve-hostname-rhino-nodename-nor-servname-provided-or-not-known}}
+\addcontentsline{toc}{subsection}{\texttt{ssh:\ Could\ not\ resolve\ hostname\ rhino:\ nodename\ nor\ servname\ provided,\ or\ not\ known}}
+
+Click to view steps
+
+This error means that your computer is having trouble connecting to rhino. Ensure one of the following is true:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  You are connected to the Fred Hutch wifi network on campus.
+\item
+  You are connected to the Fred Hutch VPN
+\item
+  You are plugged into an ethernet cable on campus that taps into the Fred Hutch network. Note that not all ethernet wall jacks have this capability, so try another jack if you are having trouble. Please email the IT helpdesk and include your office number and the number on the jack if you find a jack that isn't working.
+\end{enumerate}
+
+\hypertarget{ssh-connect-to-host-rhino-port-22-undefined-error-0}{%
+\subsection*{\texorpdfstring{\texttt{ssh:\ connect\ to\ host\ rhino\ port\ 22:\ Undefined\ error:\ 0}}{ssh: connect to host rhino port 22: Undefined error: 0}}\label{ssh-connect-to-host-rhino-port-22-undefined-error-0}}
+\addcontentsline{toc}{subsection}{\texttt{ssh:\ connect\ to\ host\ rhino\ port\ 22:\ Undefined\ error:\ 0}}
+
+Click to view steps
+
+This likely indicates a disruption to your internet connection and/or VPN. Ensure you are connected to the internet and connected to the Fred Hutch network on campus or the VPN.
+
+\hypertarget{connection-failed-message-in-cyberduck}{%
+\subsection*{\texorpdfstring{\texttt{Connection\ failed} message in Cyberduck}{Connection failed message in Cyberduck}}\label{connection-failed-message-in-cyberduck}}
+\addcontentsline{toc}{subsection}{\texttt{Connection\ failed} message in Cyberduck}
+
+Click to view steps
+
+This likely indicates a disruption to your internet connection and/or VPN. Ensure you are connected to the internet and connected to the Fred Hutch network on campus or the VPN.
+
+\includegraphics[width=1\linewidth]{faq_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_16}
 
 \hypertarget{about-the-authors}{%
 \chapter*{About the Authors}\label{about-the-authors}}
@@ -445,7 +657,7 @@ Funding Staff & Staff members who help with funding \\
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-09-09                  
+##  date     2022-09-22                  
 ## 
 ## - Packages -------------------------------------------------------------------
 ##  package     * version    date       lib source                            
