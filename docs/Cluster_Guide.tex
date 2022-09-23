@@ -73,7 +73,7 @@
 
 \title{FH Cluster Guide}
 \author{}
-\date{\vspace{-2.5em}September 22, 2022}
+\date{\vspace{-2.5em}September 23, 2022}
 
 \begin{document}
 \maketitle
@@ -305,12 +305,12 @@ Click to view steps
 Congratulations! You are now logged in to the Fred Hutch cluster!
 
 \hypertarget{submit-your-first-job}{%
-\chapter{Submit your first job}\label{submit-your-first-job}}
+\chapter{Submit Your First Job}\label{submit-your-first-job}}
 
 The Fred Hutch cluster uses \href{https://slurm.schedmd.com/overview.html}{Slurm} to organize and prioritize jobs. Instead of running commands directly on rhino, you will submit a script (a snippet of directions) to tell Slurm what to do.
 
 \hypertarget{download-the-script}{%
-\section{Download the script}\label{download-the-script}}
+\section{Download the Script}\label{download-the-script}}
 
 We can use the \texttt{wget} command to download a script from GitHub. This means we don't have to write the script from scratch. Copy and paste the following into the terminal, and hit return:
 
@@ -321,7 +321,7 @@ wget https://raw.githubusercontent.com/FredHutch/slurm-examples/master/introduct
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_0_0}
 
 \hypertarget{confirm-the-download}{%
-\section{Confirm the download}\label{confirm-the-download}}
+\section{Confirm the Download}\label{confirm-the-download}}
 
 Let's confirm that we can see the file we just downloaded. We can use the \texttt{ls} (list files) command for this. Type \texttt{ls} and hit return. You should see the file \texttt{01.sh} in your home directory. The \texttt{.sh} ending means this is a script meant to run from the command line.
 
@@ -332,7 +332,7 @@ ls
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_0_6}
 
 \hypertarget{inspect-the-script}{%
-\section{Inspect the script}\label{inspect-the-script}}
+\section{Inspect the Script}\label{inspect-the-script}}
 
 Let's next inspect the script. The \texttt{cat} command, followed by a file name, lists the entire contents of a specific file.
 
@@ -351,7 +351,7 @@ cat 01.sh
 \end{itemize}
 
 \hypertarget{submit-the-script}{%
-\section{Submit the script}\label{submit-the-script}}
+\section{Submit the Script}\label{submit-the-script}}
 
 We use the \texttt{sbatch} command to submit a script and start running a job on the cluster. Copy the following and hit return. You should see a message like ``\texttt{Submitted\ batch\ job\ 12345678}''. Your number will vary because this is a unique job identifier.
 
@@ -360,7 +360,7 @@ sbatch 01.sh
 \end{verbatim}
 
 \hypertarget{check-the-output}{%
-\section{Check the output}\label{check-the-output}}
+\section{Check the Output}\label{check-the-output}}
 
 Type \texttt{ls} again. You should now see a log file like \texttt{slurm-12345678.out} listed alongside your script \texttt{01.sh}. Let's use \texttt{cat} to inspect the output in the log file. We should see our message has been printed!
 
@@ -383,7 +383,7 @@ This command prints the contents of a specific file .
 This command submits a job to the cluster with instructions specified in .sh
 
 \hypertarget{file-upload-and-download}{%
-\chapter{File upload and download}\label{file-upload-and-download}}
+\chapter{File Upload and Download}\label{file-upload-and-download}}
 
 Exchanging files with the cluster is very important. You can imagine scenarios where:
 
@@ -434,7 +434,7 @@ You should see your script file ``\texttt{01.sh}'' and the log file.
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_37}
 
 \hypertarget{download-and-edit-the-script}{%
-\section{Download and edit the script}\label{download-and-edit-the-script}}
+\section{Download and Edit the Script}\label{download-and-edit-the-script}}
 
 \begin{itemize}
 \tightlist
@@ -453,7 +453,7 @@ Edit the message to include your name and save the file. Rename the file \texttt
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_45}
 
 \hypertarget{upload-the-new-script}{%
-\section{Upload the new script}\label{upload-the-new-script}}
+\section{Upload the New Script}\label{upload-the-new-script}}
 
 From your Downloads folder, simply drag the file to Cyberduck.
 
@@ -464,7 +464,7 @@ You should now see the new script among your cluster files.
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15cf3fa00a4_0_6}
 
 \hypertarget{run-the-new-script}{%
-\section{Run the new script}\label{run-the-new-script}}
+\section{Run the New Script}\label{run-the-new-script}}
 
 Return to your Terminal. Submit a job with your new script by running the following. When you type \texttt{ls} you should see a new log file!
 
@@ -484,8 +484,106 @@ cat slurm-<your-number-here>.out
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_6}
 
-\hypertarget{interactive-cluster}{%
-\chapter{Interactive cluster}\label{interactive-cluster}}
+\hypertarget{interactive-session}{%
+\chapter{Interactive Session}\label{interactive-session}}
+
+While using the cluster, you might need to build and test jobs interactively before running them. Luckily, you can launch an interactive session, or node. Interactive nodes are dedicated computing resources that are meant to be used interactively, rather than through a job submission system. Interactive nodes are also useful if you have to install specific software.
+
+\hypertarget{starting-the-session}{%
+\section{Starting the Session}\label{starting-the-session}}
+
+Start an interactive node by running the command:
+
+\begin{verbatim}
+grabnode
+\end{verbatim}
+
+You will be prompted with several questions about the type of interactive node you want. We don't need anything fancy, so we will set up the node to use minimal resources. You can enter the following:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{How many CPUs/cores would you like to grab on the node?} \textbf{1}
+\item
+  \emph{How much memory (GB) would you like to grab?} \textbf{20}
+\item
+  \emph{Please enter the max number of days you would like to grab this node:} \textbf{1}
+\item
+  \emph{Do you need a GPU?} \textbf{N}
+\item
+  When prompted, enter your password
+\end{itemize}
+
+The CPU, or Central Processing Unit, is the brain of the computer that performs and orchestrates computational tasks. Modern computers often perform multiple tasks at once, ranging from 4 tasks on a typical laptop to 48 tasks or more on higher end servers.
+
+RAM, or Random Access Memory, is often simply referred to as memory. This short term memory holds the information that the CPU needs to perform calculations. One distinctive feature of memory is that it is short term. In other words, when the electricity is shut off, the data stored in memory disappears. To save the CPU's work, you usually save files to your computer. Running highly complicated analyses or algorithms can often require additional memory resources.
+
+The \href{https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html}{GPU}, or Graphics Processing Unit, is similar to the CPU. The GPU was originally designed to quickly render graphics (such as for video games), but today can be used to run complex artificial intelligence applications or computationally intensive jobs.
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_26}
+
+You will see that you are now logged on to a ``gizmo'' node instead of a ``rhino'' node.
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_50}
+
+\hypertarget{running-interactive-commands}{%
+\section{Running Interactive Commands}\label{running-interactive-commands}}
+
+You can start the session by running a similar command as we used in the job we submitted via script. Echo a message by running:
+
+\begin{verbatim}
+echo "Hello, again!"
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_58}
+
+Let's get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing \href{https://www.r-project.org/}{R} version 4.2.0.
+
+\begin{verbatim}
+ml R/4.2.0-foss-2021b
+\end{verbatim}
+
+Next, launch R:
+
+\begin{verbatim}
+R
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_65}
+
+You can play around with R here. For example, you might run:
+
+\begin{verbatim}
+head(mtcars)
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_72}
+
+Close the R session by typing:
+
+\begin{verbatim}
+q()
+\end{verbatim}
+
+Close the interactive node by typing:
+
+\begin{verbatim}
+exit
+\end{verbatim}
+
+\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_82}
+
+\texttt{grabnode}
+
+This command starts an interactive session, or node.
+
+\textbf{CPU}
+
+A computer component that performs and orchestrates computational tasks.
+
+\textbf{Memory}
+
+A computer component that stores calculations and information in the short term.
 
 \hypertarget{part-assessment}{%
 \part*{Assessment}\label{part-assessment}}
@@ -657,7 +755,7 @@ Funding Staff & Staff members who help with funding \\
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-09-22                  
+##  date     2022-09-23                  
 ## 
 ## - Packages -------------------------------------------------------------------
 ##  package     * version    date       lib source                            
