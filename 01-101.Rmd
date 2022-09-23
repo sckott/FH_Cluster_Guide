@@ -482,7 +482,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 <div class = "dictionary">
 `grabnode` 
   
-This command lists the files in the current directory.
+This command starts an interactive session, or node.
 
 **CPU**
 
