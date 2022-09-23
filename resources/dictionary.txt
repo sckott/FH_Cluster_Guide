@@ -32,6 +32,7 @@ NCI
 NHGRI
 ottrpal
 Pandoc
+preconfigured
 PuTTY
 SciComp
 SciWiki
