@@ -23,4 +23,10 @@ Our goal is to get you running on the Fred Hutch cluster quickly and efficiently
 
 In this short course, you'll invest a bit of time now to save you time and frustration down the road. Follow along at **any time on your own schedule**. We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!
 
+We will cover how to get logged in, how to submit your first job, how to transfer files, and how to launch an interactive session.
+
+```{r, echo=FALSE, fig.alt='Pathway of chapters covered in this course.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_88")
+```
+
 <!-- we would rather folks waste computing resources than not use it at all! -->
