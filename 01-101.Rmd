@@ -7,6 +7,10 @@ ottrpal::set_knitr_image_path()
 
 # What is a Cluster? {#what-is-a-cluster}
 
+```{r, echo=FALSE, fig.alt='We are on the first step of the pathway.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_114")
+```
+
 A computing cluster is a set of many computers networked together. Because there are many computers working together, the network is able to handle computationally expensive tasks, like genome assemblies or advanced algorithms. Imagine you're building a house. It would take a long time by yourself! It's much better to have many builders working together.
 
 Now that we have a team of workers, the next challenge is task management. A home construction team will need a manager to help delegate tasks. Similarly, the computing cluster uses management software to prioritize tasks, delegate workers (resources), and check on progress. The Fred Hutch cluster uses a common management and scheduling tool called [Slurm](https://slurm.schedmd.com/overview.html).
@@ -24,6 +28,10 @@ A set of computers networked together to perform large tasks.
 </div>
 
 # Account Setup {#account-setup}
+
+```{r, echo=FALSE, fig.alt='We are on the second step of the pathway.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_160")
+```
 
 You will need an account to log in to the cluster. This ensures that data stays protected.
 
@@ -352,10 +360,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ## Upload the New Script
 
 From your Downloads folder, simply drag the file to Cyberduck.
-
-```{r, echo=FALSE, fig.alt='Screenshot of local and Cyberduck files, depicting the dragging that transfers the file over.', out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_49")
-```
+  
+  ```{r, echo=FALSE, fig.alt='Screenshot of local and Cyberduck files, depicting the dragging that transfers the file over.', out.width = '100%'}
+  ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_49")
+  ```
 
 You should now see the new script among your cluster files.
 
