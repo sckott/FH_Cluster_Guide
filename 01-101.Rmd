@@ -5,7 +5,7 @@ ottrpal::set_knitr_image_path()
 
 # (PART\*) Cluster 101 {-}
 
-# What is a Cluster?
+# What is a Cluster? {#what-is-a-cluster}
 
 A computing cluster is a set of many computers networked together. Because there are many computers working together, the network is able to handle computationally expensive tasks, like genome assemblies or advanced algorithms. Imagine you're building a house. It would take a long time by yourself! It's much better to have many builders working together.
 
@@ -23,7 +23,7 @@ How is the cluster different from a laptop or desktop? First, you might use an o
 A set of computers networked together to perform large tasks.
 </div>
 
-# Account Setup
+# Account Setup {#account-setup}
 
 You will need an account to log in to the cluster. This ensures that data stays protected.
 
@@ -187,10 +187,10 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 
 <details><summary>Click to view steps</summary><p>
 
-1. Type the following commands, substituting in your HutchNet ID:  
+1. Type the following commands, substituting in your HutchNet ID (no brackets):  
 
     ```
-    ssh -Y HutchID@rhino
+    ssh -Y [HutchID]@rhino
     ```
 1. You will see a message that looks like `The authenticity of host 'rhino (XXX.XXX.XX.XX)' can't be established.` Type in `yes` and hit enter.
 1. Enter your password. No`*` or symbols will show up, so type it in carefully!
@@ -265,10 +265,10 @@ sbatch 01.sh
 
 ## Check the Output
 
-Type `ls` again. You should now see a log file like `slurm-12345678.out` listed alongside your script `01.sh`. Let's use `cat` to inspect the output in the log file. We should see our message has been printed!
+Type `ls` again. You should now see a log file like `slurm-12345678.out` listed alongside your script `01.sh`. Let's use `cat` to inspect the output in the log file. Make sure you replace `[your-number-here]` with the number in your actual file. We should see our message has been printed! 
 
 ```
-cat slurm-<your-number-here>.out
+cat slurm-[your-number-here].out
 ```
 
 ```{r, echo=FALSE, fig.alt='Screenshot of ls and cat command shows that the Hello World message has successfully printed.', out.width = '100%'}
@@ -379,10 +379,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 The job numbers included in log file names generally increase in number. The greater the number, the more recently the job was run.
 </div>
 
-Use the `cat` command to inspect the log. The message should show the new text that you added!
+Use the `cat` command to inspect the log. Make sure you replace `[your-number-here]` to match your file. The message should show the new text that you added!
 
 ```
-cat slurm-<your-number-here>.out
+cat slurm-[your-number-here].out
 ```
 
 ```{r, echo=FALSE, fig.alt='The message "Hello, Ava!" has been printed to the Terminal using the cat command.', out.width = '100%'}
@@ -492,6 +492,45 @@ A computer component that performs and orchestrates computational tasks.
 
 A computer component that stores calculations and information in the short term.
 </div>
+
+# Summary
+
+Let's review the key information from the previous sections.
+
+## Overview
+
+A [computing cluster](#what-is-a-cluster) is a set of computers networked together to perform large tasks. We usually connect to the cluster using a command-line interface called a [Terminal](#terminal). The Terminal application varies based on your operating system. 
+
+Before using the Fred Hutch cluster, it's a good idea to [contact the SciComp](#account-setup) team to ensure your account is set up correctly.
+
+You must be connected to the campus wifi network, plugged into a networked ethernet jack, or connected to the Fred Hutch VPN to connect to the Fred Hutch cluster.
+
+We connect to the cluster using a secure method called [SSH](#logging-in). Exact SSH commands vary depending on your operating system.
+
+Computer tasks are typically performed via job submission, where you tell the cluster what to do inside a script file. The Fred Hutch cluster uses [Slurm](#submit-your-first-job) to organize jobs submitted by different users.
+
+You can use the application [Cyberduck](#file-upload-and-download) to transfer smaller files between your local computer and the cluster via SFTP (SSH File Transfer Protocol).
+
+When building, testing, and debugging jobs, you might want to launch an [interactive session](#interactive-session) on the cluster. You will be asked several questions about resources before your session starts.
+
+## Glossary
+
+- **computing cluster** - A set of computers networked together to perform large tasks.
+- **CPU** - A computer component that performs and orchestrates computational tasks.
+- **Cyberduck** - Third-party software which transfers files between your local machine and the cluster.
+- **hostname** - The hostname is the name, or label, assigned to a computer in a network. We connect to hostname `rhino.fhcrc.org` or `rhino` for short.
+- **memory** - A computer component that stores calculations and information in the short term.
+- **SSH** - A secure method for remotely connecting to another computer or network of computers; stands for “Secure SHell”.
+- **terminal** - A command line interface; a software application that allows you to issue commands directly to a computer.
+
+## Commands (command line interface)
+
+- `cat` - displays all contents of a file (usage: `cat [filename]`)
+- `exit` - terminates an interactive session (usage: `exit`)
+- `grabnode` - launches an interactive session (usage: `grabnode`)
+- `ls` - lists files in the current folder (usage: `ls`)
+- `sbatch` - a Slurm command which submits a script containing job instructions for the cluster (usage: `sbatch [scriptname.sh]`)
+- `wget` - downloads a file from the internet (usage: `wget [url]`)
 
 # (PART\*) Assessment {-}
 
