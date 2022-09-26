@@ -547,14 +547,14 @@ You can use the application [Cyberduck](#file-upload-and-download) to transfer s
 
 ## Commands (command line interface)
 
-| Command    | Description                                                                        | Usage                    |
-|------------|------------------------------------------------------------------------------------|--------------------------|
-| `cat`      | displays all contents of a file                                                    | `cat [filename]`         |
-| `exit`     | terminates an interactive session                                                  | `exit`                   |
-| `grabnode` | launches an interactive session                                                    | `grabnode`               |
-| `ls`       | lists files in the current folder                                                  | `ls`                     |
-| `sbatch`   | a Slurm command which submits a script <br> containing job instructions for the cluster | `sbatch [scriptname.sh]` |
-| `wget`     | downloads a file from the internet                                                 | `wget [url]`             |
+| Command    | Description                                  | Usage                    |
+|------------|----------------------------------------------|--------------------------|
+| `cat`      | displays all contents of a file              | `cat [filename]`         |
+| `exit`     | terminates an interactive session            | `exit`                   |
+| `grabnode` | launches an interactive session              | `grabnode`               |
+| `ls`       | lists files in the current folder            | `ls`                     |
+| `sbatch`   | submits a script containing job instructions | `sbatch [scriptname.sh]` |
+| `wget`     | downloads a file from the internet           | `wget [url]`             |
 
 # (PART\*) Assessment {-}
 
