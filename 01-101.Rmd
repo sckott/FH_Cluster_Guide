@@ -362,7 +362,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 From your Downloads folder, simply drag the file to Cyberduck.
   
   ```{r, echo=FALSE, fig.alt='Screenshot of local and Cyberduck files, depicting the dragging that transfers the file over.', out.width = '100%'}
-  ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_49")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_49")
   ```
 
 You should now see the new script among your cluster files.
