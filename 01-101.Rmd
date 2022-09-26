@@ -131,7 +131,7 @@ The commonly used Linux distribution, Ubuntu, already comes with a Terminal inst
 1. Update the Terminal and prepare it for connecting to the cluster by running:
 
 ```
-sudo apt install openssh-server
+sudo apt install openssh-client
 ```
 
 Enter your password and enter `Y` when prompted.
