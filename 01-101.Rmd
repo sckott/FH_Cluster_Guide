@@ -499,19 +499,13 @@ Let's review the key information from the previous sections.
 
 ## Overview
 
-A [computing cluster](#what-is-a-cluster) is a set of computers networked together to perform large tasks. We usually connect to the cluster using a command-line interface called a [Terminal](#terminal). The Terminal application varies based on your operating system. 
+A [computing cluster](#what-is-a-cluster) is a set of computers networked together to perform large tasks. We usually connect to the cluster using a command-line interface called a [Terminal](#terminal). The Terminal application varies based on your operating system. We connect to the cluster using a secure method called [SSH](#logging-in). Exact SSH commands vary depending on your operating system.
 
-Before using the Fred Hutch cluster, it's a good idea to [contact the SciComp](#account-setup) team to ensure your account is set up correctly.
+Before using the Fred Hutch cluster, it's a good idea to [contact the SciComp](#account-setup) team to ensure your account is set up correctly. You must be connected to the campus wifi network, plugged into a networked ethernet jack, or connected to the Fred Hutch VPN to connect to the Fred Hutch cluster.
 
-You must be connected to the campus wifi network, plugged into a networked ethernet jack, or connected to the Fred Hutch VPN to connect to the Fred Hutch cluster.
-
-We connect to the cluster using a secure method called [SSH](#logging-in). Exact SSH commands vary depending on your operating system.
-
-Computer tasks are typically performed via job submission, where you tell the cluster what to do inside a script file. The Fred Hutch cluster uses [Slurm](#submit-your-first-job) to organize jobs submitted by different users.
+Computer tasks are typically performed via job submission, where you tell the cluster what to do inside a script file. The Fred Hutch cluster uses [Slurm](#submit-your-first-job) to organize jobs submitted by different users. When building, testing, and debugging jobs, you might want to launch an [interactive session](#interactive-session) on the cluster. You will be asked several questions about resources before your session starts.
 
 You can use the application [Cyberduck](#file-upload-and-download) to transfer smaller files between your local computer and the cluster via SFTP (SSH File Transfer Protocol).
-
-When building, testing, and debugging jobs, you might want to launch an [interactive session](#interactive-session) on the cluster. You will be asked several questions about resources before your session starts.
 
 ## Glossary
 
@@ -525,12 +519,14 @@ When building, testing, and debugging jobs, you might want to launch an [interac
 
 ## Commands (command line interface)
 
-- `cat` - displays all contents of a file (usage: `cat [filename]`)
-- `exit` - terminates an interactive session (usage: `exit`)
-- `grabnode` - launches an interactive session (usage: `grabnode`)
-- `ls` - lists files in the current folder (usage: `ls`)
-- `sbatch` - a Slurm command which submits a script containing job instructions for the cluster (usage: `sbatch [scriptname.sh]`)
-- `wget` - downloads a file from the internet (usage: `wget [url]`)
+| Command    | Description                                                                        | Usage                    |
+|------------|------------------------------------------------------------------------------------|--------------------------|
+| `cat`      | displays all contents of a file                                                    | `cat [filename]`         |
+| `exit`     | terminates an interactive session                                                  | `exit`                   |
+| `grabnode` | launches an interactive session                                                    | `grabnode`               |
+| `ls`       | lists files in the current folder                                                  | `ls`                     |
+| `sbatch`   | a Slurm command which submits a script containing job instructions for the cluster | `sbatch [scriptname.sh]` |
+| `wget`     | downloads a file from the internet                                                 | `wget [url]`             |
 
 # (PART\*) Assessment {-}
 
