@@ -2,7 +2,7 @@
 
 # Where to get help {#help}
 
-We want to help! Here are some ways you can get help for your work on the cluster.
+The Scientific Computing group in IT manages the cluster, provides support with software, advises on data storage and holds office hours specifically to help users make their science go. Here are some ways you can get help for your work on the cluster.
 
 ## Submit a Ticket {-}
 
@@ -14,11 +14,11 @@ Submitting a good ticket helps the SciComp Team address your needs quickly and e
 
 ## Visit the SciWiki {-}
 
-The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputing/comp_index/) is full of useful tips and guides.
+The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputing/comp_index/) is full of useful tips and guides.  Remember when using the search that the login "nodes" to the Fred Hutch cluster are called rhino and the cluster "nodes" are called gizmo.  
 
 # Provide Feedback {#feedback}
 
-Please submit an issue at our [GitHub repository](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
+Please submit an issue about this course at our [GitHub repository](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
 
 # FAQ / Troubleshooting
 
