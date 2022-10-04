@@ -210,7 +210,11 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 
 The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. Thus the best way to use the cluster is to create short snippets of directions (a script) that a computer can perform without human input and then tell the computers to do these jobs.  
 
-Now that you've logged into rhino you will be able to send your script to the networked computers in the cluster, that are collectively called gizmo. The Fred Hutch cluster uses [Slurm](https://slurm.schedmd.com/overview.html) to organize and prioritize jobs sent to gizmo. Based on your instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.
+Now that you've logged into rhino you will be able to send your script to the networked computers in the cluster. The Fred Hutch cluster uses [Slurm](https://slurm.schedmd.com/overview.html) to organize and prioritize jobs. Based on your instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.
+
+<div class = "notice">
+The part of the cluster where you log in is called `rhino`. The part of the cluster where jobs are run is called `gizmo`. 
+</div>
 
 ## Download the Script
 
@@ -385,13 +389,13 @@ cat slurm-<your-number-here>.out
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_6")
 ```
 
-# Interactive Session
+# Interactive Nodes
 
-While using the cluster, you might need to build and test jobs interactively before running them on gizmo. Luckily, you can launch an interactive session on the cluster by asking for part of a computer, called a "node", to be dedicated to you for a period of time, rather than using the Slurm job submission system. Interactive nodes are also useful if you have to install specific software for testing prior to requesting a software module be installed. 
+While using the cluster, you might need to build and test jobs interactively before running them. Luckily, you can work directly on the cluster by asking for part of a computer, called a "node". A node is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive node takes up resources directly on the cluster, it's a good idea to try submitting a job first. 
 
-## Starting the Session
+## Starting the Node
 
-When starting an interactive session, you're going to need to think about what you are testing and what resources you might need on the node you are requesting to use. We'll describe what these choices mean, though you can always start a session using the default values if you aren't sure what you need yet.  
+When starting an interactive node, you're going to need to think about what you are testing and what resources you might need on the node you are requesting to use. You can always start an interactive node using the default values if you aren't sure what you need yet.  
 
 Start an interactive node by running the command:
 
@@ -417,15 +421,15 @@ The [GPU](https://www.intel.com/content/www/us/en/products/docs/processors/what-
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_26")
 ```
 
-You will see that you are now logged on to a "gizmo" node instead of a "rhino" node.
+You will see that you are now logged on to "gizmo" instead of "rhino". Remember that the part of the cluster where you log in is called `rhino`. The part of the cluster where jobs are run is called `gizmo`. 
 
-```{r, echo=FALSE, fig.alt='Configuration prompts for interactive node log the user in to the gizmo node.', out.width = '100%'}
+```{r, echo=FALSE, fig.alt='Configuration prompts for interactive node log the user in to gizmo.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_50")
 ```
 
 ## Running Interactive Commands
 
-You can start the session by running a similar command as we used in the job we submitted via script. Echo a message by running:
+You can start the node by running a similar command as we used in the job we submitted via script. Echo a message by running:
 
 ```
 echo "Hello, again!"
@@ -450,7 +454,7 @@ Next, launch R:
 R
 ```
 
-```{r, echo=FALSE, fig.alt='The R module and R sessions have been launched on the interactive node.', out.width = '100%'}
+```{r, echo=FALSE, fig.alt='The R module and R session have been launched on the interactive node.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_65")
 ```
 
@@ -483,7 +487,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 <div class = "dictionary">
 `grabnode` 
   
-This command starts an interactive session, or node.
+This command starts an interactive node on the cluster.
 
 **CPU**
 
