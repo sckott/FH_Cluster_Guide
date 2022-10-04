@@ -73,7 +73,7 @@
 
 \title{FH Cluster Guide}
 \author{}
-\date{\vspace{-2.5em}September 26, 2022}
+\date{\vspace{-2.5em}October 04, 2022}
 
 \begin{document}
 \maketitle
@@ -86,9 +86,13 @@
 \chapter*{About this Course}\label{about-this-course}}
 \addcontentsline{toc}{chapter}{About this Course}
 
-Our goal is to get you running on the Fred Hutch cluster quickly and efficiently with this quick-start guide. As a wise Drivers' Ed instructor once said, \textbf{you need to go slow to go fast}!
+Fred Hutch maintains a high performance computing cluster specifically to support research work that requires more intensive computing than your average desktop computer can handle.
 
-In this short course, you'll invest a bit of time now to save you time and frustration down the road. Follow along at \textbf{any time on your own schedule}. We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!
+Our goal for this course is to get you running on the Fred Hutch cluster \textbf{quickly and efficiently}. It is intended for everyone whether you're completely new to using a cluster, or who may have used a cluster at another institution but are new to Fred Hutch.
+
+The Fred Hutch cluster is supported by a group in IT called Scientific Computing, and this course was developed by the Fred Hutch Data Science Lab in collaboration with them. Please see the \protect\hyperlink{about-the-authors}{author credits} for more information.
+
+We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!
 
 \hypertarget{part-cluster-101}{%
 \part*{Cluster 101}\label{part-cluster-101}}
@@ -103,7 +107,7 @@ Now that we have a team of workers, the next challenge is task management. A hom
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_18}
 
-How is the cluster different from a laptop or desktop? First, you might use an operating system like Windows or MacOS. The Fred Hutch server is a Linux system. Second, because many people use the cluster for many tasks, there isn't a central screen and keyboard. You access the cluster remotely from your computer! We will talk more about how to connect to the cluster in a \protect\hyperlink{terminal}{following chapter}.
+How is the cluster different from a laptop or desktop? First, on your laptop you most likely interact with it using an operating system like Windows or MacOS. The Fred Hutch cluster uses a Linux operating system. Second, because many people use the cluster for many tasks, there isn't a central screen and keyboard. You access the cluster remotely from your computer! We will talk more about how to connect to the cluster in a \protect\hyperlink{terminal}{following chapter}.
 
 \textbf{Computing cluster}
 
@@ -112,12 +116,12 @@ A set of computers networked together to perform large tasks.
 \hypertarget{account-setup}{%
 \chapter{Account Setup}\label{account-setup}}
 
-You will need an account to log in to the cluster. This ensures that data stays protected.
+You will need an account to log in to the cluster. This ensures that data stays protected and that computing resources are shared fairly.
 
 \hypertarget{check-your-hutchnet-id}{%
 \section{Check your HutchNet ID}\label{check-your-hutchnet-id}}
 
-Your \href{https://centernet.fredhutch.org/cn/u/center-it/help-desk.html}{HutchNet ID} is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at the Center (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems.
+Your \href{https://centernet.fredhutch.org/cn/u/center-it/help-desk.html}{HutchNet ID} is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at Fred Hutch (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems.
 
 For example:
 
@@ -131,16 +135,12 @@ For example:
 
 If one of your collaborators requires access to the Fred Hutch network you can submit a \href{https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html}{non-employee action form}. Non-employee is a generic administrative term for affiliates, students, contractors, etc.
 
-\hypertarget{contacting-the-scicomp-team}{%
-\section{Contacting the SciComp Team}\label{contacting-the-scicomp-team}}
+\hypertarget{pi-account}{%
+\section{Connect to a PI Account}\label{pi-account}}
 
-To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account.
+Your HutchNet ID must be associated with a PI cluster ``account''. The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic! To ensure that you have been set up to use the cluster, please fill out \href{https://forms.gle/5ct8mQCeBD7LUt6S7}{this Account Setup Form} and we will ensure you are set up correctly!
 
-The Scientific Computing Team (SciComp) tries to set some users up ahead of time. However, not everyone is set up automatically. Please fill out \href{https://forms.gle/5ct8mQCeBD7LUt6S7}{this Account Setup Form} and we will ensure you are set up correctly!
-
-Errors similar to ``Invalid account or account/partition'' typically indicate that the account hasn't been set up by SciComp. This is a quick fix if you use the form above.
-
-Now, let's set up our Terminal!
+Now, let's connect to the cluster using a terminal!
 
 \hypertarget{terminal}{%
 \chapter{Terminal Setup}\label{terminal}}
@@ -307,7 +307,11 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 \hypertarget{submit-your-first-job}{%
 \chapter{Submit Your First Job}\label{submit-your-first-job}}
 
-The Fred Hutch cluster uses \href{https://slurm.schedmd.com/overview.html}{Slurm} to organize and prioritize jobs. Instead of running commands directly on rhino, you will submit a script (a snippet of directions) to tell Slurm what to do.
+The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs.
+
+Now that you've logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses \href{https://slurm.schedmd.com/overview.html}{Slurm} to organize and prioritize jobs. Based on the instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.
+
+The part of the cluster where you log in is called \texttt{rhino}. The part of the cluster where jobs are run is called \texttt{gizmo}.
 
 \hypertarget{download-the-script}{%
 \section{Download the Script}\label{download-the-script}}
@@ -487,18 +491,20 @@ cat slurm-<your-number-here>.out
 \hypertarget{interactive-session}{%
 \chapter{Interactive Session}\label{interactive-session}}
 
-While using the cluster, you might need to build and test jobs interactively before running them. Luckily, you can launch an interactive session, or node. Interactive nodes are dedicated computing resources that are meant to be used interactively, rather than through a job submission system. Interactive nodes are also useful if you have to install specific software.
+While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a ``node''. This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive session takes up resources directly on the cluster whether you're actively using it or not, it's best to use interactive sessions only when a task cannot be done by submitting a script.
 
 \hypertarget{starting-the-session}{%
-\section{Starting the Session}\label{starting-the-session}}
+\section{Starting the session}\label{starting-the-session}}
 
-Start an interactive node by running the command:
+When starting an interactive session, you're going to need to think about what you are testing and what resources you might need on the node you are requesting to use. You can always start an interactive session using the default values if you aren't sure what you need yet.
+
+Start an interactive session on a node by running the command:
 
 \begin{verbatim}
 grabnode
 \end{verbatim}
 
-You will be prompted with several questions about the type of interactive node you want. We don't need anything fancy, so we will set up the node to use minimal resources. You can enter the following:
+You will be prompted with several questions about the type of resources on the node you want. We don't need anything fancy, so we will set up the session to use minimal resources. You can enter the following:
 
 \begin{itemize}
 \tightlist
@@ -522,14 +528,14 @@ The \href{https://www.intel.com/content/www/us/en/products/docs/processors/what-
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_26}
 
-You will see that you are now logged on to a ``gizmo'' node instead of a ``rhino'' node.
+You will see that you are now logged on to ``gizmo'' instead of ``rhino''. Remember that the part of the cluster where you log in is called \texttt{rhino}. The part of the cluster where jobs are run is called \texttt{gizmo}.
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_50}
 
 \hypertarget{running-interactive-commands}{%
 \section{Running Interactive Commands}\label{running-interactive-commands}}
 
-You can start the session by running a similar command as we used in the job we submitted via script. Echo a message by running:
+You can start working on the node by running a similar command as we used in the job we submitted via script. Echo a message by running:
 
 \begin{verbatim}
 echo "Hello, again!"
@@ -537,7 +543,10 @@ echo "Hello, again!"
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_58}
 
-Let's get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing \href{https://www.r-project.org/}{R} version 4.2.0.
+\hypertarget{using-pre-installed-software-modules}{%
+\section{Using Pre-installed Software Modules}\label{using-pre-installed-software-modules}}
+
+Let's get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing \href{https://www.r-project.org/}{R} version 4.2.0. You can learn more about what modules are available and how to request new ones for the Fred Hutch cluster \href{https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/}{here}.
 
 \begin{verbatim}
 ml R/4.2.0-foss-2021b
@@ -575,7 +584,10 @@ exit
 
 \texttt{grabnode}
 
-This command starts an interactive session, or node.
+This command starts an interactive session on the cluster.
+
+\textbf{Node}
+One of the networked computers in the cluster.
 
 \textbf{CPU}
 
@@ -584,6 +596,40 @@ A computer component that performs and orchestrates computational tasks.
 \textbf{Memory}
 
 A computer component that stores calculations and information in the short term.
+
+\hypertarget{help}{%
+\chapter{Getting Help}\label{help}}
+
+The Scientific Computing group in IT manages the cluster, provides support with software, advises on data storage, and holds office hours specifically to help users. Here are some ways you can get help for your work on the cluster.
+
+\hypertarget{send-an-email}{%
+\section*{Send an Email}\label{send-an-email}}
+\addcontentsline{toc}{section}{Send an Email}
+
+The primary way you can request help for a problem is to send SciComp an email, so a ticket will be created in their tracking system. This allows the details of the problem you're having to be sent to them so they can better help you. Submitting a good email ticket helps the SciComp Team address your needs quickly and efficiently. We suggest you submit the following information:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  A brief overview of what the problem is.
+\item
+  Some specifics about the problem, such as the full text (it's ok if it's long) of any error message or terminal command, or a screen shot of the interface you were using when you had the problem.
+\item
+  A description of what you wanted to have happen or what your overall goal is (in case perhaps there is another strategy that might work better).
+\end{enumerate}
+
+\hypertarget{visit-the-sciwiki}{%
+\section*{Visit the SciWiki}\label{visit-the-sciwiki}}
+\addcontentsline{toc}{section}{Visit the SciWiki}
+
+The SciWiki \href{https://sciwiki.fredhutch.org/scicomputing/comp_index/}{Scientific Computing page} is full of useful tips and guides. Remember when using the search that the login ``nodes'' to the Fred Hutch cluster are called rhino and the cluster ``nodes'' are called gizmo.
+
+\hypertarget{find-community-support-on-slack}{%
+\section*{Find Community Support on Slack}\label{find-community-support-on-slack}}
+\addcontentsline{toc}{section}{Find Community Support on Slack}
+
+Peer-to-peer support can be very valuable in learning and troubleshooting your work. The \href{https://fhdata.slack.com}{Fred Hutch Data Slack} workspace is open to all with a fredhutch.org, uw.edu, seattlechildrens.org, or related institution email addresses (whi.org, scharp.org, etc). You can ask questions, find out about office hours, and discover other live support and training events that can help you learn more about how to leverage resources at Fred Hutch to advance your science.
 
 \hypertarget{part-assessment}{%
 \part*{Assessment}\label{part-assessment}}
@@ -596,35 +642,10 @@ A computer component that stores calculations and information in the short term.
 \part*{Appendix}\label{part-appendix}}
 \addcontentsline{toc}{part}{Appendix}
 
-\hypertarget{help}{%
-\chapter{Where to get help}\label{help}}
-
-We want to help! Here are some ways you can get help for your work on the cluster.
-
-\hypertarget{submit-a-ticket}{%
-\section*{Submit a Ticket}\label{submit-a-ticket}}
-\addcontentsline{toc}{section}{Submit a Ticket}
-
-Submitting a good ticket helps the SciComp Team address your needs quickly and efficiently. We suggest you submit the following in a ticket:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-\item
-\item
-\end{enumerate}
-
-\hypertarget{visit-the-sciwiki}{%
-\section*{Visit the SciWiki}\label{visit-the-sciwiki}}
-\addcontentsline{toc}{section}{Visit the SciWiki}
-
-The SciWiki \href{https://sciwiki.fredhutch.org/scicomputing/comp_index/}{Scientific Computing page} is full of useful tips and guides.
-
 \hypertarget{feedback}{%
 \chapter{Provide Feedback}\label{feedback}}
 
-Please submit an issue at our \href{https://github.com/fhdsl/FH_Cluster_Guide/issues/new}{GitHub repository}. You can also click the edit button on the top of the page in question.
+Please submit an issue about this course at our \href{https://github.com/fhdsl/FH_Cluster_Guide/issues/new}{GitHub repository}. You can also click the edit button on the top of the page in question.
 
 \hypertarget{faq-troubleshooting}{%
 \chapter{FAQ / Troubleshooting}\label{faq-troubleshooting}}
@@ -691,6 +712,12 @@ This likely indicates a disruption to your internet connection and/or VPN. Ensur
 
 \includegraphics[width=1\linewidth]{faq_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_16}
 
+\hypertarget{invalid-account-or-accountpartition-when-logging-in}{%
+\subsection*{\texorpdfstring{\texttt{Invalid\ account\ or\ account/partition} when logging in}{Invalid account or account/partition when logging in}}\label{invalid-account-or-accountpartition-when-logging-in}}
+\addcontentsline{toc}{subsection}{\texttt{Invalid\ account\ or\ account/partition} when logging in}
+
+Errors similar to this typically indicate that the account hasn't been set up by SciComp. This is a quick fix if you \href{01-101.html\#pi-account}{use the form mentioned in the course}.
+
 \hypertarget{about-the-authors}{%
 \chapter*{About the Authors}\label{about-the-authors}}
 \addcontentsline{toc}{chapter}{About the Authors}
@@ -755,7 +782,7 @@ Funding Staff & Staff members who help with funding \\
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-09-26                  
+##  date     2022-10-04                  
 ## 
 ## - Packages -------------------------------------------------------------------
 ##  package     * version    date       lib source                            
