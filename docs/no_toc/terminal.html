@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>FH Cluster Guide</title>
+  <title>Chapter 3 Terminal Setup | FH Cluster Guide</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="FH Cluster Guide" />
+  <meta property="og:title" content="Chapter 3 Terminal Setup | FH Cluster Guide" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="FH Cluster Guide" />
+  <meta name="twitter:title" content="Chapter 3 Terminal Setup | FH Cluster Guide" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-
-<link rel="next" href="what-is-a-cluster.html"/>
+<link rel="prev" href="account-setup.html"/>
+<link rel="next" href="logging-in.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -178,22 +178,78 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="header">
-<h1 class="title">FH Cluster Guide</h1>
-<p class="date"><em>October 04, 2022</em></p>
+<div id="terminal" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Terminal Setup</h1>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_183.png" title="We are on the third step of the pathway." alt="We are on the third step of the pathway." width="80%" /></p>
+<p>The next step is getting familiar with your Terminal. This is your portal to the cluster.</p>
+<div id="what-is-a-terminal" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> What is a terminal?</h2>
+<p>The Terminal is a <a href="https://www.codecademy.com/article/command-line-interface">command line interface</a>. In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don’t have a graphical user interface (GUI). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the <a href="terminal.html#windows">Windows</a>, <a href="terminal.html#mac">MacOS</a>, or <a href="terminal.html#linux">Linux</a> sections below.</p>
+<div class="terminal">
+<p>“Terminal” used to be synonymous with “computer”. With the creation of operating systems like Windows and MacOS, computers became much easier to use and exploded in popularity! Your colleagues are almost always referring to the command line application when they say “Terminal”.</p>
 </div>
-<div id="about-this-course" class="section level1 unnumbered">
-<h1>About this Course</h1>
-<p>Fred Hutch maintains a high performance computing cluster specifically to support research work that requires more intensive computing than your average desktop computer can handle.</p>
-<p>Our goal for this course is to get you running on the Fred Hutch cluster <strong>quickly and efficiently</strong>. It is intended for everyone whether you’re completely new to using a cluster, or who may have used a cluster at another institution but are new to Fred Hutch.</p>
-<p>The Fred Hutch cluster is supported by a group in IT called Scientific Computing, and this course was developed by the Fred Hutch Data Science Lab in collaboration with them. Please see the <a href="about-the-authors.html#about-the-authors">author credits</a> for more information.</p>
-<p>We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!</p>
-<p><img src="index_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_88.png" title="Pathway of chapters covered in this course." alt="Pathway of chapters covered in this course." width="100%" /></p>
-
 </div>
-
-
-
+<div id="windows" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Windows Setup</h2>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>You will need to install a Terminal application called PuTTY to connect to the Fred Hutch Cluster.</p>
+<ol style="list-style-type: decimal">
+<li><p>You should then see PuTTY available in the Software Center. Click “Install” and go through the Setup Wizard.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_15.png" title="The Software Center application lists available apps, including PuTTY." alt="The Software Center application lists available apps, including PuTTY." width="100%" /></p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_20.png" title="The PuTTY page inside Software Center. The Install button is highlighted." alt="The PuTTY page inside Software Center. The Install button is highlighted." width="100%" /></p>
+<div class="notice">
+You can also <a href="faq.html#manual-putty">install PuTTY manually</a> if you don’t see it in the Software Center.
+</div></li>
+<li><p>PuTTY should now be available in your applications. Click on PuTTY to open.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_28.png" title="The PuTTY application now appears in the Windows app menu." alt="The PuTTY application now appears in the Windows app menu." width="100%" /></p></li>
+<li><p>You should now see the PuTTY Configuration menu.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_35.png" title="The PuTTY configuration menu is open." alt="The PuTTY configuration menu is open." width="100%" /></p></li>
+</ol>
+</p>
+</details>
+</div>
+<div id="mac" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Mac Setup</h2>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>Mac machines come with a Terminal installed.</p>
+<ol style="list-style-type: decimal">
+<li><p>Go to Finder &gt; Applications &gt; Utilities &gt; Terminal and double-click.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_9.png" title="Screenshot of the Utilities directory. The Terminal app is highlighted." alt="Screenshot of the Utilities directory. The Terminal app is highlighted." width="100%" /></p></li>
+<li><p>Your Terminal should look like this:</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_2.png" title="Screenshot of the Mac Terminal." alt="Screenshot of the Mac Terminal." width="100%" /></p></li>
+</ol>
+</p>
+</details>
+</div>
+<div id="linux" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Linux Setup</h2>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>The commonly used Linux distribution, Ubuntu, already comes with a Terminal installed.</p>
+<ol style="list-style-type: decimal">
+<li>Press ctrl + alt + T. Your open Terminal window should look like this:</li>
+</ol>
+<p>[SCREENSHOT]</p>
+<ol style="list-style-type: decimal">
+<li>Update the Terminal and prepare it for connecting to the cluster by running:</li>
+</ol>
+<pre><code>sudo apt install openssh-client</code></pre>
+<p>Enter your password and enter <code>Y</code> when prompted.</p>
+</p>
+</details>
+</div>
+</div>
 <hr>
 <center> 
   <div class="footer">
@@ -207,8 +263,8 @@
           </div>
         </div>
       </div>
-
-<a href="what-is-a-cluster.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="account-setup.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="logging-in.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -229,7 +285,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/fhdsl/FH_Cluster_Guide/edit/main/index.Rmd",
+"link": "https://github.com/fhdsl/FH_Cluster_Guide/edit/main/01-101.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -240,7 +296,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["Cluster_Guide.pdf", "https://github.com/fhdsl/FH_Cluster_Guide/raw/main/index.Rmd"],
+"download": ["Cluster_Guide.pdf", "https://github.com/fhdsl/FH_Cluster_Guide/raw/main/01-101.Rmd"],
 "search": {
 "engine": "fuse",
 "options": null
