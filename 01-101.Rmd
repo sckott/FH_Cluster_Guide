@@ -40,9 +40,15 @@ For example:
 If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). Non-employee is a generic administrative term for affiliates, students, contractors, etc.
 </div>
 
-## Connect to a PI Account {#pi-account}
+## Connect to a PI Account
 
 To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account. The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
+
+
+<div class = "warning">
+Errors similar to “Invalid account or account/partition” typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you use the form above.
+</div>
+
 
 Now, let's set up our Terminal!
 
@@ -433,8 +439,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 
 ## Using Pre-Installed Software Modules
+Let's get a bit more advanced. We can load a preconfigured software bundle called a module. At the Fred Hutch new software modules you commonly use can be requested at any time by emailing SciComp and providing information about the software itself.  
 
-Let's get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing [R](https://www.r-project.org/) version 4.2.0. You can learn more about modules on the Fred Hutch cluster [here](https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/).
+This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing [R](https://www.r-project.org/) version 4.2.0.
+
+
 
 ```
 ml R/4.2.0-foss-2021b
