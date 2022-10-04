@@ -119,8 +119,12 @@
 <li class="chapter" data-level="" data-path="help.html"><a href="help.html#visit-the-sciwiki"><i class="fa fa-check"></i>Visit the SciWiki</a></li>
 <li class="chapter" data-level="" data-path="help.html"><a href="help.html#find-community-support-on-slack"><i class="fa fa-check"></i>Find Community Support on Slack</a></li>
 </ul></li>
-<li class="part"><span><b>Assessment</b></span></li>
-<li class="chapter" data-level="9" data-path="cluster-101-self-test.html"><a href="cluster-101-self-test.html"><i class="fa fa-check"></i><b>9</b> Cluster 101 Self Test</a></li>
+<li class="chapter" data-level="9" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>9</b> Summary</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="summary.html"><a href="summary.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+<li class="chapter" data-level="9.2" data-path="summary.html"><a href="summary.html#glossary"><i class="fa fa-check"></i><b>9.2</b> Glossary</a></li>
+<li class="chapter" data-level="9.3" data-path="summary.html"><a href="summary.html#commands-command-line-interface"><i class="fa fa-check"></i><b>9.3</b> Commands (command line interface)</a></li>
+</ul></li>
 <li class="part"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="10" data-path="feedback.html"><a href="feedback.html"><i class="fa fa-check"></i><b>10</b> Provide Feedback</a></li>
 <li class="chapter" data-level="11" data-path="faq-troubleshooting.html"><a href="faq-troubleshooting.html"><i class="fa fa-check"></i><b>11</b> FAQ / Troubleshooting</a>
@@ -176,6 +180,7 @@
 </div>
 <div id="file-upload-and-download" class="section level1" number="6">
 <h1><span class="header-section-number">Chapter 6</span> File Upload and Download</h1>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_252.png" title="We are on the sixth step of the pathway." alt="We are on the sixth step of the pathway." width="80%" /></p>
 <p>Exchanging files with the cluster is very important. You can imagine scenarios where:</p>
 <ul>
 <li>You want to download log files or output files</li>
@@ -231,8 +236,8 @@
 <div class="notice">
 <p>The job numbers included in log file names generally increase in number. The greater the number, the more recently the job was run.</p>
 </div>
-<p>Use the <code>cat</code> command to inspect the log. The message should show the new text that you added!</p>
-<pre><code>cat slurm-&lt;your-number-here&gt;.out</code></pre>
+<p>Use the <code>cat</code> command to inspect the log. Make sure you replace <code>[your-number-here]</code> to match your file. The message should show the new text that you added!</p>
+<pre><code>cat slurm-[your-number-here].out</code></pre>
 <p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_6.png" title="The message &quot;Hello, Ava!&quot; has been printed to the Terminal using the cat command." alt="The message &quot;Hello, Ava!&quot; has been printed to the Terminal using the cat command." width="100%" /></p>
 </div>
 </div>

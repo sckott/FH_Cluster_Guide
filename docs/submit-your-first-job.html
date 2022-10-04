@@ -119,8 +119,12 @@
 <li class="chapter" data-level="" data-path="help.html"><a href="help.html#visit-the-sciwiki"><i class="fa fa-check"></i>Visit the SciWiki</a></li>
 <li class="chapter" data-level="" data-path="help.html"><a href="help.html#find-community-support-on-slack"><i class="fa fa-check"></i>Find Community Support on Slack</a></li>
 </ul></li>
-<li class="part"><span><b>Assessment</b></span></li>
-<li class="chapter" data-level="9" data-path="cluster-101-self-test.html"><a href="cluster-101-self-test.html"><i class="fa fa-check"></i><b>9</b> Cluster 101 Self Test</a></li>
+<li class="chapter" data-level="9" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>9</b> Summary</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="summary.html"><a href="summary.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+<li class="chapter" data-level="9.2" data-path="summary.html"><a href="summary.html#glossary"><i class="fa fa-check"></i><b>9.2</b> Glossary</a></li>
+<li class="chapter" data-level="9.3" data-path="summary.html"><a href="summary.html#commands-command-line-interface"><i class="fa fa-check"></i><b>9.3</b> Commands (command line interface)</a></li>
+</ul></li>
 <li class="part"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="10" data-path="feedback.html"><a href="feedback.html"><i class="fa fa-check"></i><b>10</b> Provide Feedback</a></li>
 <li class="chapter" data-level="11" data-path="faq-troubleshooting.html"><a href="faq-troubleshooting.html"><i class="fa fa-check"></i><b>11</b> FAQ / Troubleshooting</a>
@@ -176,6 +180,7 @@
 </div>
 <div id="submit-your-first-job" class="section level1" number="5">
 <h1><span class="header-section-number">Chapter 5</span> Submit Your First Job</h1>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_229.png" title="We are on the fifth step of the pathway." alt="We are on the fifth step of the pathway." width="80%" /></p>
 <p>The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs.</p>
 <p>Now that you’ve logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses <a href="https://slurm.schedmd.com/overview.html">Slurm</a> to organize and prioritize jobs. Based on the instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.</p>
 <div class="notice">
@@ -210,8 +215,8 @@
 </div>
 <div id="check-the-output" class="section level2" number="5.5">
 <h2><span class="header-section-number">5.5</span> Check the Output</h2>
-<p>Type <code>ls</code> again. You should now see a log file like <code>slurm-12345678.out</code> listed alongside your script <code>01.sh</code>. Let’s use <code>cat</code> to inspect the output in the log file. We should see our message has been printed!</p>
-<pre><code>cat slurm-&lt;your-number-here&gt;.out</code></pre>
+<p>Type <code>ls</code> again. You should now see a log file like <code>slurm-12345678.out</code> listed alongside your script <code>01.sh</code>. Let’s use <code>cat</code> to inspect the output in the log file. Make sure you replace <code>[your-number-here]</code> with the number in your actual file. We should see our message has been printed!</p>
+<pre><code>cat slurm-[your-number-here].out</code></pre>
 <p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_22.png" title="Screenshot of ls and cat command shows that the Hello World message has successfully printed." alt="Screenshot of ls and cat command shows that the Hello World message has successfully printed." width="100%" /></p>
 <div class="dictionary">
 <p><code>ls</code></p>

@@ -21,3 +21,6 @@ Our goal for this course is to get you running on the Fred Hutch cluster **quick
 The Fred Hutch cluster is supported by a group in IT called Scientific Computing, and this course was developed by the Fred Hutch Data Science Lab in collaboration with them. Please see the [author credits](#about-the-authors) for more information.
 
 We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!
+
+
+\includegraphics[width=1\linewidth]{index_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_88} 

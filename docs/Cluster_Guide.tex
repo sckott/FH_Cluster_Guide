@@ -94,12 +94,16 @@ The Fred Hutch cluster is supported by a group in IT called Scientific Computing
 
 We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!
 
+\includegraphics[width=1\linewidth]{index_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_88}
+
 \hypertarget{part-cluster-101}{%
 \part*{Cluster 101}\label{part-cluster-101}}
 \addcontentsline{toc}{part}{Cluster 101}
 
 \hypertarget{what-is-a-cluster}{%
 \chapter{What is a Cluster?}\label{what-is-a-cluster}}
+
+\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_114}
 
 A computing cluster is a set of many computers networked together. Because there are many computers working together, the network is able to handle computationally expensive tasks, like genome assemblies or advanced algorithms. Imagine you're building a house. It would take a long time by yourself! It's much better to have many builders working together.
 
@@ -115,6 +119,8 @@ A set of computers networked together to perform large tasks.
 
 \hypertarget{account-setup}{%
 \chapter{Account Setup}\label{account-setup}}
+
+\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_160}
 
 You will need an account to log in to the cluster. This ensures that data stays protected and that computing resources are shared fairly.
 
@@ -144,6 +150,8 @@ Now, let's connect to the cluster using a terminal!
 
 \hypertarget{terminal}{%
 \chapter{Terminal Setup}\label{terminal}}
+
+\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_183}
 
 The next step is getting familiar with your Terminal. This is your portal to the cluster.
 
@@ -232,6 +240,8 @@ Enter your password and enter \texttt{Y} when prompted.
 \hypertarget{logging-in}{%
 \chapter{Logging In}\label{logging-in}}
 
+\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_206}
+
 Now that you have your Terminal application ready, you want to connect to the cluster. You will do this using a method called \href{https://www.ssh.com/academy/ssh/protocol}{SSH}, which stands for ``Secure SHell''.
 
 \hypertarget{what-is-ssh}{%
@@ -280,10 +290,10 @@ Click to view steps
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Type the following commands, substituting in your HutchNet ID:
+  Type the following commands, substituting in your HutchNet ID (no brackets):
 
 \begin{verbatim}
-ssh -Y HutchID@rhino
+ssh -Y [HutchID]@rhino
 \end{verbatim}
 \item
   You will see a message that looks like \texttt{The\ authenticity\ of\ host\ \textquotesingle{}rhino\ (XXX.XXX.XX.XX)\textquotesingle{}\ can\textquotesingle{}t\ be\ established.} Type in \texttt{yes} and hit enter.
@@ -306,6 +316,8 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 
 \hypertarget{submit-your-first-job}{%
 \chapter{Submit Your First Job}\label{submit-your-first-job}}
+
+\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_229}
 
 The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs.
 
@@ -366,10 +378,10 @@ sbatch 01.sh
 \hypertarget{check-the-output}{%
 \section{Check the Output}\label{check-the-output}}
 
-Type \texttt{ls} again. You should now see a log file like \texttt{slurm-12345678.out} listed alongside your script \texttt{01.sh}. Let's use \texttt{cat} to inspect the output in the log file. We should see our message has been printed!
+Type \texttt{ls} again. You should now see a log file like \texttt{slurm-12345678.out} listed alongside your script \texttt{01.sh}. Let's use \texttt{cat} to inspect the output in the log file. Make sure you replace \texttt{{[}your-number-here{]}} with the number in your actual file. We should see our message has been printed!
 
 \begin{verbatim}
-cat slurm-<your-number-here>.out
+cat slurm-[your-number-here].out
 \end{verbatim}
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_22}
@@ -388,6 +400,8 @@ This command submits a job to the cluster with instructions specified in .sh
 
 \hypertarget{file-upload-and-download}{%
 \chapter{File Upload and Download}\label{file-upload-and-download}}
+
+\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_252}
 
 Exchanging files with the cluster is very important. You can imagine scenarios where:
 
@@ -480,16 +494,18 @@ sbatch 01-name.sh
 
 The job numbers included in log file names generally increase in number. The greater the number, the more recently the job was run.
 
-Use the \texttt{cat} command to inspect the log. The message should show the new text that you added!
+Use the \texttt{cat} command to inspect the log. Make sure you replace \texttt{{[}your-number-here{]}} to match your file. The message should show the new text that you added!
 
 \begin{verbatim}
-cat slurm-<your-number-here>.out
+cat slurm-[your-number-here].out
 \end{verbatim}
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_6}
 
 \hypertarget{interactive-session}{%
 \chapter{Interactive Session}\label{interactive-session}}
+
+\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_275}
 
 While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a ``node''. This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive session takes up resources directly on the cluster whether you're actively using it or not, it's best to use interactive sessions only when a task cannot be done by submitting a script.
 
@@ -631,12 +647,63 @@ The SciWiki \href{https://sciwiki.fredhutch.org/scicomputing/comp_index/}{Scient
 
 Peer-to-peer support can be very valuable in learning and troubleshooting your work. The \href{https://fhdata.slack.com}{Fred Hutch Data Slack} workspace is open to all with a fredhutch.org, uw.edu, seattlechildrens.org, or related institution email addresses (whi.org, scharp.org, etc). You can ask questions, find out about office hours, and discover other live support and training events that can help you learn more about how to leverage resources at Fred Hutch to advance your science.
 
-\hypertarget{part-assessment}{%
-\part*{Assessment}\label{part-assessment}}
-\addcontentsline{toc}{part}{Assessment}
+\hypertarget{summary}{%
+\chapter{Summary}\label{summary}}
 
-\hypertarget{cluster-101-self-test}{%
-\chapter{Cluster 101 Self Test}\label{cluster-101-self-test}}
+Let's review the key information from the previous sections.
+
+\hypertarget{overview}{%
+\section{Overview}\label{overview}}
+
+A \protect\hyperlink{what-is-a-cluster}{computing cluster} is a set of computers networked together to perform large tasks. We usually connect to the cluster using a command-line interface called a \protect\hyperlink{terminal}{Terminal}. The Terminal application varies based on your operating system. We connect to the cluster using a secure method called \protect\hyperlink{logging-in}{SSH}. Exact SSH commands vary depending on your operating system.
+
+Before using the Fred Hutch cluster, it's a good idea to \protect\hyperlink{account-setup}{contact the SciComp} team to ensure your account is set up correctly. You must be connected to the campus wifi network, plugged into a networked ethernet jack, or connected to the Fred Hutch VPN to connect to the Fred Hutch cluster.
+
+Computer tasks are typically performed via job submission, where you tell the cluster what to do inside a script file. The Fred Hutch cluster uses \protect\hyperlink{submit-your-first-job}{Slurm} to organize jobs submitted by different users. When building, testing, and debugging jobs, you might want to launch an \protect\hyperlink{interactive-session}{interactive session} on the cluster. You will be asked several questions about resources before your session starts.
+
+You can use the application \protect\hyperlink{file-upload-and-download}{Cyberduck} to transfer smaller files between your local computer and the cluster via SFTP (SSH File Transfer Protocol).
+
+Don't be afraid to ask for \protect\hyperlink{help}{help}! Check out the SciWiki, join the Slack workspace, or contact the SciComp team if you get stuck.
+
+\hypertarget{glossary}{%
+\section{Glossary}\label{glossary}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{computing cluster} - A set of computers networked together to perform large tasks.
+\item
+  \textbf{CPU} - A computer component that performs and orchestrates computational tasks.
+\item
+  \textbf{Cyberduck} - Third-party software which transfers files between your local machine and the cluster.
+\item
+  \textbf{hostname} - The hostname is the name, or label, assigned to a computer in a network. We connect to hostname \texttt{rhino.fhcrc.org} or \texttt{rhino} for short.
+\item
+  \textbf{memory} - A computer component that stores calculations and information in the short term.
+\item
+  \textbf{node} - A part of the cluster; a computer in the network.
+\item
+  \textbf{SSH} - A secure method for remotely connecting to another computer or network of computers; stands for ``Secure SHell''.
+\item
+  \textbf{terminal} - A command line interface; a software application that allows you to issue commands directly to a computer.
+\end{itemize}
+
+\hypertarget{commands-command-line-interface}{%
+\section{Commands (command line interface)}\label{commands-command-line-interface}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Command & Description & Usage \\
+\midrule
+\endhead
+\texttt{cat} & displays all contents of a file & \texttt{cat\ {[}filename{]}} \\
+\texttt{exit} & terminates an interactive session & \texttt{exit} \\
+\texttt{grabnode} & launches an interactive session & \texttt{grabnode} \\
+\texttt{ls} & lists files in the current folder & \texttt{ls} \\
+\texttt{sbatch} & submits a script containing job instructions & \texttt{sbatch\ {[}scriptname.sh{]}} \\
+\texttt{wget} & downloads a file from the internet & \texttt{wget\ {[}url{]}} \\
+\bottomrule
+\end{longtable}
 
 \hypertarget{part-appendix}{%
 \part*{Appendix}\label{part-appendix}}
