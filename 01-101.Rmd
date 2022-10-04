@@ -501,7 +501,7 @@ A computer component that performs and orchestrates computational tasks.
 A computer component that stores calculations and information in the short term.
 </div>
 
-# Where to get help {#help}
+# Getting Help {#help}
 
 The Scientific Computing group in IT manages the cluster, provides support with software, advises on data storage, and holds office hours specifically to help users. Here are some ways you can get help for your work on the cluster. 
 
