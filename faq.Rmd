@@ -2,7 +2,7 @@
 
 # Where to get help {#help}
 
-The Scientific Computing group in IT manages the cluster, provides support with software, advises on data storage, and holds office hours specifically to help users. Here are some ways you can get help for your work on the cluster.
+The Scientific Computing group in IT manages the cluster, provides support with software, advises on data storage and holds office hours specifically to help users make their science go. Here are some ways you can get help for your work on the cluster.
 
 ## Submit a Ticket {-}
 
@@ -14,7 +14,7 @@ Submitting a good ticket helps the SciComp Team address your needs quickly and e
 
 ## Visit the SciWiki {-}
 
-The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputing/comp_index/) is full of useful tips and guides. Remember when using the search that the login "nodes" to the Fred Hutch cluster are called rhino and the cluster "nodes" are called gizmo.  
+The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputing/comp_index/) is full of useful tips and guides.  Remember when using the search that the login "nodes" to the Fred Hutch cluster are called rhino and the cluster "nodes" are called gizmo.  
 
 # Provide Feedback {#feedback}
 
@@ -73,9 +73,5 @@ This likely indicates a disruption to your internet connection and/or VPN. Ensur
 ```{r, echo=FALSE, fig.alt='Screenshot of the Cyberduck Connection failed popup windpw.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_16")
 ```
-
-### `Invalid account or account/partition` when logging in {-}
-
-Errors similar to this typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you [use the form mentioned in the course](01-101.html#pi-account).
 
 </p></details>
