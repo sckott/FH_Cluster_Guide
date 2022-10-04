@@ -4,7 +4,7 @@
 
 Please submit an issue about this course at our [GitHub repository](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
 
-# FAQ / Troubleshooting
+# FAQ and Troubleshooting
 
 ## FAQ 
 

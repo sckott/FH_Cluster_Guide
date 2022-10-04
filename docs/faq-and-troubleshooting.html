@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 Getting Help | FH Cluster Guide</title>
+  <title>Chapter 11 FAQ and Troubleshooting | FH Cluster Guide</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 Getting Help | FH Cluster Guide" />
+  <meta property="og:title" content="Chapter 11 FAQ and Troubleshooting | FH Cluster Guide" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 Getting Help | FH Cluster Guide" />
+  <meta name="twitter:title" content="Chapter 11 FAQ and Troubleshooting | FH Cluster Guide" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="interactive-session.html"/>
-<link rel="next" href="summary.html"/>
+<link rel="prev" href="feedback.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -178,25 +178,74 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="help" class="section level1" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Getting Help</h1>
-<p>The Scientific Computing group in IT manages the cluster, provides support with software, advises on data storage, and holds office hours specifically to help users. Here are some ways you can get help for your work on the cluster.</p>
-<div id="send-an-email" class="section level2 unnumbered">
-<h2>Send an Email</h2>
-<p>The primary way you can request help for a problem is to send SciComp an email, so a ticket will be created in their tracking system. This allows the details of the problem you’re having to be sent to them so they can better help you. Submitting a good email ticket helps the SciComp Team address your needs quickly and efficiently. We suggest you submit the following information:</p>
+<div id="faq-and-troubleshooting" class="section level1" number="11">
+<h1><span class="header-section-number">Chapter 11</span> FAQ and Troubleshooting</h1>
+<div id="faq" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> FAQ</h2>
+<p>Here are some questions you might have.</p>
+<div id="manual-putty" class="section level3" number="11.1.1">
+<h3><span class="header-section-number">11.1.1</span> How can I manually install PuTTY?</h3>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
 <ol style="list-style-type: decimal">
-<li>A brief overview of what the problem is.</li>
-<li>Some specifics about the problem, such as the full text (it’s ok if it’s long) of any error message or terminal command, or a screen shot of the interface you were using when you had the problem.</li>
-<li>A description of what you wanted to have happen or what your overall goal is (in case perhaps there is another strategy that might work better).</li>
+<li><p>Click <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">here</a> to install the latest version of PuTTY. You will choose the 64-bit x86 installation with few exceptions.</p>
+<p><img src="faq_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_6.png" title="The PuTTY latest version installation website." alt="The PuTTY latest version installation website." width="100%" /></p></li>
+<li><p>Click through to install via the Setup Wizard.</p></li>
 </ol>
+</p>
+</details>
 </div>
-<div id="visit-the-sciwiki" class="section level2 unnumbered">
-<h2>Visit the SciWiki</h2>
-<p>The SciWiki <a href="https://sciwiki.fredhutch.org/scicomputing/comp_index/">Scientific Computing page</a> is full of useful tips and guides. Remember when using the search that the login “nodes” to the Fred Hutch cluster are called rhino and the cluster “nodes” are called gizmo.</p>
 </div>
-<div id="find-community-support-on-slack" class="section level2 unnumbered">
-<h2>Find Community Support on Slack</h2>
-<p>Peer-to-peer support can be very valuable in learning and troubleshooting your work. The <a href="https://fhdata.slack.com">Fred Hutch Data Slack</a> workspace is open to all with a fredhutch.org, uw.edu, seattlechildrens.org, or related institution email addresses (whi.org, scharp.org, etc). You can ask questions, find out about office hours, and discover other live support and training events that can help you learn more about how to leverage resources at Fred Hutch to advance your science.</p>
+<div id="troubleshooting" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> Troubleshooting</h2>
+<p>Here are some issues you might encounter.</p>
+<div id="ssh-could-not-resolve-hostname-rhino-nodename-nor-servname-provided-or-not-known" class="section level3 unnumbered">
+<h3><code>ssh: Could not resolve hostname rhino: nodename nor servname provided, or not known</code></h3>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>This error means that your computer is having trouble connecting to rhino. Ensure one of the following is true:</p>
+<ol style="list-style-type: decimal">
+<li>You are connected to the Fred Hutch wifi network on campus.</li>
+<li>You are connected to the Fred Hutch VPN</li>
+<li>You are plugged into an ethernet cable on campus that taps into the Fred Hutch network. Note that not all ethernet wall jacks have this capability, so try another jack if you are having trouble. Please email the IT helpdesk and include your office number and the number on the jack if you find a jack that isn’t working.</li>
+</ol>
+</p>
+</details>
+</div>
+<div id="ssh-connect-to-host-rhino-port-22-undefined-error-0" class="section level3 unnumbered">
+<h3><code>ssh: connect to host rhino port 22: Undefined error: 0</code></h3>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>This likely indicates a disruption to your internet connection and/or VPN. Ensure you are connected to the internet and connected to the Fred Hutch network on campus or the VPN.</p>
+</p>
+</details>
+</div>
+<div id="connection-failed-message-in-cyberduck" class="section level3 unnumbered">
+<h3><code>Connection failed</code> message in Cyberduck</h3>
+<details>
+<summary>
+Click to view steps
+</summary>
+<p>
+<p>This likely indicates a disruption to your internet connection and/or VPN. Ensure you are connected to the internet and connected to the Fred Hutch network on campus or the VPN.</p>
+<p><img src="faq_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_16.png" title="Screenshot of the Cyberduck Connection failed popup windpw." alt="Screenshot of the Cyberduck Connection failed popup windpw." width="100%" /></p>
+</div>
+<div id="invalid-account-or-accountpartition-when-logging-in" class="section level3 unnumbered">
+<h3><code>Invalid account or account/partition</code> when logging in</h3>
+<p>Errors similar to this typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you <a href="01-101.html#pi-account">use the form mentioned in the course</a>.</p>
+</p>
+</details>
+
+</div>
 </div>
 </div>
 <hr>
@@ -212,8 +261,8 @@
           </div>
         </div>
       </div>
-<a href="interactive-session.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="summary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="feedback.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -234,7 +283,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/fhdsl/FH_Cluster_Guide/edit/main/01-101.Rmd",
+"link": "https://github.com/fhdsl/FH_Cluster_Guide/edit/main/faq.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -245,7 +294,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["Cluster_Guide.pdf", "https://github.com/fhdsl/FH_Cluster_Guide/raw/main/01-101.Rmd"],
+"download": ["Cluster_Guide.pdf", "https://github.com/fhdsl/FH_Cluster_Guide/raw/main/faq.Rmd"],
 "search": {
 "engine": "fuse",
 "options": null
