@@ -5,7 +5,11 @@ ottrpal::set_knitr_image_path()
 
 # (PART\*) Cluster 101 {-}
 
-# What is a Cluster?
+# What is a Cluster? {#what-is-a-cluster}
+
+```{r, echo=FALSE, fig.alt='We are on the first step of the pathway.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_114")
+```
 
 A computing cluster is a set of many computers networked together. Because there are many computers working together, the network is able to handle computationally expensive tasks, like genome assemblies or advanced algorithms. Imagine you're building a house. It would take a long time by yourself! It's much better to have many builders working together.
 
@@ -23,7 +27,11 @@ How is the cluster different from a laptop or desktop? First, on your laptop you
 A set of computers networked together to perform large tasks.
 </div>
 
-# Account Setup
+# Account Setup {#account-setup}
+
+```{r, echo=FALSE, fig.alt='We are on the second step of the pathway.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_160")
+```
 
 You will need an account to log in to the cluster. This ensures that data stays protected and that computing resources are shared fairly.
 
@@ -47,6 +55,10 @@ Your HutchNet ID must be associated with a PI cluster "account". The Scientific 
 Now, let's connect to the cluster using a terminal!
 
 # Terminal Setup {#terminal}
+
+```{r, echo=FALSE, fig.alt='We are on the third step of the pathway.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_183")
+```
 
 The next step is getting familiar with your Terminal. This is your portal to the cluster.
 
@@ -134,6 +146,10 @@ Enter your password and enter `Y` when prompted.
 
 # Logging In
 
+```{r, echo=FALSE, fig.alt='We are on the fourth step of the pathway.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_206")
+```
+
 Now that you have your Terminal application ready, you want to connect to the cluster. You will do this using a method called [SSH](https://www.ssh.com/academy/ssh/protocol), which stands for "Secure SHell".
 
 ## What is `SSH`?
@@ -181,10 +197,10 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 
 <details><summary>Click to view steps</summary><p>
 
-1. Type the following commands, substituting in your HutchNet ID:  
+1. Type the following commands, substituting in your HutchNet ID (no brackets):  
 
     ```
-    ssh -Y HutchID@rhino
+    ssh -Y [HutchID]@rhino
     ```
 1. You will see a message that looks like `The authenticity of host 'rhino (XXX.XXX.XX.XX)' can't be established.` Type in `yes` and hit enter.
 1. Enter your password. No`*` or symbols will show up, so type it in carefully!
@@ -207,6 +223,10 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 </p></details>
 
 # Submit Your First Job
+
+```{r, echo=FALSE, fig.alt='We are on the fifth step of the pathway.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_229")
+```
 
 The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs. 
 
@@ -265,10 +285,10 @@ sbatch 01.sh
 
 ## Check the Output
 
-Type `ls` again. You should now see a log file like `slurm-12345678.out` listed alongside your script `01.sh`. Let's use `cat` to inspect the output in the log file. We should see our message has been printed!
+Type `ls` again. You should now see a log file like `slurm-12345678.out` listed alongside your script `01.sh`. Let's use `cat` to inspect the output in the log file. Make sure you replace `[your-number-here]` with the number in your actual file. We should see our message has been printed! 
 
 ```
-cat slurm-<your-number-here>.out
+cat slurm-[your-number-here].out
 ```
 
 ```{r, echo=FALSE, fig.alt='Screenshot of ls and cat command shows that the Hello World message has successfully printed.', out.width = '100%'}
@@ -290,6 +310,10 @@ This command submits a job to the cluster with instructions specified in <filena
 </div>
 
 # File Upload and Download
+
+```{r, echo=FALSE, fig.alt='We are on the sixth step of the pathway.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_252")
+```
 
 Exchanging files with the cluster is very important. You can imagine scenarios where:
 
@@ -352,10 +376,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ## Upload the New Script
 
 From your Downloads folder, simply drag the file to Cyberduck.
-
-```{r, echo=FALSE, fig.alt='Screenshot of local and Cyberduck files, depicting the dragging that transfers the file over.', out.width = '100%'}
+  
+  ```{r, echo=FALSE, fig.alt='Screenshot of local and Cyberduck files, depicting the dragging that transfers the file over.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_49")
-```
+  ```
 
 You should now see the new script among your cluster files.
 
@@ -379,10 +403,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 The job numbers included in log file names generally increase in number. The greater the number, the more recently the job was run.
 </div>
 
-Use the `cat` command to inspect the log. The message should show the new text that you added!
+Use the `cat` command to inspect the log. Make sure you replace `[your-number-here]` to match your file. The message should show the new text that you added!
 
 ```
-cat slurm-<your-number-here>.out
+cat slurm-[your-number-here].out
 ```
 
 ```{r, echo=FALSE, fig.alt='The message "Hello, Ava!" has been printed to the Terminal using the cat command.', out.width = '100%'}
@@ -390,6 +414,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ```
 
 # Interactive Session
+
+```{r, echo=FALSE, fig.alt='We are on the seventh and final step of the pathway.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_275")
+```
 
 While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a "node". This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive session takes up resources directly on the cluster whether you're actively using it or not, it's best to use interactive sessions only when a task cannot be done by submitting a script.  
 
@@ -521,6 +549,41 @@ The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputi
 
 Peer-to-peer support can be very valuable in learning and troubleshooting your work. The [Fred Hutch Data Slack](https://fhdata.slack.com) workspace is open to all with a fredhutch.org, uw.edu, seattlechildrens.org, or related institution email addresses (whi.org, scharp.org, etc). You can ask questions, find out about office hours, and discover other live support and training events that can help you learn more about how to leverage resources at Fred Hutch to advance your science.  
 
-# (PART\*) Assessment {-}
+# Summary
 
-# Cluster 101 Self Test
+Let's review the key information from the previous sections.
+
+## Overview
+
+A [computing cluster](#what-is-a-cluster) is a set of computers networked together to perform large tasks. We usually connect to the cluster using a command-line interface called a [Terminal](#terminal). The Terminal application varies based on your operating system. We connect to the cluster using a secure method called [SSH](#logging-in). Exact SSH commands vary depending on your operating system.
+
+Before using the Fred Hutch cluster, it's a good idea to [contact the SciComp](#account-setup) team to ensure your account is set up correctly. You must be connected to the campus wifi network, plugged into a networked ethernet jack, or connected to the Fred Hutch VPN to connect to the Fred Hutch cluster.
+
+Computer tasks are typically performed via job submission, where you tell the cluster what to do inside a script file. The Fred Hutch cluster uses [Slurm](#submit-your-first-job) to organize jobs submitted by different users. When building, testing, and debugging jobs, you might want to launch an [interactive session](#interactive-session) on the cluster. You will be asked several questions about resources before your session starts.
+
+You can use the application [Cyberduck](#file-upload-and-download) to transfer smaller files between your local computer and the cluster via SFTP (SSH File Transfer Protocol).
+
+Don't be afraid to ask for [help](#help)! Check out the SciWiki, join the Slack workspace, or contact the SciComp team if you get stuck.
+
+## Glossary
+
+- **computing cluster** - A set of computers networked together to perform large tasks.
+- **CPU** - A computer component that performs and orchestrates computational tasks.
+- **Cyberduck** - Third-party software which transfers files between your local machine and the cluster.
+- **hostname** - The hostname is the name, or label, assigned to a computer in a network. We connect to hostname `rhino.fhcrc.org` or `rhino` for short.
+- **memory** - A computer component that stores calculations and information in the short term.
+- **node** - A part of the cluster; a computer in the network.
+- **SSH** - A secure method for remotely connecting to another computer or network of computers; stands for “Secure SHell”.
+- **terminal** - A command line interface; a software application that allows you to issue commands directly to a computer.
+
+## Commands (command line interface)
+
+| Command    | Description                                  | Usage                    |
+|------------|----------------------------------------------|--------------------------|
+| `cat`      | displays all contents of a file              | `cat [filename]`         |
+| `exit`     | terminates an interactive session            | `exit`                   |
+| `grabnode` | launches an interactive session              | `grabnode`               |
+| `ls`       | lists files in the current folder            | `ls`                     |
+| `sbatch`   | submits a script containing job instructions | `sbatch [scriptname.sh]` |
+| `wget`     | downloads a file from the internet           | `wget [url]`             |
+
