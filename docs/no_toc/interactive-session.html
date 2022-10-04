@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>FH Cluster Guide</title>
+  <title>Chapter 7 Interactive Session | FH Cluster Guide</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="FH Cluster Guide" />
+  <meta property="og:title" content="Chapter 7 Interactive Session | FH Cluster Guide" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="FH Cluster Guide" />
+  <meta name="twitter:title" content="Chapter 7 Interactive Session | FH Cluster Guide" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-
-<link rel="next" href="what-is-a-cluster.html"/>
+<link rel="prev" href="file-upload-and-download.html"/>
+<link rel="next" href="help.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -178,22 +178,63 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="header">
-<h1 class="title">FH Cluster Guide</h1>
-<p class="date"><em>October 04, 2022</em></p>
+<div id="interactive-session" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Interactive Session</h1>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_275.png" title="We are on the seventh and final step of the pathway." alt="We are on the seventh and final step of the pathway." width="80%" /></p>
+<p>While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a “node”. This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive session takes up resources directly on the cluster whether you’re actively using it or not, it’s best to use interactive sessions only when a task cannot be done by submitting a script.</p>
+<div id="starting-the-session" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Starting the session</h2>
+<p>When starting an interactive session, you’re going to need to think about what you are testing and what resources you might need on the node you are requesting to use. You can always start an interactive session using the default values if you aren’t sure what you need yet.</p>
+<p>Start an interactive session on a node by running the command:</p>
+<pre><code>grabnode</code></pre>
+<p>You will be prompted with several questions about the type of resources on the node you want. We don’t need anything fancy, so we will set up the session to use minimal resources. You can enter the following:</p>
+<ul>
+<li><em>How many CPUs/cores would you like to grab on the node?</em> <strong>1</strong></li>
+<li><em>How much memory (GB) would you like to grab?</em> <strong>20</strong></li>
+<li><em>Please enter the max number of days you would like to grab this node:</em> <strong>1</strong></li>
+<li><em>Do you need a GPU?</em> <strong>N</strong></li>
+<li>When prompted, enter your password</li>
+</ul>
+<p>The CPU, or Central Processing Unit, is the brain of the computer that performs and orchestrates computational tasks. Modern computers often perform multiple tasks at once, ranging from 4 tasks on a typical laptop to 48 tasks or more on higher end servers.</p>
+<p>RAM, or Random Access Memory, is often simply referred to as memory. This short term memory holds the information that the CPU needs to perform calculations. One distinctive feature of memory is that it is short term. In other words, when the electricity is shut off, the data stored in memory disappears. To save the CPU’s work, you usually save files to your computer. Running highly complicated analyses or algorithms can often require additional memory resources.</p>
+<p>The <a href="https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html">GPU</a>, or Graphics Processing Unit, is similar to the CPU. The GPU was originally designed to quickly render graphics (such as for video games), but today can be used to run complex artificial intelligence applications or computationally intensive jobs.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_26.png" title="CPU is the brain of the computer, whereas memory stores information in the short term." alt="CPU is the brain of the computer, whereas memory stores information in the short term." width="100%" /></p>
+<p>You will see that you are now logged on to “gizmo” instead of “rhino”. Remember that the part of the cluster where you log in is called <code>rhino</code>. The part of the cluster where jobs are run is called <code>gizmo</code>.</p>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_50.png" title="Configuration prompts for interactive node log the user in to gizmo." alt="Configuration prompts for interactive node log the user in to gizmo." width="100%" /></p>
 </div>
-<div id="about-this-course" class="section level1 unnumbered">
-<h1>About this Course</h1>
-<p>Fred Hutch maintains a high performance computing cluster specifically to support research work that requires more intensive computing than your average desktop computer can handle.</p>
-<p>Our goal for this course is to get you running on the Fred Hutch cluster <strong>quickly and efficiently</strong>. It is intended for everyone whether you’re completely new to using a cluster, or who may have used a cluster at another institution but are new to Fred Hutch.</p>
-<p>The Fred Hutch cluster is supported by a group in IT called Scientific Computing, and this course was developed by the Fred Hutch Data Science Lab in collaboration with them. Please see the <a href="about-the-authors.html#about-the-authors">author credits</a> for more information.</p>
-<p>We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!</p>
-<p><img src="index_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_88.png" title="Pathway of chapters covered in this course." alt="Pathway of chapters covered in this course." width="100%" /></p>
-
+<div id="running-interactive-commands" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Running Interactive Commands</h2>
+<p>You can start working on the node by running a similar command as we used in the job we submitted via script. Echo a message by running:</p>
+<pre><code>echo &quot;Hello, again!&quot;</code></pre>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_58.png" title="An echo message is printed on an interactive node." alt="An echo message is printed on an interactive node." width="100%" /></p>
 </div>
-
-
-
+<div id="using-pre-installed-software-modules" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Using Pre-installed Software Modules</h2>
+<p>Let’s get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don’t need to install anything manually! In this example, we will load a module containing <a href="https://www.r-project.org/">R</a> version 4.2.0. You can learn more about what modules are available and how to request new ones for the Fred Hutch cluster <a href="https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/">here</a>.</p>
+<pre><code>ml R/4.2.0-foss-2021b</code></pre>
+<p>Next, launch R:</p>
+<pre><code>R</code></pre>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_65.png" title="The R module and R session have been launched on the interactive node." alt="The R module and R session have been launched on the interactive node." width="100%" /></p>
+<p>You can play around with R here. For example, you might run:</p>
+<pre><code>head(mtcars)</code></pre>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_72.png" title="R commands on an interactive node." alt="R commands on an interactive node." width="100%" /></p>
+<p>Close the R session by typing:</p>
+<pre><code>q()</code></pre>
+<p>Close the interactive node by typing:</p>
+<pre><code>exit</code></pre>
+<p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_82.png" title="The R session and interactive node have been exited." alt="The R session and interactive node have been exited." width="100%" /></p>
+<div class="dictionary">
+<p><code>grabnode</code></p>
+<p>This command starts an interactive session on the cluster.</p>
+<p><strong>Node</strong>
+One of the networked computers in the cluster.</p>
+<p><strong>CPU</strong></p>
+<p>A computer component that performs and orchestrates computational tasks.</p>
+<p><strong>Memory</strong></p>
+<p>A computer component that stores calculations and information in the short term.</p>
+</div>
+</div>
+</div>
 <hr>
 <center> 
   <div class="footer">
@@ -207,8 +248,8 @@
           </div>
         </div>
       </div>
-
-<a href="what-is-a-cluster.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="file-upload-and-download.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="help.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -229,7 +270,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/fhdsl/FH_Cluster_Guide/edit/main/index.Rmd",
+"link": "https://github.com/fhdsl/FH_Cluster_Guide/edit/main/01-101.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -240,7 +281,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["Cluster_Guide.pdf", "https://github.com/fhdsl/FH_Cluster_Guide/raw/main/index.Rmd"],
+"download": ["Cluster_Guide.pdf", "https://github.com/fhdsl/FH_Cluster_Guide/raw/main/01-101.Rmd"],
 "search": {
 "engine": "fuse",
 "options": null
