@@ -9,9 +9,11 @@ Cyberduck
 Datatrail
 DataTrail
 dropdown
+edu
 ethernet
 FH
 fhcrc
+fredhutch
 GDSCN
 GitHub
 Globus
@@ -35,8 +37,10 @@ Pandoc
 Pre
 preconfigured
 PuTTY
+scharp
 SciComp
 SciWiki
+seattlechildrens
 SFTP
 SHell
 Slurm
@@ -44,7 +48,9 @@ UE
 UE5
 reproducibility
 underserved
+uw
 VPN
 Webmail
+whi
 wifi
 www
