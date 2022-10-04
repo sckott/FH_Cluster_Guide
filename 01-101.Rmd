@@ -25,7 +25,7 @@ A set of computers networked together to perform large tasks.
 
 # Account Setup
 
-You will need an account to log in to the cluster. This ensures that data stays protected and the computing resources are shared fairly.
+You will need an account to log in to the cluster. This ensures that data stays protected and that computing resources are shared fairly.
 
 ## Check your HutchNet ID
 
@@ -42,7 +42,7 @@ If one of your collaborators requires access to the Fred Hutch network you can s
 
 ## Connect to a PI Account {#pi-account}
 
-To use the Scientific Computing cluster at Hutch, your HutchNet ID must be associated with a PI account. The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
+Your HutchNet ID must be associated with a PI cluster "account". The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
 
 Now, let's connect to the cluster using a terminal!
 
@@ -208,9 +208,9 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 
 # Submit Your First Job
 
-The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. Thus the best way to use the cluster is to create short snippets of directions (a script) that a computer can perform without human input and then tell the computers to do these jobs.  
+The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input and then tell the computers to execute the instructions as individual jobs. 
 
-Now that you've logged into rhino you will be able to send your script to the networked computers in the cluster. The Fred Hutch cluster uses [Slurm](https://slurm.schedmd.com/overview.html) to organize and prioritize jobs. Based on your instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.
+Now that you've logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses [Slurm](https://slurm.schedmd.com/overview.html) to organize and prioritize jobs. Based on the instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.
 
 <div class = "notice">
 The part of the cluster where you log in is called `rhino`. The part of the cluster where jobs are run is called `gizmo`. 
@@ -389,21 +389,21 @@ cat slurm-<your-number-here>.out
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_6")
 ```
 
-# Interactive Nodes
+# Interactive Session
 
-While using the cluster, you might need to build and test jobs interactively before running them. Luckily, you can work directly on the cluster by asking for part of a computer, called a "node". A node is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive node takes up resources directly on the cluster, it's a good idea to try submitting a job first. 
+While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating a session on one of the networked computers, called a "node". A node (or part of one) is then dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive session takes up resources directly on the cluster whether you're actively using it or not, it's best to use interactive sessions only when a task cannot be done by submitting a script.  
 
-## Starting the Node
+## Starting the session
 
-When starting an interactive node, you're going to need to think about what you are testing and what resources you might need on the node you are requesting to use. You can always start an interactive node using the default values if you aren't sure what you need yet.  
+When starting an interactive session, you're going to need to think about what you are testing and what resources you might need on the node you are requesting to use. You can always start an interactive session using the default values if you aren't sure what you need yet.  
 
-Start an interactive node by running the command:
+Start an interactive session on a node by running the command:
 
 ```
 grabnode
 ```
 
-You will be prompted with several questions about the type of interactive node you want. We don't need anything fancy, so we will set up the node to use minimal resources. You can enter the following:
+You will be prompted with several questions about the type of resources on the node you want. We don't need anything fancy, so we will set up the session to use minimal resources. You can enter the following:
 
 - _How many CPUs/cores would you like to grab on the node?_ **1**
 - _How much memory (GB) would you like to grab?_ **20**
@@ -429,7 +429,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 ## Running Interactive Commands
 
-You can start the node by running a similar command as we used in the job we submitted via script. Echo a message by running:
+You can start working on the node by running a similar command as we used in the job we submitted via script. Echo a message by running:
 
 ```
 echo "Hello, again!"
@@ -487,7 +487,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 <div class = "dictionary">
 `grabnode` 
   
-This command starts an interactive node on the cluster.
+This command starts an interactive session on the cluster.
+
+**Node**
+One of the networked computers in the cluster. 
 
 **CPU**
 
