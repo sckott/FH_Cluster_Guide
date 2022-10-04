@@ -1,24 +1,8 @@
 # (PART\*) Appendix {-}
 
-# Where to get help {#help}
-
-We want to help! Here are some ways you can get help for your work on the cluster.
-
-## Submit a Ticket {-}
-
-Submitting a good ticket helps the SciComp Team address your needs quickly and efficiently. We suggest you submit the following in a ticket:
-
-1.  
-1.  
-1.  
-
-## Visit the SciWiki {-}
-
-The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputing/comp_index/) is full of useful tips and guides.
-
 # Provide Feedback {#feedback}
 
-Please submit an issue at our [GitHub repository](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
+Please submit an issue about this course at our [GitHub repository](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
 
 # FAQ / Troubleshooting
 
@@ -73,5 +57,9 @@ This likely indicates a disruption to your internet connection and/or VPN. Ensur
 ```{r, echo=FALSE, fig.alt='Screenshot of the Cyberduck Connection failed popup windpw.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_16")
 ```
+
+### `Invalid account or account/partition` when logging in {-}
+
+Errors similar to this typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you [use the form mentioned in the course](01-101.html#pi-account).
 
 </p></details>

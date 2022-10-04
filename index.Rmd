@@ -19,8 +19,10 @@ knitr::write_bib(c(
 
 # About this Course {-}
 
-Our goal is to get you running on the Fred Hutch cluster quickly and efficiently with this quick-start guide. As a wise Drivers' Ed instructor once said, **you need to go slow to go fast**! 
+Fred Hutch maintains a high performance computing cluster specifically to support research work that requires more intensive computing than your average desktop computer can handle.
 
-In this short course, you'll invest a bit of time now to save you time and frustration down the road. Follow along at **any time on your own schedule**. We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!
+Our goal for this course is to get you running on the Fred Hutch cluster **quickly and efficiently**. It is intended for everyone whether you're completely new to using a cluster, or who may have used a cluster at another institution but are new to Fred Hutch. 
 
-<!-- we would rather folks waste computing resources than not use it at all! -->
+The Fred Hutch cluster is supported by a group in IT called Scientific Computing, and this course was developed by the Fred Hutch Data Science Lab in collaboration with them. Please see the [author credits](#about-the-authors) for more information.
+
+We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!

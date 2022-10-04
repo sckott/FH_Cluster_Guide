@@ -15,7 +15,7 @@ Now that we have a team of workers, the next challenge is task management. A hom
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_18")
 ```
 
-How is the cluster different from a laptop or desktop? First, you might use an operating system like Windows or MacOS. The Fred Hutch server is a Linux system. Second, because many people use the cluster for many tasks, there isn't a central screen and keyboard. You access the cluster remotely from your computer! We will talk more about how to connect to the cluster in a [following chapter](#terminal).
+How is the cluster different from a laptop or desktop? First, on your laptop you most likely interact with it using an operating system like Windows or MacOS. The Fred Hutch cluster uses a Linux operating system. Second, because many people use the cluster for many tasks, there isn't a central screen and keyboard. You access the cluster remotely from your computer! We will talk more about how to connect to the cluster in a [following chapter](#terminal).
 
 <div class = "dictionary">
 **Computing cluster**  
@@ -25,11 +25,11 @@ A set of computers networked together to perform large tasks.
 
 # Account Setup
 
-You will need an account to log in to the cluster. This ensures that data stays protected.
+You will need an account to log in to the cluster. This ensures that data stays protected and that computing resources are shared fairly.
 
 ## Check your HutchNet ID
 
-Your [HutchNet ID](https://centernet.fredhutch.org/cn/u/center-it/help-desk.html) is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at the Center (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems. 
+Your [HutchNet ID](https://centernet.fredhutch.org/cn/u/center-it/help-desk.html) is the standard login you receive when you start working at the Hutch or are an official affiliate. You can use it to login to most resources at Fred Hutch (Desktop Computer, Employee Self Service, VPN, Webmail) and our Scientific Computing systems. 
 
 For example:  
 
@@ -40,17 +40,11 @@ For example:
 If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). Non-employee is a generic administrative term for affiliates, students, contractors, etc.
 </div>
 
-## Contacting the SciComp Team
+## Connect to a PI Account {#pi-account}
 
-To use Scientific Computing clusters at Hutch, your HutchNet ID must be associated with a PI account. 
+Your HutchNet ID must be associated with a PI cluster "account". The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
 
-The Scientific Computing Team (SciComp) tries to set some users up ahead of time. However, not everyone is set up automatically. Please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
-
-<div class = "warning">
-Errors similar to “Invalid account or account/partition” typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you use the form above.
-</div>
-
-Now, let's set up our Terminal!
+Now, let's connect to the cluster using a terminal!
 
 # Terminal Setup {#terminal}
 
@@ -214,7 +208,13 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 
 # Submit Your First Job
 
-The Fred Hutch cluster uses [Slurm](https://slurm.schedmd.com/overview.html) to organize and prioritize jobs. Instead of running commands directly on rhino, you will submit a script (a snippet of directions) to tell Slurm what to do. 
+The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs. 
+
+Now that you've logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses [Slurm](https://slurm.schedmd.com/overview.html) to organize and prioritize jobs. Based on the instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.
+
+<div class = "notice">
+The part of the cluster where you log in is called `rhino`. The part of the cluster where jobs are run is called `gizmo`. 
+</div>
 
 ## Download the Script
 
@@ -391,17 +391,19 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 # Interactive Session
 
-While using the cluster, you might need to build and test jobs interactively before running them. Luckily, you can launch an interactive session, or node. Interactive nodes are dedicated computing resources that are meant to be used interactively, rather than through a job submission system. Interactive nodes are also useful if you have to install specific software.
+While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a "node". This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive session takes up resources directly on the cluster whether you're actively using it or not, it's best to use interactive sessions only when a task cannot be done by submitting a script.  
 
-## Starting the Session
+## Starting the session
 
-Start an interactive node by running the command:
+When starting an interactive session, you're going to need to think about what you are testing and what resources you might need on the node you are requesting to use. You can always start an interactive session using the default values if you aren't sure what you need yet.  
+
+Start an interactive session on a node by running the command:
 
 ```
 grabnode
 ```
 
-You will be prompted with several questions about the type of interactive node you want. We don't need anything fancy, so we will set up the node to use minimal resources. You can enter the following:
+You will be prompted with several questions about the type of resources on the node you want. We don't need anything fancy, so we will set up the session to use minimal resources. You can enter the following:
 
 - _How many CPUs/cores would you like to grab on the node?_ **1**
 - _How much memory (GB) would you like to grab?_ **20**
@@ -419,15 +421,15 @@ The [GPU](https://www.intel.com/content/www/us/en/products/docs/processors/what-
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_26")
 ```
 
-You will see that you are now logged on to a "gizmo" node instead of a "rhino" node.
+You will see that you are now logged on to "gizmo" instead of "rhino". Remember that the part of the cluster where you log in is called `rhino`. The part of the cluster where jobs are run is called `gizmo`. 
 
-```{r, echo=FALSE, fig.alt='Configuration prompts for interactive node log the user in to the gizmo node.', out.width = '100%'}
+```{r, echo=FALSE, fig.alt='Configuration prompts for interactive node log the user in to gizmo.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_50")
 ```
 
 ## Running Interactive Commands
 
-You can start the session by running a similar command as we used in the job we submitted via script. Echo a message by running:
+You can start working on the node by running a similar command as we used in the job we submitted via script. Echo a message by running:
 
 ```
 echo "Hello, again!"
@@ -437,7 +439,10 @@ echo "Hello, again!"
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_58")
 ```
 
-Let's get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing [R](https://www.r-project.org/) version 4.2.0.
+
+## Using Pre-installed Software Modules
+
+Let's get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing [R](https://www.r-project.org/) version 4.2.0. You can learn more about what modules are available and how to request new ones for the Fred Hutch cluster [here](https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/).
 
 ```
 ml R/4.2.0-foss-2021b
@@ -449,7 +454,7 @@ Next, launch R:
 R
 ```
 
-```{r, echo=FALSE, fig.alt='The R module and R sessions have been launched on the interactive node.', out.width = '100%'}
+```{r, echo=FALSE, fig.alt='The R module and R session have been launched on the interactive node.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_65")
 ```
 
@@ -482,7 +487,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 <div class = "dictionary">
 `grabnode` 
   
-This command starts an interactive session, or node.
+This command starts an interactive session on the cluster.
+
+**Node**
+One of the networked computers in the cluster. 
 
 **CPU**
 
@@ -492,6 +500,26 @@ A computer component that performs and orchestrates computational tasks.
 
 A computer component that stores calculations and information in the short term.
 </div>
+
+# Getting Help {#help}
+
+The Scientific Computing group in IT manages the cluster, provides support with software, advises on data storage, and holds office hours specifically to help users. Here are some ways you can get help for your work on the cluster. 
+
+## Send an Email {-}
+
+The primary way you can request help for a problem is to send SciComp an email, so a ticket will be created in their tracking system.  This allows the details of the problem you're having to be sent to them so they can better help you. Submitting a good email ticket helps the SciComp Team address your needs quickly and efficiently. We suggest you submit the following information:
+
+1.  A brief overview of what the problem is.
+1.  Some specifics about the problem, such as the full text (it's ok if it's long) of any error message or terminal command, or a screen shot of the interface you were using when you had the problem. 
+1.  A description of what you wanted to have happen or what your overall goal is (in case perhaps there is another strategy that might work better).
+
+## Visit the SciWiki {-}
+
+The SciWiki [Scientific Computing page](https://sciwiki.fredhutch.org/scicomputing/comp_index/) is full of useful tips and guides. Remember when using the search that the login "nodes" to the Fred Hutch cluster are called rhino and the cluster "nodes" are called gizmo.  
+
+## Find Community Support on Slack {-}
+
+Peer-to-peer support can be very valuable in learning and troubleshooting your work. The [Fred Hutch Data Slack](https://fhdata.slack.com) workspace is open to all with a fredhutch.org, uw.edu, seattlechildrens.org, or related institution email addresses (whi.org, scharp.org, etc). You can ask questions, find out about office hours, and discover other live support and training events that can help you learn more about how to leverage resources at Fred Hutch to advance your science.  
 
 # (PART\*) Assessment {-}
 
