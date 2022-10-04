@@ -34,7 +34,7 @@ overview
 glossary
 commands-command-line-interface
 feedback
-faq-troubleshooting
+faq-and-troubleshooting
 faq
 manual-putty
 troubleshooting
