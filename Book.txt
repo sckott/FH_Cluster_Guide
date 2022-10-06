@@ -1,5 +1,3 @@
-index.Rmd
 01-101.Rmd
 quiz_ch1.md
 faq.Rmd
-About.Rmd
