@@ -1,3 +1,4 @@
+About-this-Course.md
 1-What-is-a-Cluster?.md
 2-Account-Setup.md
 3-Terminal-Setup.md
@@ -7,8 +8,8 @@
 7-Interactive-Session.md
 8-Getting-Help.md
 9-Summary.md
+quiz_ch1.md
 10-Provide-Feedback.md
 11-FAQ-and-Troubleshooting.md
-About-this-Course.md
 About-the-Authors.md
 References.md
