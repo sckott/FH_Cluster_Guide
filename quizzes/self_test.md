@@ -1,5 +1,5 @@
 
-{quiz, id: self_test_101, attempts: 10}
+{quiz, id: self_test_101, attempts: 100}
 
 ## Self-Test: Cluster 101
 
