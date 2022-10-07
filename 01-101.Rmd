@@ -473,7 +473,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 Let's get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing [R](https://www.r-project.org/) version 4.2.0. You can learn more about what modules are available and how to request new ones for the Fred Hutch cluster [here](https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/).
 
 ```
-ml R/4.2.0-foss-2021b
+ml fhR/4.2.0-foss-2021b
 ```
 
 Next, launch R:
