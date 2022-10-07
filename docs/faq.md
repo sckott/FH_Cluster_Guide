@@ -76,5 +76,5 @@ You must complete the quiz - [Self-Test: Cluster 101](https://leanpub.com/course
  1. Click on "Generate Certificate"  
  
     
-    \includegraphics[width=1\linewidth]{faq_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_6} 
+    \includegraphics[width=1\linewidth]{faq_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_32} 
     
