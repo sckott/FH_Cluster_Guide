@@ -3,7 +3,7 @@
 
 ## Self-Test: Cluster 101
 
-Choose the best answer for each question below. Use this opportunity to test your knowledge!
+Choose the best answer for each question below. Use this opportunity to test your knowledge! You have 100 attempts, but must get all questions right to receive a certificate of completion.
 
 {choose-answers: 4}
 ? What is a high performance computing cluster?
