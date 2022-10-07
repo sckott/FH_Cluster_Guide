@@ -1,5 +1,6 @@
 url	chapt_title	img_path
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/index.html	About this Course	resources/chapt_screen_images/index.png
+https://hutchdatascience.org/FH_Cluster_Guide/no_toc/skip-to-certification.html	Skip to Certification	resources/chapt_screen_images/skip-to-certification.png
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/what-is-a-cluster.html	1 What is a Cluster?	resources/chapt_screen_images/what-is-a-cluster.png
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/account-setup.html	2 Account Setup	resources/chapt_screen_images/account-setup.png
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/terminal.html	3 Terminal Setup	resources/chapt_screen_images/terminal.png
@@ -11,5 +12,6 @@ https://hutchdatascience.org/FH_Cluster_Guide/no_toc/help.html	8 Getting Help	re
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/summary.html	9 Summary	resources/chapt_screen_images/summary.png
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/feedback.html	10 Provide Feedback	resources/chapt_screen_images/feedback.png
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/faq-and-troubleshooting.html	11 FAQ and Troubleshooting	resources/chapt_screen_images/faq-and-troubleshooting.png
+https://hutchdatascience.org/FH_Cluster_Guide/no_toc/get-your-certificate.html	Get Your Certificate	resources/chapt_screen_images/get-your-certificate.png
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/about-the-authors.html	About the Authors	resources/chapt_screen_images/about-the-authors.png
 https://hutchdatascience.org/FH_Cluster_Guide/no_toc/references.html	References	resources/chapt_screen_images/references.png
