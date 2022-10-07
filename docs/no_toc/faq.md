@@ -72,5 +72,5 @@ You must complete the quiz - [Self-Test: Cluster 101](https://leanpub.com/course
     
  1. Click on "Generate Certificate"  
  
-    <img src="faq_files/figure-html//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_6.png" title="The Generate Certificate button on the course summary page is highlighted." alt="The Generate Certificate button on the course summary page is highlighted." width="100%" />
+    <img src="faq_files/figure-html//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_32.png" title="The Generate Certificate button on the course summary page is highlighted." alt="The Generate Certificate button on the course summary page is highlighted." width="100%" />
     
