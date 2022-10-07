@@ -3,7 +3,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# (PART\*) Cluster 101 {-}
+# (PART\*) Introduction {-}
 
 # What is a Cluster? {#what-is-a-cluster}
 
@@ -53,6 +53,18 @@ If one of your collaborators requires access to the Fred Hutch network you can s
 Your HutchNet ID must be associated with a PI cluster "account". The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
 
 Now, let's connect to the cluster using a terminal!
+
+# Skip to Certification {-}
+
+Are you an experienced user? You can jump straight to the 10-question quiz by clicking the link below. **This Leanpub course can be taken for free, but you still have to put the course in your cart and checkout**.
+
+[Self-Test: Cluster 101](https://leanpub.com/courses/fredhutch/fredhutchcluster101/quizzes/self_test_101)
+
+```{r, echo=FALSE, fig.alt='An arrow depicts jumping from the course to a Leanpub certificate.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g162fb43cc93_0_0")
+```
+
+# (PART\*) Cluster 101 {-}
 
 # Terminal Setup {#terminal}
 
