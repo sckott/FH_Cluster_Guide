@@ -56,6 +56,6 @@ This likely indicates a disruption to your internet connection and/or VPN. Ensur
 
 ### `Invalid account or account/partition` when logging in {-}
 
-Errors similar to this typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you [use the form mentioned in the course](01-101.html#pi-account).
+Errors similar to this typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you [use the form mentioned in the course](account-setup.html#pi-account).
 
 </p></details>

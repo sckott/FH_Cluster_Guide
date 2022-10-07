@@ -217,16 +217,8 @@ The commonly used Linux distribution, Ubuntu, already comes with a Terminal inst
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
-  Press ctrl + alt + T. Your open Terminal window should look like this:
-\end{enumerate}
-
-{[}SCREENSHOT{]}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
+  Press ctrl + alt + T. This should open a Terminal window.
 \item
   Update the Terminal and prepare it for connecting to the cluster by running:
 \end{enumerate}
@@ -311,6 +303,20 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 \section{Linux Login}\label{linux-login}}
 
 Click to view steps
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Type the following commands, substituting in your HutchNet ID (no brackets):
+
+\begin{verbatim}
+ssh [HutchID]@rhino
+\end{verbatim}
+\item
+  Enter your password. No\texttt{*} or symbols will show up, so type it in carefully!\\
+\item
+  You are now logged in! There should be a login message, with your name at the bottom.
+\end{enumerate}
 
 Congratulations! You are now logged in to the Fred Hutch cluster!
 
@@ -565,7 +571,7 @@ echo "Hello, again!"
 Let's get a bit more advanced. We can load a preconfigured software bundle called a module. This is very convenient because it means we don't need to install anything manually! In this example, we will load a module containing \href{https://www.r-project.org/}{R} version 4.2.0. You can learn more about what modules are available and how to request new ones for the Fred Hutch cluster \href{https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/}{here}.
 
 \begin{verbatim}
-ml R/4.2.0-foss-2021b
+ml fhR/4.2.0-foss-2021b
 \end{verbatim}
 
 Next, launch R:
@@ -783,7 +789,7 @@ This likely indicates a disruption to your internet connection and/or VPN. Ensur
 \subsection*{\texorpdfstring{\texttt{Invalid\ account\ or\ account/partition} when logging in}{Invalid account or account/partition when logging in}}\label{invalid-account-or-accountpartition-when-logging-in}}
 \addcontentsline{toc}{subsection}{\texttt{Invalid\ account\ or\ account/partition} when logging in}
 
-Errors similar to this typically indicate that the account hasn't been set up by SciComp. This is a quick fix if you \href{01-101.html\#pi-account}{use the form mentioned in the course}.
+Errors similar to this typically indicate that the account hasn't been set up by SciComp. This is a quick fix if you \href{account-setup.html\#pi-account}{use the form mentioned in the course}.
 
 \hypertarget{about-the-authors}{%
 \chapter*{About the Authors}\label{about-the-authors}}
