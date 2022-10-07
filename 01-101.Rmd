@@ -5,7 +5,7 @@ ottrpal::set_knitr_image_path()
 
 # (PART\*) Introduction {-}
 
-# What is a Cluster? {#what-is-a-cluster}
+# What is a Cluster {#what-is-a-cluster}
 
 ```{r, echo=FALSE, fig.alt='We are on the first step of the pathway.', out.width = '80%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_114")
