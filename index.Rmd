@@ -33,10 +33,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 # Skip to Certification {-}
 
-```{r, echo=FALSE, fig.alt='An arrow depicts jumping from the course to a Leanpub certificate.', out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g162fb43cc93_0_0")
-```
-
 Are you an experienced user? You can jump straight to the 10-question quiz by clicking the link below:
 
 [Self-Test: Cluster 101](https://leanpub.com/courses/fredhutch/fredhutchcluster101/quizzes/self_test_101)
+
+```{r, echo=FALSE, fig.alt='An arrow depicts jumping from the course to a Leanpub certificate.', out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g162fb43cc93_0_0")
+```
