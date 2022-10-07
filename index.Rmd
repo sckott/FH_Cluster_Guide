@@ -1,5 +1,5 @@
 ---
-title: "FH Cluster Guide"
+title: "Fred Hutch Cluster 101"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
