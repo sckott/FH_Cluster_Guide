@@ -1,7 +1,7 @@
 About-this-Course.md
-Skip-to-Certification.md
 1-What-is-a-Cluster?.md
 2-Account-Setup.md
+Skip-to-Certification.md
 3-Terminal-Setup.md
 4-Logging-In.md
 5-Submit-Your-First-Job.md
