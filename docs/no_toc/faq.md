@@ -59,3 +59,18 @@ This likely indicates a disruption to your internet connection and/or VPN. Ensur
 Errors similar to this typically indicate that the account hasn’t been set up by SciComp. This is a quick fix if you [use the form mentioned in the course](account-setup.html#pi-account).
 
 </p></details>
+
+# Get Your Certificate {-}
+
+You must complete the quiz - [Self-Test: Cluster 101](https://leanpub.com/courses/fredhutch/fredhutchcluster101/quizzes/self_test_101) - 
+ with all questions correctly answered to earn your certificate for this course. Once complete:
+ 
+ 1. Go to the course [homepage](https://leanpub.com/courses/fredhutch/fredhutchcluster101/home)  
+ 1. Click on "Complete Course"  
+ 
+    <img src="faq_files/figure-html//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_28.png" title="The Complete Course button on the course homepage is highlighted." alt="The Complete Course button on the course homepage is highlighted." width="100%" />
+    
+ 1. Click on "Generate Certificate"  
+ 
+    <img src="faq_files/figure-html//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_6.png" title="The Generate Certificate button on the course summary page is highlighted." alt="The Generate Certificate button on the course summary page is highlighted." width="100%" />
+    
