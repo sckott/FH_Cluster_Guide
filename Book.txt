@@ -1,4 +1,5 @@
 About-this-Course.md
+experienced-users.Rmd
 1-What-is-a-Cluster?.md
 2-Account-Setup.md
 3-Terminal-Setup.md
