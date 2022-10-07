@@ -56,7 +56,7 @@ Now, let's connect to the cluster using a terminal!
 
 # Skip to Certification {-}
 
-Are you an experienced user? You can jump straight to the 10-question quiz by clicking the link below. **This Leanpub course can be taken for free, but you still have to put the course in your cart and checkout**.
+Are you an experienced user? You can jump straight to the 10-question quiz by clicking the link below. **This Leanpub quiz can be taken for free, but you still have to put the course in your cart and check out**.
 
 [Self-Test: Cluster 101](https://leanpub.com/courses/fredhutch/fredhutchcluster101/quizzes/self_test_101)
 
