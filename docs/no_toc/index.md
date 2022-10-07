@@ -1,5 +1,5 @@
 ---
-title: "FH Cluster Guide"
+title: "Fred Hutch Cluster 101"
 date: "October 07, 2022"
 site: bookdown::bookdown_site
 documentclass: book
