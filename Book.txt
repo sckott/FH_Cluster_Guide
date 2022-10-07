@@ -1,5 +1,5 @@
 About-this-Course.md
-1-What-is-a-Cluster?.md
+1-What-is-a-Cluster.md
 2-Account-Setup.md
 Skip-to-Certification.md
 3-Terminal-Setup.md
