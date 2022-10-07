@@ -20,14 +20,6 @@ Our goal for this course is to get you running on the Fred Hutch cluster **quick
 
 The Fred Hutch cluster is supported by a group in IT called Scientific Computing, and this course was developed by the Fred Hutch Data Science Lab in collaboration with them. Please see the [author credits](#about-the-authors) for more information.
 
-We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer! This course is available in [Bookdown](https://hutchdatascience.org/FH_Cluster_Guide) and [Leanpub](https://leanpub.com/courses/fredhutch/fredhutchcluster101) formats. If you want a certificate, you need to take the Leanpub version of the course.
+We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer! This course is available in [Bookdown](https://hutchdatascience.org/FH_Cluster_Guide) and [Leanpub](https://leanpub.com/courses/fredhutch/fredhutchcluster101) formats. If you want a certificate, you need to take the Leanpub version of the course. **The Leanpub course can be taken for free, but you still have to put the course in your cart and checkout**.
 
 <img src="index_files/figure-html//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_88.png" title="Pathway of chapters covered in this course." alt="Pathway of chapters covered in this course." width="100%" />
-
-# Skip to Certification {-}
-
-Are you an experienced user? You can jump straight to the 10-question quiz by clicking the link below:
-
-[Self-Test: Cluster 101](https://leanpub.com/courses/fredhutch/fredhutchcluster101/quizzes/self_test_101)
-
-<img src="index_files/figure-html//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_0.png" title="An arrow depicts jumping from the course to a Leanpub certificate." alt="An arrow depicts jumping from the course to a Leanpub certificate." width="100%" />
