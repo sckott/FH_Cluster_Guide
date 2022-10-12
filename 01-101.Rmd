@@ -60,13 +60,13 @@ Your HutchNet ID must be associated with a PI cluster "account". The Scientific 
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_0")
 ```
 
-If you are ready to proceed, you will see something like "Cluster access: True":
+If everything is green as shown below, you are ready to proceed. You can [proceed with the course](#terminal) or [skip to certification](#skip-to-certification). 
 
 ```{r, echo=FALSE, fig.alt='The user has been set up correctly, indicated by cluster access: True.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_5")
 ```
 
-If your check looks like the following (Cluster access: False), it means you need to have your HutchNet ID associated with a PI cluster account. Use the "Get access to the cluster" link to request this be set up, or click the "here" link to email the SciComp team. You should include your **full name, HutchNetID, and PI name** in the email.
+If you see anything in red as shown below, click the link to e-mail SciComp to finish setting up your account. Be sure to include your HutchNetID and PI name in the email.
 
 ```{r, echo=FALSE, fig.alt='The user has not been set up correctly, indicated by cluster access: False.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_10")
