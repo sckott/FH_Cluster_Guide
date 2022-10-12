@@ -1,7 +1,7 @@
 # Fred Hutch Cluster 101 Course
 [![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
 
-![Fred Hutch Cluster 101 journey](link)
+![Fred Hutch Cluster 101 journey](https://raw.githubusercontent.com/fhdsl/FH_Cluster_Guide/main/assets/title_image.jpg)
 
 This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
 
