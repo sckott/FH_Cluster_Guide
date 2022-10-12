@@ -7,7 +7,7 @@ ottrpal::set_knitr_image_path()
 
 # What is a Cluster {#what-is-a-cluster}
 
-```{r, echo=FALSE, fig.alt='We are on the first step of the pathway.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='We are on the first step of the pathway.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_114")
 ```
 
@@ -15,7 +15,7 @@ A computing cluster is a set of many computers networked together. Because there
 
 Now that we have a team of workers, the next challenge is task management. A home construction team will need a manager to help delegate tasks. Similarly, the computing cluster uses management software to prioritize tasks, delegate workers (resources), and check on progress. The Fred Hutch cluster uses a common management and scheduling tool called [Slurm](https://slurm.schedmd.com/overview.html).
 
-```{r, echo=FALSE, fig.alt='Your computer has 1 node, 8 CPUs, and 8 gigabytes of memory. The Hutch cluster has nearly 600 nodes, 4000 CPUs, and 40 terabytes of memory.', out.width = '100%'}
+```{r, echo=FALSE, fig.alt='Your computer has 1 node, 8 CPUs, and 8 gigabytes of memory. The Hutch cluster has nearly 600 nodes, 4000 CPUs, and 40 terabytes of memory.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g149d37dd4a1_0_18")
 ```
 
@@ -29,7 +29,7 @@ A set of computers networked together to perform large tasks.
 
 # Account Setup {#account-setup}
 
-```{r, echo=FALSE, fig.alt='We are on the second step of the pathway.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='We are on the second step of the pathway.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_160")
 ```
 
@@ -56,19 +56,19 @@ Your HutchNet ID must be associated with a PI cluster "account". The Scientific 
 1. Click on "Check Access"
 1. Log in using your HutchNet ID and password
 
-```{r, echo=FALSE, fig.alt='SciComp self-service landing page with links.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='SciComp self-service landing page with links.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_0")
 ```
 
 If you are ready to proceed, you will see something like "Cluster access: True":
 
-```{r, echo=FALSE, fig.alt='The user has been set up correctly, indicated by cluster access: True.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='The user has been set up correctly, indicated by cluster access: True.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_5")
 ```
 
 If your check looks like the following (Cluster access: False), it means you need to have your HutchNet ID associated with a PI cluster account. Use the "Get access to the cluster" link to request this be set up, or click the "here" link to email the SciComp team. You should include your **full name, HutchNetID, and PI name** in the email.
 
-```{r, echo=FALSE, fig.alt='The user has not been set up correctly, indicated by cluster access: False.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='The user has not been set up correctly, indicated by cluster access: False.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_10")
 ```
 
@@ -88,7 +88,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 # Terminal Setup {#terminal}
 
-```{r, echo=FALSE, fig.alt='We are on the third step of the pathway.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='We are on the third step of the pathway.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_183")
 ```
 
@@ -176,7 +176,7 @@ Enter your password and enter `Y` when prompted.
 
 # Logging In
 
-```{r, echo=FALSE, fig.alt='We are on the fourth step of the pathway.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='We are on the fourth step of the pathway.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_206")
 ```
 
@@ -263,7 +263,7 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 
 # Submit Your First Job
 
-```{r, echo=FALSE, fig.alt='We are on the fifth step of the pathway.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='We are on the fifth step of the pathway.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_229")
 ```
 
@@ -350,7 +350,7 @@ This command submits a job to the cluster with instructions specified in <filena
 
 # File Upload and Download
 
-```{r, echo=FALSE, fig.alt='We are on the sixth step of the pathway.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='We are on the sixth step of the pathway.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_252")
 ```
 
@@ -416,9 +416,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 From your Downloads folder, simply drag the file to Cyberduck.
   
-  ```{r, echo=FALSE, fig.alt='Screenshot of local and Cyberduck files, depicting the dragging that transfers the file over.', out.width = '100%'}
+```{r, echo=FALSE, fig.alt='Screenshot of local and Cyberduck files, depicting the dragging that transfers the file over.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_49")
-  ```
+```
 
 You should now see the new script among your cluster files.
 
@@ -454,7 +454,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 # Interactive Session
 
-```{r, echo=FALSE, fig.alt='We are on the seventh and final step of the pathway.', out.width = '80%'}
+```{r, echo=FALSE, fig.alt='We are on the seventh and final step of the pathway.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_275")
 ```
 
@@ -484,7 +484,7 @@ RAM, or Random Access Memory, is often simply referred to as memory. This short 
 
 The [GPU](https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html), or Graphics Processing Unit, is similar to the CPU. The GPU was originally designed to quickly render graphics (such as for video games), but today can be used to run complex artificial intelligence applications or computationally intensive jobs.
 
-```{r, echo=FALSE, fig.alt='CPU is the brain of the computer, whereas memory stores information in the short term.', out.width = '100%'}
+```{r, echo=FALSE, fig.alt='CPU is the brain of the computer, whereas memory stores information in the short term.', out.width = '80%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_26")
 ```
 
