@@ -14,4 +14,3 @@ self_test.md
 11-FAQ-and-Troubleshooting.md
 Get-Your-Certificate.md
 About-the-Authors.md
-References.md

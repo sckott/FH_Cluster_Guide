@@ -50,7 +50,27 @@ If one of your collaborators requires access to the Fred Hutch network you can s
 
 ## Connect to a PI Account {#pi-account}
 
-Your HutchNet ID must be associated with a PI cluster "account". The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please fill out [this Account Setup Form](https://forms.gle/5ct8mQCeBD7LUt6S7) and we will ensure you are set up correctly!
+Your HutchNet ID must be associated with a PI cluster "account". The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please follow the following steps:
+
+1. Go to the [SciComp Self-Service Portal](https://scicomp-self-service.fredhutch.org/)
+1. Click on "Check Access"
+1. Log in using your HutchNet ID and password
+
+```{r, echo=FALSE, fig.alt='SciComp self-service landing page with links.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_0")
+```
+
+If you are ready to proceed, you will see something like "Cluster access: True":
+
+```{r, echo=FALSE, fig.alt='The user has been set up correctly, indicated by cluster access: True.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_5")
+```
+
+If your check looks like the following (Cluster access: False), it means you need to have your HutchNet ID associated with a PI cluster account. Use the "Get access to the cluster" link to request this be set up, or click the "here" link to email the SciComp team. You should include your **full name, HutchNetID, and PI name** in the email.
+
+```{r, echo=FALSE, fig.alt='The user has not been set up correctly, indicated by cluster access: False.', out.width = '80%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_10")
+```
 
 Now, let's connect to the cluster using a terminal!
 
