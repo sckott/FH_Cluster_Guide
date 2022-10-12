@@ -1,20 +1,33 @@
-# Fred Hutch Computing Cluster Guide
-
+# Fred Hutch Cluster 101 Course
 [![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
+
+![Fred Hutch Cluster 101 journey](link)
 
 This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
 
-You can see the rendered course material here: https://hutchdatascience.org/FH_Cluster_Guide/
+You can see the rendered course material here: 
 
-If you would like to contribute to this course material, take a look at the [getting started GitHub wiki pages](https://github.com/jhudsl/OTTR_Template/wiki).
+- As a Bookdown course: https://hutchdatascience.org/FH_Cluster_Guide/
+- As a Leanpub course: https://leanpub.com/courses/fredhutch/fredhutchcluster101
+
+If you would like to contribute to this course material, please [submit an issue on this repo](https://github.com/fhdsl/FH_Cluster_Guide/issues/new) or visit the [OTTR Project website](https://www.ottrproject.org/index.html).
 
 ## About this course
 
-This course introduces users to the Fred Hutch Cluster. It has instructions for both brand new beginners (101) and the computing-initiated (201).
+This course introduces users to the Fred Hutch Cluster.
 
-<!-- ## Learning Objectives
+Our goal for this course is to get users running on the Fred Hutch cluster **quickly and efficiently**. It is intended for all Fred Hutch cluster users whether they are completely new to using a cluster, or if they have used a cluster at another institution but are new to Fred Hutch. 
 
-This course will teach learners to:  -->
+## Learning Objectives
+
+This course will teach learners to:
+
+- Get their cluster account set up at Fred Hutch
+- Set up their Terminal and log in
+- Run their first job on the cluster
+- Transfer a basic file back and forth to the cluster
+- Run an interactive session on the cluster
+- Follow best practices for basic cluster use
 
 ## Encountering problems?
 
