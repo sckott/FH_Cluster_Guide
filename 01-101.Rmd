@@ -359,11 +359,13 @@ Exchanging files with the cluster is very important. You can imagine scenarios w
 - You want to upload a custom `.sh` script file that you wrote on your laptop
 - You want to upload other files
 
-In this course, upload and download of files is performed using [Cyberduck](https://cyberduck.io/). Cyberduck is a tool that lets us connect to the cluster securely, browse files, and transfer files securely.
+In this course, upload and download of files is performed using [Cyberduck](https://cyberduck.io/). Cyberduck is a tool that lets us connect to the cluster securely, browse files, and transfer files securely. 
 
 ## Download Cyberduck
 
 Download the latest version of Cyberduck [here](https://cyberduck.io/download/).
+
+Make sure you press the download buttons that are a bit further down the screen (that say Windows or macOS) as you may get ads for other downloads.
 
 <div class = "warning">
 Note that the version of Cyberduck in the Software Center or Self Service might not be current, causing compatibility issues with some operating systems.
