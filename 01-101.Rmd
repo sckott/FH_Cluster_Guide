@@ -329,7 +329,7 @@ sbatch 01.sh
 
 ## Check the Output
 
-Type `ls` again. You should now see a log file like `slurm-12345678.out` listed alongside your script `01.sh`. Let's use `cat` to inspect the output in the log file. Make sure you replace `[your-number-here]` with the number in your actual file. We should see our message has been printed! 
+Type `ls` again. You should now see a log file like `slurm-12345678.out` listed alongside your script `01.sh`. Let's use `cat` to inspect the output in the log file (the new file starting with `slurm` and ending with `.out`). Make sure you replace `[your-number-here]` with the number in your actual file. We should see our message has been printed! 
 
 ```
 cat slurm-[your-number-here].out
@@ -340,17 +340,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ```
 
 <div class = "dictionary">
-`ls` 
-  
-This command lists the files in the current directory.
+`ls`   This command lists the files in the current directory.
 
-`cat` _filename_
+`cat filename` This command prints the contents of a specific file (_filename_).
 
-This command prints the contents of a specific file <filename>.
-
-`sbatch` _filename.sh_
-
-This command submits a job to the cluster with instructions specified in <filename>.sh
+`sbatch filename.sh` This command submits a job to the cluster with instructions specified in a `.sh` file.
 </div>
 
 # File Upload and Download
