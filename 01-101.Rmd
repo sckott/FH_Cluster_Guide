@@ -365,7 +365,7 @@ In this course, upload and download of files is performed using [Cyberduck](http
 
 Download the latest version of Cyberduck [here](https://cyberduck.io/download/).
 
-Make sure you press the download buttons that are a bit further down the screen (that say Windows or macOS) as you may get ads for other downloads.
+Make sure you press the download buttons that are a bit further down the screen (that say Windows or MacOS) as you may get ads for other downloads.
 
 <div class = "warning">
 Note that the version of Cyberduck in the Software Center or Self Service might not be current, causing compatibility issues with some operating systems.
