@@ -555,20 +555,13 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ```
 
 <div class = "dictionary">
-`grabnode` 
-  
-This command starts an interactive session on the cluster.
+`grabnode` This command starts an interactive session on the cluster.
 
-**Node**
-One of the networked computers in the cluster. 
+**Node** One of the networked computers in the cluster. 
 
-**CPU**
+**CPU** A computer component that performs and orchestrates computational tasks.
 
-A computer component that performs and orchestrates computational tasks.
-
-**Memory**
-
-A computer component that stores calculations and information in the short term.
+**Memory** A computer component that stores calculations and information in the short term.
 </div>
 
 # Getting Help {#help}
