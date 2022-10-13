@@ -19,7 +19,7 @@ knitr::write_bib(c(
 
 # About this Course {-}
 
-Fred Hutch maintains a high performance computing cluster specifically to support research work that requires more intensive computing than your average desktop computer can handle.
+Fred Hutch maintains a [high performance computing cluster](https://en.wikipedia.org/wiki/HPCC) specifically to support research work that requires more intensive computing than your average desktop computer can handle.
 
 Our goal for this course is to get you running on the Fred Hutch cluster **quickly and efficiently**. It is intended for everyone whether you're completely new to using a cluster, or those who may have used a cluster at another institution but are new to Fred Hutch. 
 
