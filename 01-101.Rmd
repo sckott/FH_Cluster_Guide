@@ -45,7 +45,7 @@ For example:
 - my HutchNet ID is `jsmith3`.  
 
 <div class = "notice">
-If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). Non-employee is a generic administrative term for affiliates, students, contractors, etc.
+If one of your collaborators requires access to the Fred Hutch network you can submit a [non-employee action form](https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html). "Non-employee" is a generic administrative term for affiliates, students, contractors, etc.
 </div>
 
 ## Connect to a PI Account {#pi-account}
