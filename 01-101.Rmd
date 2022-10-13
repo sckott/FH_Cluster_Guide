@@ -75,7 +75,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 Note that it may take just a bit of time for SciComp to see your email request, but it is usually fairly quick! You will then receive an email back from the SciComp team that you now have cluster access. (The access checking page will also show that you have cluster access if you refresh the page.)
 
-Now, let's connect to the cluster using a terminal!
+Now, let's connect to the cluster!
 
 # Skip to Certification {-}
 
