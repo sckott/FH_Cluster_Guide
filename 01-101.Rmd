@@ -276,7 +276,8 @@ The strength of a computing cluster is the ability to do many jobs in parallel o
 Now that you've logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses [Slurm](https://slurm.schedmd.com/overview.html) to organize and prioritize jobs. Based on the instructions in your script, Slurm will find computing resources within the cluster to run your job along with all the other requests from other users.
 
 <div class = "notice">
-The part of the cluster where you log in is called `rhino`. The part of the cluster where jobs are run is called `gizmo`. 
+The part of the cluster where you **log in** is called `rhino`. 
+The part of the cluster where **jobs are run** is called `gizmo`. 
 </div>
 
 ## Download the Script
