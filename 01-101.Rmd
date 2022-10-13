@@ -73,7 +73,7 @@ If you see anything in red as shown below, click the link to e-mail SciComp to f
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_10")
 ```
 
-Note that it may take just a bit of time for SciComp to see your email request, but it is usually fairly quick!
+Note that it may take just a bit of time for SciComp to see your email request, but it is usually fairly quick! You will then receive an email back from the SciComp team that you now have cluster access.
 
 Now, let's connect to the cluster using a terminal!
 
