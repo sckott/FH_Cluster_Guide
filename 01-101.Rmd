@@ -401,13 +401,13 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 
 - Right click on "`01.sh`" and select "Download"
 - You will see a "Transfers" prompt open, and the `01.sh` file should now appear in your Downloads folder
-- Open the `01.sh` file
+- Open the `01.sh` in your Downloads folder
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the script opened on the users local laptop.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_41")
 ```
 
-Edit the message to include your name and save the file. Rename the file `01-name.sh`
+Edit the message to include your name and save the file. Rename the file `01-name.sh`.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the edited and renamed script file contents. The contents of the script now reads "Hello, Ava!".', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g1579ffd7b01_12_45")
@@ -541,6 +541,8 @@ Close the R session by typing:
 ```
 q()
 ```
+
+It may ask if you want to save your workspace. You can say `n` for no.
 
 Close the interactive node by typing:
 
