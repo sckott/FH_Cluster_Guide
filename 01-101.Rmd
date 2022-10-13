@@ -52,7 +52,8 @@ If one of your collaborators requires access to the Fred Hutch network you can s
 
 Your HutchNet ID must be associated with a PI cluster "account". The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please follow the following steps:
 
-1. Go to the [SciComp Self-Service Portal](https://scicomp-self-service.fredhutch.org/)
+1. Log into the Hutch VPN if needed (log in using Hutch email and CenterNet password)
+1. Go to the [SciComp Self-Service Portal](https://scicomp-self-service.fredhutch.org/) (will not work if you need to log into VPN)
 1. Click on "Check Access"
 1. Log in using your HutchNet ID and password
 
