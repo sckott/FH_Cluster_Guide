@@ -600,6 +600,10 @@ You can use the application [Cyberduck](#file-upload-and-download) to transfer s
 
 Don't be afraid to ask for [help](#help)! Check out the SciWiki, join the Slack workspace, or contact the SciComp team if you get stuck.
 
+<div class = "warning">
+Note that if you are working with sensitive data (such as data with [PHI](https://www.hhs.gov/answers/hipaa/what-is-phi/index.html) that requires [HIPAA compliance](https://www.hhs.gov/hipaa/index.html), you need to be extra cautious about transferring your data to the cluster. Your home directory is not an appropriate storage option for such data. Stay tuned for more resources about how to safely work with such data on the cluster.
+</div>
+
 ## Glossary
 
 - **computing cluster** - A set of computers networked together to perform large tasks.
