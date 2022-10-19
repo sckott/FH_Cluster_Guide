@@ -77,7 +77,7 @@ m) Emailing questions to the Scientific Computing (SciComp) Team
 m) Find peer to peer support, SciComp office hours, or other live events via FH-Data Slack
 C) All of the above
 
-{choose-answers: 4}
+{choose-answers: 4, random-choice-order: false}
 ? Which of the following are you responsible for?
 
 m) Understanding basic best practices for using the cluster
