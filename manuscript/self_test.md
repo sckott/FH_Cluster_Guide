@@ -69,13 +69,13 @@ m) It is the preferred method by the Scientific Computing (SciComp) Team
 m) It is the most powerful way to interact with the cluster
 m) It makes sure resources are always shared and scheduled fairly
 
-{choose-answers: 4}
+{random-choice-order: false}
 ? What are the ways you can request help or learn more about using the Fred Hutch cluster?
 
-m) Read more at SciWiki.fredhutch.org
-m) Emailing questions to the Scientific Computing (SciComp) Team
-m) Find peer to peer support, SciComp office hours, or other live events via FH-Data Slack
-C) All of the above
+a) Read more at SciWiki.fredhutch.org
+b) Emailing questions to the Scientific Computing (SciComp) Team
+c) Find peer to peer support, SciComp office hours, or other live events via FH-Data Slack
+D) All of the above
 
 {random-choice-order: false}
 ? Which of the following are you responsible for?
