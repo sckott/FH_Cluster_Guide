@@ -69,6 +69,9 @@
       <nav role="navigation">
 
 <ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="course-logo/funfetti-dasl-hex-cluster101-web.png" style="width: 50%; padding-left: 15px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
 <li class="part"><span><b>Introduction</b></span></li>
 <li class="chapter" data-level="1" data-path="what-is-a-cluster.html"><a href="what-is-a-cluster.html"><i class="fa fa-check"></i><b>1</b> What is a Cluster</a></li>
@@ -89,9 +92,10 @@
 <li class="chapter" data-level="4" data-path="logging-in.html"><a href="logging-in.html"><i class="fa fa-check"></i><b>4</b> Logging In</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="logging-in.html"><a href="logging-in.html#what-is-ssh"><i class="fa fa-check"></i><b>4.1</b> What is <code>SSH</code>?</a></li>
-<li class="chapter" data-level="4.2" data-path="logging-in.html"><a href="logging-in.html#windows-login"><i class="fa fa-check"></i><b>4.2</b> Windows Login</a></li>
-<li class="chapter" data-level="4.3" data-path="logging-in.html"><a href="logging-in.html#mac-login"><i class="fa fa-check"></i><b>4.3</b> Mac Login</a></li>
-<li class="chapter" data-level="4.4" data-path="logging-in.html"><a href="logging-in.html#linux-login"><i class="fa fa-check"></i><b>4.4</b> Linux Login</a></li>
+<li class="chapter" data-level="4.2" data-path="logging-in.html"><a href="logging-in.html#connect-securely"><i class="fa fa-check"></i><b>4.2</b> Connect Securely</a></li>
+<li class="chapter" data-level="4.3" data-path="logging-in.html"><a href="logging-in.html#windows-login"><i class="fa fa-check"></i><b>4.3</b> Windows Login</a></li>
+<li class="chapter" data-level="4.4" data-path="logging-in.html"><a href="logging-in.html#mac-login"><i class="fa fa-check"></i><b>4.4</b> Mac Login</a></li>
+<li class="chapter" data-level="4.5" data-path="logging-in.html"><a href="logging-in.html#linux-login"><i class="fa fa-check"></i><b>4.5</b> Linux Login</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="submit-your-first-job.html"><a href="submit-your-first-job.html"><i class="fa fa-check"></i><b>5</b> Submit Your First Job</a>
 <ul>
@@ -117,9 +121,10 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="help.html"><a href="help.html"><i class="fa fa-check"></i><b>8</b> Getting Help</a>
 <ul>
-<li class="chapter" data-level="" data-path="help.html"><a href="help.html#send-an-email"><i class="fa fa-check"></i>Send an Email</a></li>
-<li class="chapter" data-level="" data-path="help.html"><a href="help.html#visit-the-sciwiki"><i class="fa fa-check"></i>Visit the SciWiki</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#check-out-the-faq-page"><i class="fa fa-check"></i>Check out the FAQ page</a></li>
 <li class="chapter" data-level="" data-path="help.html"><a href="help.html#find-community-support-on-slack"><i class="fa fa-check"></i>Find Community Support on Slack</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#visit-the-sciwiki"><i class="fa fa-check"></i>Visit the SciWiki</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#send-an-email"><i class="fa fa-check"></i>Send an Email</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>9</b> Summary</a>
 <ul>
@@ -183,7 +188,8 @@
 <div id="interactive-session" class="section level1" number="7">
 <h1><span class="header-section-number">Chapter 7</span> Interactive Session</h1>
 <p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_275.png" title="We are on the seventh and final step of the pathway." alt="We are on the seventh and final step of the pathway." width="80%" style="display: block; margin: auto;" /></p>
-<p>While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a “node”. This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive session takes up resources directly on the cluster whether you’re actively using it or not, it’s best to use interactive sessions only when a task cannot be done by submitting a script.</p>
+<p>While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a “node”. This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system.</p>
+<p>Because an interactive session takes up resources directly on the cluster whether you’re actively using it or not, it’s best to use interactive sessions only when a task cannot be done by submitting a script.</p>
 <div id="starting-the-session" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Starting the session</h2>
 <p>When starting an interactive session, you’re going to need to think about what you are testing and what resources you might need on the node you are requesting to use. You can always start an interactive session using the default values if you aren’t sure what you need yet.</p>

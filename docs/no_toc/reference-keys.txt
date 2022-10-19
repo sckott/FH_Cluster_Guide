@@ -9,6 +9,7 @@ mac
 linux
 logging-in
 what-is-ssh
+connect-securely
 windows-login
 mac-login
 linux-login

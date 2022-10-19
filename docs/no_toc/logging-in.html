@@ -69,6 +69,9 @@
       <nav role="navigation">
 
 <ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="course-logo/funfetti-dasl-hex-cluster101-web.png" style="width: 50%; padding-left: 15px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
 <li class="part"><span><b>Introduction</b></span></li>
 <li class="chapter" data-level="1" data-path="what-is-a-cluster.html"><a href="what-is-a-cluster.html"><i class="fa fa-check"></i><b>1</b> What is a Cluster</a></li>
@@ -89,9 +92,10 @@
 <li class="chapter" data-level="4" data-path="logging-in.html"><a href="logging-in.html"><i class="fa fa-check"></i><b>4</b> Logging In</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="logging-in.html"><a href="logging-in.html#what-is-ssh"><i class="fa fa-check"></i><b>4.1</b> What is <code>SSH</code>?</a></li>
-<li class="chapter" data-level="4.2" data-path="logging-in.html"><a href="logging-in.html#windows-login"><i class="fa fa-check"></i><b>4.2</b> Windows Login</a></li>
-<li class="chapter" data-level="4.3" data-path="logging-in.html"><a href="logging-in.html#mac-login"><i class="fa fa-check"></i><b>4.3</b> Mac Login</a></li>
-<li class="chapter" data-level="4.4" data-path="logging-in.html"><a href="logging-in.html#linux-login"><i class="fa fa-check"></i><b>4.4</b> Linux Login</a></li>
+<li class="chapter" data-level="4.2" data-path="logging-in.html"><a href="logging-in.html#connect-securely"><i class="fa fa-check"></i><b>4.2</b> Connect Securely</a></li>
+<li class="chapter" data-level="4.3" data-path="logging-in.html"><a href="logging-in.html#windows-login"><i class="fa fa-check"></i><b>4.3</b> Windows Login</a></li>
+<li class="chapter" data-level="4.4" data-path="logging-in.html"><a href="logging-in.html#mac-login"><i class="fa fa-check"></i><b>4.4</b> Mac Login</a></li>
+<li class="chapter" data-level="4.5" data-path="logging-in.html"><a href="logging-in.html#linux-login"><i class="fa fa-check"></i><b>4.5</b> Linux Login</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="submit-your-first-job.html"><a href="submit-your-first-job.html"><i class="fa fa-check"></i><b>5</b> Submit Your First Job</a>
 <ul>
@@ -117,9 +121,10 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="help.html"><a href="help.html"><i class="fa fa-check"></i><b>8</b> Getting Help</a>
 <ul>
-<li class="chapter" data-level="" data-path="help.html"><a href="help.html#send-an-email"><i class="fa fa-check"></i>Send an Email</a></li>
-<li class="chapter" data-level="" data-path="help.html"><a href="help.html#visit-the-sciwiki"><i class="fa fa-check"></i>Visit the SciWiki</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#check-out-the-faq-page"><i class="fa fa-check"></i>Check out the FAQ page</a></li>
 <li class="chapter" data-level="" data-path="help.html"><a href="help.html#find-community-support-on-slack"><i class="fa fa-check"></i>Find Community Support on Slack</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#visit-the-sciwiki"><i class="fa fa-check"></i>Visit the SciWiki</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#send-an-email"><i class="fa fa-check"></i>Send an Email</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>9</b> Summary</a>
 <ul>
@@ -191,11 +196,14 @@
 <p><strong>Hostname</strong></p>
 <p>The hostname is the name, or label, assigned to a computer in a network. We are connecting to hostname <code>rhino.fhcrc.org</code> or <code>rhino</code> for short.</p>
 </div>
+</div>
+<div id="connect-securely" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Connect Securely</h2>
 <p>Before moving on, you will need to connect to the Fred Hutch wifi network, a networked ethernet jack, or the <a href="https://centernet.fredhutch.org/cn/u/center-it/help-desk/vpn.html">Fred Hutch VPN</a>. This is the first layer of security.</p>
 <p>The next set of steps are specific to your operating system.</p>
 </div>
-<div id="windows-login" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Windows Login</h2>
+<div id="windows-login" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Windows Login</h2>
 <details>
 <summary>
 Click to view steps
@@ -214,8 +222,8 @@ Click to view steps
 </p>
 </details>
 </div>
-<div id="mac-login" class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> Mac Login</h2>
+<div id="mac-login" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Mac Login</h2>
 <details>
 <summary>
 Click to view steps
@@ -223,7 +231,7 @@ Click to view steps
 <p>
 <ol style="list-style-type: decimal">
 <li><p>Type the following commands, substituting in your HutchNet ID (no brackets):</p>
-<pre><code>ssh -Y [HutchID]@rhino</code></pre></li>
+<pre><code>ssh [HutchID]@rhino</code></pre></li>
 <li><p>You will see a message that looks like <code>The authenticity of host 'rhino (XXX.XXX.XX.XX)' can't be established.</code> Type in <code>yes</code> and hit enter.</p></li>
 <li><p>Enter your password. No<code>*</code> or symbols will show up, so type it in carefully!</p></li>
 <li><p>You are now logged in! There should be a login message, with your name at the bottom.</p>
@@ -233,8 +241,8 @@ Click to view steps
 </p>
 </details>
 </div>
-<div id="linux-login" class="section level2" number="4.4">
-<h2><span class="header-section-number">4.4</span> Linux Login</h2>
+<div id="linux-login" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Linux Login</h2>
 <details>
 <summary>
 Click to view steps
