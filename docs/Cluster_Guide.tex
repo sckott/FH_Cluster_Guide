@@ -73,7 +73,7 @@
 
 \title{Fred Hutch Cluster 101}
 \author{}
-\date{\vspace{-2.5em}October 14, 2022}
+\date{\vspace{-2.5em}October 19, 2022}
 
 \begin{document}
 \maketitle
@@ -86,9 +86,9 @@
 \chapter*{About this Course}\label{about-this-course}}
 \addcontentsline{toc}{chapter}{About this Course}
 
-Fred Hutch maintains a high performance computing cluster specifically to support research work that requires more intensive computing than your average desktop computer can handle.
+Fred Hutch maintains a \href{https://en.wikipedia.org/wiki/HPCC}{high performance computing cluster} specifically to support research work that requires more intensive computing than your average desktop computer can handle.
 
-Our goal for this course is to get you running on the Fred Hutch cluster \textbf{quickly and efficiently}. It is intended for everyone whether you're completely new to using a cluster, or who may have used a cluster at another institution but are new to Fred Hutch.
+Our goal for this course is to get you running on the Fred Hutch cluster \textbf{quickly and efficiently}. It is intended for everyone from brand new cluster users to researchers who have used a cluster at another institution but are new to Fred Hutch.
 
 The Fred Hutch cluster is supported by a group in IT called Scientific Computing, and this course was developed by the Fred Hutch Data Science Lab in collaboration with them. Please see the \protect\hyperlink{about-the-authors}{author credits} for more information.
 
@@ -139,12 +139,12 @@ For example:
   my HutchNet ID is \texttt{jsmith3}.
 \end{itemize}
 
-If one of your collaborators requires access to the Fred Hutch network you can submit a \href{https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html}{non-employee action form}. Non-employee is a generic administrative term for affiliates, students, contractors, etc.
+If one of your collaborators requires access to the Fred Hutch network you can submit a \href{https://centernet.fredhutch.org/cn/f/hr/lcex/non-employee-action-form.html}{non-employee action form}. ``Non-employee'' is a generic administrative term for affiliates, students, contractors, etc.
 
 \hypertarget{pi-account}{%
 \section{Connect to a PI Account}\label{pi-account}}
 
-Your HutchNet ID must be associated with a PI cluster ``account''. The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic! To ensure that you have been set up to use the cluster, please follow the following steps:
+Your HutchNet ID must be associated with a PI cluster ``account''. The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic! To ensure that you have been set up to use the cluster, please follow the following steps. You must be connected to the campus wifi network, plugged into a networked ethernet jack, or connected to the Fred Hutch VPN.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -167,13 +167,15 @@ If you see anything in red as shown below, click the link to e-mail SciComp to f
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g166d4f31b2e_0_10}
 
-Now, let's connect to the cluster using a terminal!
+Note that it may take just a bit of time for SciComp to see your email request, but it is usually fairly quick! Once approved, you will receive an email back from the SciComp team that you now have cluster access. The Self-Service Portal will also show that you have cluster access if you refresh the page.
+
+Now, let's connect to the cluster!
 
 \hypertarget{skip-to-certification}{%
 \chapter*{Skip to Certification}\label{skip-to-certification}}
 \addcontentsline{toc}{chapter}{Skip to Certification}
 
-Are you an experienced user? You can jump straight to the 10-question quiz by clicking the link below. \textbf{This Leanpub quiz can be taken for free, but you still have to put the course in your cart and check out}.
+Are you an experienced user? Do you need certification? You can jump straight to the 10-question quiz by clicking the link below. \textbf{This Leanpub quiz can be taken for free, but you still have to put the course in your cart and check out}.
 
 \href{https://leanpub.com/courses/fredhutch/fredhutchcluster101/quizzes/self_test_101}{Self-Test: Cluster 101}
 
@@ -193,7 +195,7 @@ The next step is getting familiar with your Terminal. This is your portal to the
 \hypertarget{what-is-a-terminal}{%
 \section{What is a terminal?}\label{what-is-a-terminal}}
 
-The Terminal is a \href{https://www.codecademy.com/article/command-line-interface}{command line interface}. In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a graphical user interface (GUI). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the \protect\hyperlink{windows}{Windows}, \protect\hyperlink{mac}{MacOS}, or \protect\hyperlink{linux}{Linux} sections below.
+The Terminal is a \href{https://www.codecademy.com/article/command-line-interface}{command line interface}. In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a \href{https://en.wikipedia.org/wiki/Graphical_user_interface}{graphical user interface (GUI)}. In other words, you can trigger actions without using point and click tools (e.g., browsers, Microsoft Excel). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the \protect\hyperlink{windows}{Windows}, \protect\hyperlink{mac}{MacOS}, or \protect\hyperlink{linux}{Linux} sections below.
 
 ``Terminal'' used to be synonymous with ``computer''. With the creation of operating systems like Windows and MacOS, computers became much easier to use and exploded in popularity! Your colleagues are almost always referring to the command line application when they say ``Terminal''.
 
@@ -362,9 +364,10 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 
 The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs.
 
-Now that you've logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses \href{https://slurm.schedmd.com/overview.html}{Slurm} to organize and prioritize jobs. Based on the instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.
+Now that you've logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses \href{https://slurm.schedmd.com/overview.html}{Slurm} to organize and prioritize jobs. Based on the instructions in your script, Slurm will find computing resources within the cluster to run your job along with all the other requests from other users.
 
-The part of the cluster where you log in is called \texttt{rhino}. The part of the cluster where jobs are run is called \texttt{gizmo}.
+The part of the cluster where you \textbf{log in} is called \texttt{rhino}.
+The part of the cluster where \textbf{jobs are run} is called \texttt{gizmo}.
 
 \hypertarget{download-the-script}{%
 \section{Download the Script}\label{download-the-script}}
@@ -419,7 +422,7 @@ sbatch 01.sh
 \hypertarget{check-the-output}{%
 \section{Check the Output}\label{check-the-output}}
 
-Type \texttt{ls} again. You should now see a log file like \texttt{slurm-12345678.out} listed alongside your script \texttt{01.sh}. Let's use \texttt{cat} to inspect the output in the log file. Make sure you replace \texttt{{[}your-number-here{]}} with the number in your actual file. We should see our message has been printed!
+Type \texttt{ls} again. You should now see a log file like \texttt{slurm-12345678.out} listed alongside your script \texttt{01.sh}. Let's use \texttt{cat} to inspect the output in the log file (the new file starting with \texttt{slurm} and ending with \texttt{.out}). Make sure you replace \texttt{{[}your-number-here{]}} with the number in your actual file. We should see our message has been printed!
 
 \begin{verbatim}
 cat slurm-[your-number-here].out
@@ -431,13 +434,13 @@ cat slurm-[your-number-here].out
 
 This command lists the files in the current directory.
 
-\texttt{cat} \emph{filename}
+\texttt{cat\ filename}
 
-This command prints the contents of a specific file .
+This command prints the contents of a specific file (\emph{filename}).
 
-\texttt{sbatch} \emph{filename.sh}
+\texttt{sbatch\ filename.sh}
 
-This command submits a job to the cluster with instructions specified in .sh
+This command submits a job to the cluster with instructions specified in a \texttt{.sh} file.
 
 \hypertarget{file-upload-and-download}{%
 \chapter{File Upload and Download}\label{file-upload-and-download}}
@@ -458,10 +461,14 @@ Exchanging files with the cluster is very important. You can imagine scenarios w
 
 In this course, upload and download of files is performed using \href{https://cyberduck.io/}{Cyberduck}. Cyberduck is a tool that lets us connect to the cluster securely, browse files, and transfer files securely.
 
+If you are working with sensitive data (such as data with \href{https://www.hhs.gov/answers/hipaa/what-is-phi/index.html}{PHI} that requires \href{https://www.hhs.gov/hipaa/index.html}{HIPAA compliance}, you need to be extra cautious about transferring your data to the cluster. Your home directory is not an appropriate storage option for such data.
+
 \hypertarget{download-cyberduck}{%
 \section{Download Cyberduck}\label{download-cyberduck}}
 
 Download the latest version of Cyberduck \href{https://cyberduck.io/download/}{here}.
+
+\begin{center}\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g16e400fe3e8_0_0} \end{center}
 
 Note that the version of Cyberduck in the Software Center or Self Service might not be current, causing compatibility issues with some operating systems.
 
@@ -502,12 +509,12 @@ You should see your script file ``\texttt{01.sh}'' and the log file.
 \item
   You will see a ``Transfers'' prompt open, and the \texttt{01.sh} file should now appear in your Downloads folder
 \item
-  Open the \texttt{01.sh} file
+  Open the \texttt{01.sh} in your Downloads folder
 \end{itemize}
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_41}
 
-Edit the message to include your name and save the file. Rename the file \texttt{01-name.sh}
+Edit the message to include your name and save the file. Rename the file \texttt{01-name.sh}.
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_45}
 
@@ -631,6 +638,8 @@ Close the R session by typing:
 q()
 \end{verbatim}
 
+R will ask if you want to save your workspace. Type \texttt{n} for no and hit return.
+
 Close the interactive node by typing:
 
 \begin{verbatim}
@@ -644,6 +653,7 @@ exit
 This command starts an interactive session on the cluster.
 
 \textbf{Node}
+
 One of the networked computers in the cluster.
 
 \textbf{CPU}
@@ -702,7 +712,7 @@ Before using the Fred Hutch cluster, it's a good idea to \protect\hyperlink{acco
 
 Computer tasks are typically performed via job submission, where you tell the cluster what to do inside a script file. The Fred Hutch cluster uses \protect\hyperlink{submit-your-first-job}{Slurm} to organize jobs submitted by different users. When building, testing, and debugging jobs, you might want to launch an \protect\hyperlink{interactive-session}{interactive session} on the cluster. You will be asked several questions about resources before your session starts.
 
-You can use the application \protect\hyperlink{file-upload-and-download}{Cyberduck} to transfer smaller files between your local computer and the cluster via SFTP (SSH File Transfer Protocol).
+You can use the application \protect\hyperlink{file-upload-and-download}{Cyberduck} to transfer smaller files between your local computer and the cluster via SFTP (SSH File Transfer Protocol). This course does not cover transferring sensitive data, which requires extra precautions.
 
 Don't be afraid to ask for \protect\hyperlink{help}{help}! Check out the SciWiki, join the Slack workspace, or contact the SciComp team if you get stuck.
 
@@ -896,7 +906,7 @@ Package Developers (\href{https://github.com/jhudsl/ottrpal}{ottrpal}) \href{htt
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-10-14                  
+##  date     2022-10-19                  
 ## 
 ## - Packages -------------------------------------------------------------------
 ##  package     * version    date       lib source                            
