@@ -82,3 +82,5 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g162fb43cc93_0_32")
     ```
     
+[Contact the DaSL Team](mailto:data@fredhutch.org) to submit your Cluster 101 certificate for an awesome Hex Sticker!
+
