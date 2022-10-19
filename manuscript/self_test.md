@@ -80,9 +80,9 @@ C) All of the above
 {random-choice-order: false}
 ? Which of the following are you responsible for?
 
-m) Understanding basic best practices for using the cluster
-m) Understanding the goals of your research
-m) Understanding your computational needs, or reaching out to the Scientific Computing (SciComp) Team to determine your needs
-C) All of the above
+a) Understanding basic best practices for using the cluster
+b) Understanding the goals of your research
+c) Understanding your computational needs, or reaching out to the Scientific Computing (SciComp) Team to determine your needs
+D) All of the above
 
 {/quiz}
