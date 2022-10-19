@@ -14,6 +14,7 @@ _Please note that this course is under developmnent and these credits are subjec
 |Lead Content Instructor|[Ava Hoffman]|
 |Content Authors|The Fred Hutch SciComp Team|
 |Content Editors|Amy Paguirigan|
+|Content Reviewers|Elizabeth Humphries, [Candace Savonen], [Carrie Wright]|
 |Content Consultants|The Fred Hutch SciComp Team|
 |**Technical**||
 |Course Publishing Engineer|[Ava Hoffman]|
