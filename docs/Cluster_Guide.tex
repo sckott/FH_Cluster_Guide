@@ -86,13 +86,13 @@
 \chapter*{About this Course}\label{about-this-course}}
 \addcontentsline{toc}{chapter}{About this Course}
 
-Fred Hutch maintains a \href{https://en.wikipedia.org/wiki/HPCC}{high performance computing cluster} specifically to support research work that requires more intensive computing than your average desktop computer can handle.
+Fred Hutch maintains a \href{https://en.wikipedia.org/wiki/HPCC}{high performance computing cluster} specifically to support work that requires intensive computing. The Fred Hutch cluster (sometimes called ``Rhino'' and/or ``Gizmo'') allow you to do more than your average desktop computer can handle.
 
-Our goal for this course is to get you running on the Fred Hutch cluster \textbf{quickly and efficiently}. It is intended for everyone from brand new cluster users to researchers who have used a cluster at another institution but are new to Fred Hutch.
+Our goal for this course is to get you running on the Fred Hutch cluster \textbf{quickly and efficiently}. It is intended for everyone from brand new cluster users to researchers who have used a cluster at another institution but are new to Fred Hutch. We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer!
 
 The Fred Hutch cluster is supported by a group in IT called Scientific Computing, and this course was developed by the Fred Hutch Data Science Lab in collaboration with them. Please see the \protect\hyperlink{about-the-authors}{author credits} for more information.
 
-We hope that the following modules will help you take advantage of the powerful resources the Fred Hutch has to offer! This course is available in \href{https://hutchdatascience.org/FH_Cluster_Guide}{Bookdown} and \href{https://leanpub.com/courses/fredhutch/fredhutchcluster101}{Leanpub} formats. If you want a certificate, you need to take the Leanpub version of the course. \textbf{The Leanpub course can be taken for free, but you still have to put the course in your cart and check out}.
+This course is available in \href{https://hutchdatascience.org/FH_Cluster_Guide}{Bookdown} and \href{https://leanpub.com/courses/fredhutch/fredhutchcluster101}{Leanpub} formats. If you want a certificate, you need to take the Leanpub version of the course. \textbf{The Leanpub course can be taken for free, but you still have to put the course in your cart and check out}.
 
 \includegraphics[width=1\linewidth]{index_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_88}
 
@@ -154,7 +154,7 @@ Your HutchNet ID must be associated with a PI cluster ``account''. The Scientifi
 \item
   Click on ``Check Access''
 \item
-  Log in using your HutchNet ID and password
+  Log in using your HutchNet ID (no \texttt{@fredhutch.org}) and password
 \end{enumerate}
 
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g166d4f31b2e_0_0}
@@ -179,6 +179,20 @@ Are you an experienced user? Do you need certification? You can jump straight to
 
 \href{https://leanpub.com/courses/fredhutch/fredhutchcluster101/quizzes/self_test_101}{Self-Test: Cluster 101}
 
+An experienced user:
+
+\begin{itemize}
+\tightlist
+\item
+  Has used SSH to connect to a computing cluster
+\item
+  Is familiar with the methods used to connect to the Fred Hutch cluster
+\item
+  Has used Slurm to submit a computing job
+\item
+  Is familiar with the Cyberduck application for transferring files
+\end{itemize}
+
 \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_0}
 
 \hypertarget{part-cluster-101}{%
@@ -195,7 +209,7 @@ The next step is getting familiar with your Terminal. This is your portal to the
 \hypertarget{what-is-a-terminal}{%
 \section{What is a terminal?}\label{what-is-a-terminal}}
 
-The Terminal is a \href{https://www.codecademy.com/article/command-line-interface}{command line interface}. In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a \href{https://en.wikipedia.org/wiki/Graphical_user_interface}{graphical user interface (GUI)}. In other words, you can trigger actions without using point and click tools (e.g., browsers, Microsoft Excel). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the \protect\hyperlink{windows}{Windows}, \protect\hyperlink{mac}{MacOS}, or \protect\hyperlink{linux}{Linux} sections below.
+The Terminal is a \href{https://www.codecademy.com/article/command-line-interface}{command line interface}. In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a point-and-click equivalent. It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the \protect\hyperlink{windows}{Windows}, \protect\hyperlink{mac}{MacOS}, or \protect\hyperlink{linux}{Linux} sections below.
 
 ``Terminal'' used to be synonymous with ``computer''. With the creation of operating systems like Windows and MacOS, computers became much easier to use and exploded in popularity! Your colleagues are almost always referring to the command line application when they say ``Terminal''.
 
@@ -282,6 +296,9 @@ SSH is a secure way to remotely connect to another computer or network of comput
 
 The hostname is the name, or label, assigned to a computer in a network. We are connecting to hostname \texttt{rhino.fhcrc.org} or \texttt{rhino} for short.
 
+\hypertarget{connect-securely}{%
+\section{Connect Securely}\label{connect-securely}}
+
 Before moving on, you will need to connect to the Fred Hutch wifi network, a networked ethernet jack, or the \href{https://centernet.fredhutch.org/cn/u/center-it/help-desk/vpn.html}{Fred Hutch VPN}. This is the first layer of security.
 
 The next set of steps are specific to your operating system.
@@ -322,7 +339,7 @@ Click to view steps
   Type the following commands, substituting in your HutchNet ID (no brackets):
 
 \begin{verbatim}
-ssh -Y [HutchID]@rhino
+ssh [HutchID]@rhino
 \end{verbatim}
 \item
   You will see a message that looks like \texttt{The\ authenticity\ of\ host\ \textquotesingle{}rhino\ (XXX.XXX.XX.XX)\textquotesingle{}\ can\textquotesingle{}t\ be\ established.} Type in \texttt{yes} and hit enter.
@@ -365,6 +382,8 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs.
 
 Now that you've logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses \href{https://slurm.schedmd.com/overview.html}{Slurm} to organize and prioritize jobs. Based on the instructions in your script, Slurm will find computing resources within the cluster to run your job along with all the other requests from other users.
+
+In the next steps, we will go through a simple example where we download a single file. More complicated examples will use multiple files. We will discuss how to transfer files from your computer to the cluster in the \protect\hyperlink{file-upload-and-download}{following chapter}.
 
 The part of the cluster where you \textbf{log in} is called \texttt{rhino}.
 The part of the cluster where \textbf{jobs are run} is called \texttt{gizmo}.
@@ -466,7 +485,7 @@ If you are working with sensitive data (such as data with \href{https://www.hhs.
 \hypertarget{download-cyberduck}{%
 \section{Download Cyberduck}\label{download-cyberduck}}
 
-Download the latest version of Cyberduck \href{https://cyberduck.io/download/}{here}.
+Download the latest version of Cyberduck here.
 
 \begin{center}\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g16e400fe3e8_0_0} \end{center}
 
@@ -555,7 +574,9 @@ cat slurm-[your-number-here].out
 
 \begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_275} \end{center}
 
-While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a ``node''. This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system. Because an interactive session takes up resources directly on the cluster whether you're actively using it or not, it's best to use interactive sessions only when a task cannot be done by submitting a script.
+While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a ``node''. This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system.
+
+Because an interactive session takes up resources directly on the cluster whether you're actively using it or not, it's best to use interactive sessions only when a task cannot be done by submitting a script.
 
 \hypertarget{starting-the-session}{%
 \section{Starting the session}\label{starting-the-session}}
@@ -669,11 +690,29 @@ A computer component that stores calculations and information in the short term.
 
 The Scientific Computing group in IT manages the cluster, provides support with software, advises on data storage, and holds office hours specifically to help users. Here are some ways you can get help for your work on the cluster.
 
+\hypertarget{check-out-the-faq-page}{%
+\section*{Check out the FAQ page}\label{check-out-the-faq-page}}
+\addcontentsline{toc}{section}{Check out the FAQ page}
+
+See our \protect\hyperlink{faq-and-troubleshooting}{FAQ and Troubleshooting Page} to see common errors and what they mean. If you encounter a problem that isn't listed, \protect\hyperlink{feedback}{let us know}!
+
+\hypertarget{find-community-support-on-slack}{%
+\section*{Find Community Support on Slack}\label{find-community-support-on-slack}}
+\addcontentsline{toc}{section}{Find Community Support on Slack}
+
+Peer-to-peer support can be very valuable in learning and troubleshooting your work. The \href{https://fhdata.slack.com}{Fred Hutch Data Slack} workspace is open to all with a fredhutch.org, uw.edu, seattlechildrens.org, or related institution email addresses (whi.org, scharp.org, etc). You can ask questions, find out about office hours, and discover other live support and training events that can help you learn more about how to leverage resources at Fred Hutch to advance your science.
+
+\hypertarget{visit-the-sciwiki}{%
+\section*{Visit the SciWiki}\label{visit-the-sciwiki}}
+\addcontentsline{toc}{section}{Visit the SciWiki}
+
+The SciWiki \href{https://sciwiki.fredhutch.org/scicomputing/comp_index/}{Scientific Computing page} is full of useful tips and guides. Remember when using the search that the login ``nodes'' to the Fred Hutch cluster are called rhino and the cluster ``nodes'' are called gizmo.
+
 \hypertarget{send-an-email}{%
 \section*{Send an Email}\label{send-an-email}}
 \addcontentsline{toc}{section}{Send an Email}
 
-The primary way you can request help for a problem is to send SciComp an email, so a ticket will be created in their tracking system. This allows the details of the problem you're having to be sent to them so they can better help you. Submitting a good email ticket helps the SciComp Team address your needs quickly and efficiently. We suggest you submit the following information:
+The primary way you can request help for a problem is to \href{mailto:scicomp@fredhutch.org}{send SciComp an email}, so a ticket will be created in their tracking system. This allows the details of the problem you're having to be sent to them so they can better help you. Submitting a good email ticket helps the SciComp Team address your needs quickly and efficiently. We suggest you submit the following information:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -685,18 +724,6 @@ The primary way you can request help for a problem is to send SciComp an email, 
 \item
   A description of what you wanted to have happen or what your overall goal is (in case perhaps there is another strategy that might work better).
 \end{enumerate}
-
-\hypertarget{visit-the-sciwiki}{%
-\section*{Visit the SciWiki}\label{visit-the-sciwiki}}
-\addcontentsline{toc}{section}{Visit the SciWiki}
-
-The SciWiki \href{https://sciwiki.fredhutch.org/scicomputing/comp_index/}{Scientific Computing page} is full of useful tips and guides. Remember when using the search that the login ``nodes'' to the Fred Hutch cluster are called rhino and the cluster ``nodes'' are called gizmo.
-
-\hypertarget{find-community-support-on-slack}{%
-\section*{Find Community Support on Slack}\label{find-community-support-on-slack}}
-\addcontentsline{toc}{section}{Find Community Support on Slack}
-
-Peer-to-peer support can be very valuable in learning and troubleshooting your work. The \href{https://fhdata.slack.com}{Fred Hutch Data Slack} workspace is open to all with a fredhutch.org, uw.edu, seattlechildrens.org, or related institution email addresses (whi.org, scharp.org, etc). You can ask questions, find out about office hours, and discover other live support and training events that can help you learn more about how to leverage resources at Fred Hutch to advance your science.
 
 \hypertarget{summary}{%
 \chapter{Summary}\label{summary}}
@@ -763,7 +790,9 @@ Command & Description & Usage \\
 \hypertarget{feedback}{%
 \chapter{Provide Feedback}\label{feedback}}
 
-Please submit an issue about this course at our \href{https://github.com/fhdsl/FH_Cluster_Guide/issues/new}{GitHub repository}. You can also click the edit button on the top of the page in question.
+We'd love to hear from you! Please fill out the anonymous Google Form with your feedback.
+
+You can submit an issue about this course at our \href{https://github.com/fhdsl/FH_Cluster_Guide/issues/new}{GitHub repository}. You can also click the edit button on the top of the page in question.
 
 \hypertarget{faq-and-troubleshooting}{%
 \chapter{FAQ and Troubleshooting}\label{faq-and-troubleshooting}}
@@ -856,6 +885,8 @@ with all questions correctly answered to earn your certificate for this course. 
 
   \includegraphics[width=1\linewidth]{faq_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_32}
 \end{enumerate}
+
+\href{mailto:data@fredhutch.org}{Contact the DaSL Team} to submit your Cluster 101 certificate for an awesome Hex Sticker!
 
 \hypertarget{about-the-authors}{%
 \chapter*{About the Authors}\label{about-the-authors}}

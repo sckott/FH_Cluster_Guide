@@ -2,7 +2,9 @@
 
 # Provide Feedback {#feedback}
 
-Please submit an issue about this course at our [GitHub repository](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
+We'd love to hear from you! Please fill out the anonymous <a href="https://forms.gle/qRLJpE15HKNCMEE48" target="_blank">Google Form</a> with your feedback.
+
+You can submit an issue about this course at our [GitHub repository](https://github.com/fhdsl/FH_Cluster_Guide/issues/new). You can also click the edit button on the top of the page in question.
 
 # FAQ and Troubleshooting
 
@@ -78,3 +80,5 @@ You must complete the quiz - [Self-Test: Cluster 101](https://leanpub.com/course
     
     \includegraphics[width=1\linewidth]{faq_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_32} 
     
+[Contact the DaSL Team](mailto:data@fredhutch.org) to submit your Cluster 101 certificate for an awesome Hex Sticker!
+
