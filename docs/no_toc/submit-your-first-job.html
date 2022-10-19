@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-10-14" />
+<meta name="date" content="2022-10-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -184,9 +184,10 @@
 <h1><span class="header-section-number">Chapter 5</span> Submit Your First Job</h1>
 <p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_229.png" title="We are on the fifth step of the pathway." alt="We are on the fifth step of the pathway." width="80%" style="display: block; margin: auto;" /></p>
 <p>The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs.</p>
-<p>Now that you’ve logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses <a href="https://slurm.schedmd.com/overview.html">Slurm</a> to organize and prioritize jobs. Based on the instructions in your script, Slurm will find a computer to run your job along with all the other requests from other users.</p>
+<p>Now that you’ve logged into rhino you will be able to send scripts to the networked computers in the cluster. The Fred Hutch cluster uses <a href="https://slurm.schedmd.com/overview.html">Slurm</a> to organize and prioritize jobs. Based on the instructions in your script, Slurm will find computing resources within the cluster to run your job along with all the other requests from other users.</p>
 <div class="notice">
-<p>The part of the cluster where you log in is called <code>rhino</code>. The part of the cluster where jobs are run is called <code>gizmo</code>.</p>
+<p>The part of the cluster where you <strong>log in</strong> is called <code>rhino</code>.
+The part of the cluster where <strong>jobs are run</strong> is called <code>gizmo</code>.</p>
 </div>
 <div id="download-the-script" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Download the Script</h2>
@@ -217,16 +218,16 @@
 </div>
 <div id="check-the-output" class="section level2" number="5.5">
 <h2><span class="header-section-number">5.5</span> Check the Output</h2>
-<p>Type <code>ls</code> again. You should now see a log file like <code>slurm-12345678.out</code> listed alongside your script <code>01.sh</code>. Let’s use <code>cat</code> to inspect the output in the log file. Make sure you replace <code>[your-number-here]</code> with the number in your actual file. We should see our message has been printed!</p>
+<p>Type <code>ls</code> again. You should now see a log file like <code>slurm-12345678.out</code> listed alongside your script <code>01.sh</code>. Let’s use <code>cat</code> to inspect the output in the log file (the new file starting with <code>slurm</code> and ending with <code>.out</code>). Make sure you replace <code>[your-number-here]</code> with the number in your actual file. We should see our message has been printed!</p>
 <pre><code>cat slurm-[your-number-here].out</code></pre>
 <p><img src="resources/images/01-101_files/figure-html/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_22.png" title="Screenshot of ls and cat command shows that the Hello World message has successfully printed." alt="Screenshot of ls and cat command shows that the Hello World message has successfully printed." width="100%" /></p>
 <div class="dictionary">
 <p><code>ls</code></p>
 <p>This command lists the files in the current directory.</p>
-<p><code>cat</code> <em>filename</em></p>
-<p>This command prints the contents of a specific file <filename>.</p>
-<p><code>sbatch</code> <em>filename.sh</em></p>
-<p>This command submits a job to the cluster with instructions specified in <filename>.sh</p>
+<p><code>cat filename</code></p>
+<p>This command prints the contents of a specific file (<em>filename</em>).</p>
+<p><code>sbatch filename.sh</code></p>
+<p>This command submits a job to the cluster with instructions specified in a <code>.sh</code> file.</p>
 </div>
 </div>
 </div>
