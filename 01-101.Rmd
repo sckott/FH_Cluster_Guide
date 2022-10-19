@@ -230,7 +230,7 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 1. Type the following commands, substituting in your HutchNet ID (no brackets):  
 
     ```
-    ssh -Y [HutchID]@rhino
+    ssh [HutchID]@rhino
     ```
 1. You will see a message that looks like `The authenticity of host 'rhino (XXX.XXX.XX.XX)' can't be established.` Type in `yes` and hit enter.
 1. Enter your password. No`*` or symbols will show up, so type it in carefully!
