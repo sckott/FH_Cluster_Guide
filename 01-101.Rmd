@@ -50,10 +50,9 @@ If one of your collaborators requires access to the Fred Hutch network you can s
 
 ## Connect to a PI Account {#pi-account}
 
-Your HutchNet ID must be associated with a PI cluster "account". The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please follow the following steps:
+Your HutchNet ID must be associated with a PI cluster "account". The Scientific Computing Team (SciComp) tries to set users up with a connection to a PI account before they need it, but this is not automatic!  To ensure that you have been set up to use the cluster, please follow the following steps. You must be connected to the campus wifi network, plugged into a networked ethernet jack, or connected to the Fred Hutch VPN.
 
-1. Log into the Hutch VPN if needed (log in using Hutch email and CenterNet password)
-1. Go to the [SciComp Self-Service Portal](https://scicomp-self-service.fredhutch.org/) (will not work if you need to log into VPN)
+1. Go to the [SciComp Self-Service Portal](https://scicomp-self-service.fredhutch.org/) 
 1. Click on "Check Access"
 1. Log in using your HutchNet ID and password
 
@@ -73,14 +72,13 @@ If you see anything in red as shown below, click the link to e-mail SciComp to f
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g166d4f31b2e_0_10")
 ```
 
-Note that it may take just a bit of time for SciComp to see your email request, but it is usually fairly quick! You will then receive an email back from the SciComp team that you now have cluster access. (The access checking page will also show that you have cluster access if you refresh the page.)
+Note that it may take just a bit of time for SciComp to see your email request, but it is usually fairly quick! Once approved, you will receive an email back from the SciComp team that you now have cluster access. The Self-Service Portal will also show that you have cluster access if you refresh the page.
 
 Now, let's connect to the cluster!
 
 # Skip to Certification {-}
 
 Are you an experienced user? Do you need certification? You can jump straight to the 10-question quiz by clicking the link below. **This Leanpub quiz can be taken for free, but you still have to put the course in your cart and check out**.
-
 
 [Self-Test: Cluster 101](https://leanpub.com/courses/fredhutch/fredhutchcluster101/quizzes/self_test_101)
 
@@ -100,7 +98,7 @@ The next step is getting familiar with your Terminal. This is your portal to the
 
 ## What is a terminal?
 
-The Terminal is a [command line interface](https://www.codecademy.com/article/command-line-interface). In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface) (meaning an interface where you point and click on something to perform actions, like a browser or Microsoft Excel). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the [Windows](#windows), [MacOS](#mac), or [Linux](#linux) sections below.
+The Terminal is a [command line interface](https://www.codecademy.com/article/command-line-interface). In other words, the Terminal is a software application that allows you to issue commands directly to your laptop or desktop computer. The Terminal is very useful because it allows you to run commands that don't have a [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). In other words, you can trigger actions without using point and click tools (e.g., browsers, Microsoft Excel). It can also connect you to computer networks, such as the Fred Hutch cluster! The Terminal setup is different depending on your operating system. Jump to the [Windows](#windows), [MacOS](#mac), or [Linux](#linux) sections below.
 
 <div class = "terminal">
 "Terminal" used to be synonymous with "computer". With the creation of operating systems like Windows and MacOS, computers became much easier to use and exploded in popularity! Your colleagues are almost always referring to the command line application when they say "Terminal".
@@ -340,11 +338,18 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ```
 
 <div class = "dictionary">
-`ls`   This command lists the files in the current directory.
 
-`cat filename` This command prints the contents of a specific file (_filename_).
+`ls`
 
-`sbatch filename.sh` This command submits a job to the cluster with instructions specified in a `.sh` file.
+This command lists the files in the current directory.
+
+`cat filename` 
+
+This command prints the contents of a specific file (_filename_).
+
+`sbatch filename.sh` 
+
+This command submits a job to the cluster with instructions specified in a `.sh` file.
 </div>
 
 # File Upload and Download
@@ -359,13 +364,19 @@ Exchanging files with the cluster is very important. You can imagine scenarios w
 - You want to upload a custom `.sh` script file that you wrote on your laptop
 - You want to upload other files
 
-In this course, upload and download of files is performed using [Cyberduck](https://cyberduck.io/). Cyberduck is a tool that lets us connect to the cluster securely, browse files, and transfer files securely. 
+In this course, upload and download of files is performed using [Cyberduck](https://cyberduck.io/). Cyberduck is a tool that lets us connect to the cluster securely, browse files, and transfer files securely.
+
+<div class = "warning">
+If you are working with sensitive data (such as data with [PHI](https://www.hhs.gov/answers/hipaa/what-is-phi/index.html) that requires [HIPAA compliance](https://www.hhs.gov/hipaa/index.html), you need to be extra cautious about transferring your data to the cluster. Your home directory is not an appropriate storage option for such data.
+</div>
 
 ## Download Cyberduck
 
 Download the latest version of Cyberduck [here](https://cyberduck.io/download/).
 
-Make sure you press the download buttons that are a bit further down the screen (that say Windows or MacOS) as you may get ads for other downloads.
+```{r, echo=FALSE, fig.alt='Downloads page for Cyberduck.', out.width = '100%', fig.align = 'center'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g16e400fe3e8_0_0")
+```
 
 <div class = "warning">
 Note that the version of Cyberduck in the Software Center or Self Service might not be current, causing compatibility issues with some operating systems.
@@ -542,7 +553,7 @@ Close the R session by typing:
 q()
 ```
 
-It may ask if you want to save your workspace. You can say `n` for no.
+R will ask if you want to save your workspace. Type `n` for no and hit return.
 
 Close the interactive node by typing:
 
@@ -555,13 +566,21 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-
 ```
 
 <div class = "dictionary">
-`grabnode` This command starts an interactive session on the cluster.
+`grabnode` 
 
-**Node** One of the networked computers in the cluster. 
+This command starts an interactive session on the cluster.
 
-**CPU** A computer component that performs and orchestrates computational tasks.
+**Node** 
 
-**Memory** A computer component that stores calculations and information in the short term.
+One of the networked computers in the cluster. 
+
+**CPU** 
+
+A computer component that performs and orchestrates computational tasks.
+
+**Memory** 
+
+A computer component that stores calculations and information in the short term.
 </div>
 
 # Getting Help {#help}
@@ -596,13 +615,9 @@ Before using the Fred Hutch cluster, it's a good idea to [contact the SciComp](#
 
 Computer tasks are typically performed via job submission, where you tell the cluster what to do inside a script file. The Fred Hutch cluster uses [Slurm](#submit-your-first-job) to organize jobs submitted by different users. When building, testing, and debugging jobs, you might want to launch an [interactive session](#interactive-session) on the cluster. You will be asked several questions about resources before your session starts.
 
-You can use the application [Cyberduck](#file-upload-and-download) to transfer smaller files between your local computer and the cluster via SFTP (SSH File Transfer Protocol).
+You can use the application [Cyberduck](#file-upload-and-download) to transfer smaller files between your local computer and the cluster via SFTP (SSH File Transfer Protocol). This course does not cover transferring sensitive data, which requires extra precautions.
 
 Don't be afraid to ask for [help](#help)! Check out the SciWiki, join the Slack workspace, or contact the SciComp team if you get stuck.
-
-<div class = "warning">
-Note that if you are working with sensitive data (such as data with [PHI](https://www.hhs.gov/answers/hipaa/what-is-phi/index.html) that requires [HIPAA compliance](https://www.hhs.gov/hipaa/index.html), you need to be extra cautious about transferring your data to the cluster. Your home directory is not an appropriate storage option for such data. Stay tuned for more resources about how to safely work with such data on the cluster.
-</div>
 
 ## Glossary
 
