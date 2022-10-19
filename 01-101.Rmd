@@ -89,7 +89,7 @@ An experienced user:
 - Has used Slurm to submit a computing job
 - Is familiar with the Cyberduck application for transferring files
 
-```{r, echo=FALSE, fig.alt='An arrow depicts jumping from the course to a Leanpub certificate.', out.width = '100%'}
+```{r, echo=FALSE, fig.alt='An arrow depicts jumping from the course to a Leanpub certificate.', out.width = '70%', fig.align = 'center'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.g162fb43cc93_0_0")
 ```
 
