@@ -1,6 +1,6 @@
 ---
 title: "Fred Hutch Cluster 101"
-date: "October 19, 2022"
+date: "October 21, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
