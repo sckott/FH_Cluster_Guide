@@ -73,7 +73,7 @@
 
 \title{Fred Hutch Cluster 101}
 \author{}
-\date{\vspace{-2.5em}October 21, 2022}
+\date{\vspace{-2.5em}October 25, 2022}
 
 \begin{document}
 \maketitle
@@ -103,13 +103,13 @@ This course is available in \href{https://hutchdatascience.org/FH_Cluster_Guide}
 \hypertarget{what-is-a-cluster}{%
 \chapter{What is a Cluster}\label{what-is-a-cluster}}
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_114} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-cluster_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_114} \end{center}
 
 A computing cluster is a set of many computers networked together. Because there are many computers working together, the network is able to handle computationally expensive tasks, like genome assemblies or advanced algorithms. Imagine you're building a house. It would take a long time by yourself! It's much better to have many builders working together.
 
 Now that we have a team of workers, the next challenge is task management. A home construction team will need a manager to help delegate tasks. Similarly, the computing cluster uses management software to prioritize tasks, delegate workers (resources), and check on progress. The Fred Hutch cluster uses a common management and scheduling tool called \href{https://slurm.schedmd.com/overview.html}{Slurm}.
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_18} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-cluster_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_18} \end{center}
 
 How is the cluster different from a laptop or desktop? First, on your laptop you most likely interact with it using an operating system like Windows or MacOS. The Fred Hutch cluster uses a Linux operating system. Second, because many people use the cluster for many tasks, there isn't a central screen and keyboard. You access the cluster remotely from your computer! We will talk more about how to connect to the cluster in a \protect\hyperlink{terminal}{following chapter}.
 
@@ -120,7 +120,7 @@ A set of computers networked together to perform large tasks.
 \hypertarget{account-setup}{%
 \chapter{Account Setup}\label{account-setup}}
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_160} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/02-accounts_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_160} \end{center}
 
 You will need an account to log in to the cluster. This ensures that data stays protected and that computing resources are shared fairly.
 
@@ -157,15 +157,15 @@ Your HutchNet ID must be associated with a PI cluster ``account''. The Scientifi
   Log in using your HutchNet ID (no \texttt{@fredhutch.org}) and password
 \end{enumerate}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g166d4f31b2e_0_0}
+\includegraphics[width=1\linewidth]{resources/images/02-accounts_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g166d4f31b2e_0_0}
 
 If everything is green as shown below, you are ready to proceed. You can \protect\hyperlink{terminal}{proceed with the course} or \protect\hyperlink{skip-to-certification}{skip to certification}.
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g166d4f31b2e_0_5}
+\includegraphics[width=1\linewidth]{resources/images/02-accounts_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g166d4f31b2e_0_5}
 
 If you see anything in red as shown below, click the link to e-mail SciComp to finish setting up your account. Be sure to include your HutchNetID and PI name in the email.
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g166d4f31b2e_0_10}
+\includegraphics[width=1\linewidth]{resources/images/02-accounts_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g166d4f31b2e_0_10}
 
 Note that it may take just a bit of time for SciComp to see your email request, but it is usually fairly quick! Once approved, you will receive an email back from the SciComp team that you now have cluster access. The Self-Service Portal will also show that you have cluster access if you refresh the page.
 
@@ -193,7 +193,7 @@ An experienced user:
   Is familiar with the Cyberduck application for transferring files
 \end{itemize}
 
-\begin{center}\includegraphics[width=0.7\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_0} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{resources/images/skip-to-certification_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g162fb43cc93_0_0} \end{center}
 
 \hypertarget{part-cluster-101}{%
 \part*{Cluster 101}\label{part-cluster-101}}
@@ -202,7 +202,7 @@ An experienced user:
 \hypertarget{terminal}{%
 \chapter{Terminal Setup}\label{terminal}}
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_183} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/03-terminal_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_183} \end{center}
 
 The next step is getting familiar with your Terminal. This is your portal to the cluster.
 
@@ -225,19 +225,19 @@ You will need to install a Terminal application called PuTTY to connect to the F
 \item
   You should then see PuTTY available in the Software Center. Click ``Install'' and go through the Setup Wizard.
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_15}
+  \includegraphics[width=1\linewidth]{resources/images/03-terminal_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_15}
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_20}
+  \includegraphics[width=1\linewidth]{resources/images/03-terminal_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_20}
 
   You can also \href{faq.html\#manual-putty}{install PuTTY manually} if you don't see it in the Software Center.
 \item
   PuTTY should now be available in your applications. Click on PuTTY to open.
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_28}
+  \includegraphics[width=1\linewidth]{resources/images/03-terminal_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_28}
 \item
   You should now see the PuTTY Configuration menu.
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_35}
+  \includegraphics[width=1\linewidth]{resources/images/03-terminal_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_35}
 \end{enumerate}
 
 \hypertarget{mac}{%
@@ -252,11 +252,11 @@ Mac machines come with a Terminal installed.
 \item
   Go to Finder \textgreater{} Applications \textgreater{} Utilities \textgreater{} Terminal and double-click.
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_9}
+  \includegraphics[width=1\linewidth]{resources/images/03-terminal_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_9}
 \item
   Your Terminal should look like this:
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_2}
+  \includegraphics[width=1\linewidth]{resources/images/03-terminal_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_2}
 \end{enumerate}
 
 \hypertarget{linux}{%
@@ -283,7 +283,7 @@ Enter your password and enter \texttt{Y} when prompted.
 \hypertarget{logging-in}{%
 \chapter{Logging In}\label{logging-in}}
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_206} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/04-logging-in_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_206} \end{center}
 
 Now that you have your Terminal application ready, you want to connect to the cluster. You will do this using a method called \href{https://www.ssh.com/academy/ssh/protocol}{SSH}, which stands for ``Secure SHell''.
 
@@ -313,17 +313,17 @@ Click to view steps
 \item
   Go to the PuTTY Configuration menu. Under ``Host Name'' type \textbf{rhino} and click ``Open''.
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_41}
+  \includegraphics[width=1\linewidth]{resources/images/04-logging-in_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_41}
 \item
   You will be prompted to login. Type in your HutchNetID (e.g., \texttt{jsmith3}).
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_48}
+  \includegraphics[width=1\linewidth]{resources/images/04-logging-in_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_48}
 \item
   Enter your password. No\texttt{*} or symbols will show up, so type it in carefully!
 \item
   You are now logged in! There should be a login message, with your name at the bottom.
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_60}
+  \includegraphics[width=1\linewidth]{resources/images/04-logging-in_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15643d101eb_4_60}
 \end{enumerate}
 
 Congratulations! You are now logged in to the Fred Hutch cluster!
@@ -348,7 +348,7 @@ ssh [HutchID]@rhino
 \item
   You are now logged in! There should be a login message, with your name at the bottom.
 
-  \includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_43}
+  \includegraphics[width=1\linewidth]{resources/images/04-logging-in_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g149d37dd4a1_0_43}
 \end{enumerate}
 
 Congratulations! You are now logged in to the Fred Hutch cluster!
@@ -377,7 +377,7 @@ Congratulations! You are now logged in to the Fred Hutch cluster!
 \hypertarget{submit-your-first-job}{%
 \chapter{Submit Your First Job}\label{submit-your-first-job}}
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_229} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/05-first-job_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_229} \end{center}
 
 The strength of a computing cluster is the ability to do many jobs in parallel or on computers with more computing power than you have on your local computer. The best way to use the cluster is to create short snippets of instructions (a script) that a computer can perform without human input. Your script tells the computers to execute the instructions as individual jobs.
 
@@ -397,7 +397,7 @@ We can use the \texttt{wget} command to download a script from GitHub. This mean
 wget https://raw.githubusercontent.com/FredHutch/slurm-examples/master/introduction/1-hello-world/01.sh
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_0_0}
+\includegraphics[width=1\linewidth]{resources/images/05-first-job_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_0_0}
 
 \hypertarget{confirm-the-download}{%
 \section{Confirm the Download}\label{confirm-the-download}}
@@ -408,7 +408,7 @@ Let's confirm that we can see the file we just downloaded. We can use the \textt
 ls
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_0_6}
+\includegraphics[width=1\linewidth]{resources/images/05-first-job_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_0_6}
 
 \hypertarget{inspect-the-script}{%
 \section{Inspect the Script}\label{inspect-the-script}}
@@ -419,7 +419,7 @@ Let's next inspect the script. The \texttt{cat} command, followed by a file name
 cat 01.sh
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_2}
+\includegraphics[width=1\linewidth]{resources/images/05-first-job_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_2}
 
 \begin{itemize}
 \tightlist
@@ -447,7 +447,7 @@ Type \texttt{ls} again. You should now see a log file like \texttt{slurm-1234567
 cat slurm-[your-number-here].out
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_22}
+\includegraphics[width=1\linewidth]{resources/images/05-first-job_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_22}
 
 \texttt{ls}
 
@@ -464,7 +464,7 @@ This command submits a job to the cluster with instructions specified in a \text
 \hypertarget{file-upload-and-download}{%
 \chapter{File Upload and Download}\label{file-upload-and-download}}
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_252} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_252} \end{center}
 
 Exchanging files with the cluster is very important. You can imagine scenarios where:
 
@@ -487,7 +487,7 @@ If you are working with sensitive data (such as data with \href{https://www.hhs.
 
 Download the latest version of Cyberduck \href{https://cyberduck.io/download/}{here}.
 
-\begin{center}\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g16e400fe3e8_0_0} \end{center}
+\begin{center}\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g16e400fe3e8_0_0} \end{center}
 
 Note that the version of Cyberduck in the Software Center or Self Service might not be current, causing compatibility issues with some operating systems.
 
@@ -508,15 +508,15 @@ Launch Cyberduck and click on ``Open Connection''.
 
 Click ``Connect''
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_28}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_28}
 
 Click ``Allow''. You can also check the box to indicate ``Always''.
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_33}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_33}
 
 You should see your script file ``\texttt{01.sh}'' and the log file.
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_37}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_37}
 
 \hypertarget{download-and-edit-the-script}{%
 \section{Download and Edit the Script}\label{download-and-edit-the-script}}
@@ -531,22 +531,22 @@ You should see your script file ``\texttt{01.sh}'' and the log file.
   Open the \texttt{01.sh} in your Downloads folder
 \end{itemize}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_41}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_41}
 
 Edit the message to include your name and save the file. Rename the file \texttt{01-name.sh}.
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_45}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_45}
 
 \hypertarget{upload-the-new-script}{%
 \section{Upload the New Script}\label{upload-the-new-script}}
 
 From your Downloads folder, simply drag the file to Cyberduck.
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_49}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g1579ffd7b01_12_49}
 
 You should now see the new script among your cluster files.
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15cf3fa00a4_0_6}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_g15cf3fa00a4_0_6}
 
 \hypertarget{run-the-new-script}{%
 \section{Run the New Script}\label{run-the-new-script}}
@@ -557,7 +557,7 @@ Return to your Terminal. Submit a job with your new script by running the follow
 sbatch 01-name.sh
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_0}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_0}
 
 The job numbers included in log file names generally increase in number. The greater the number, the more recently the job was run.
 
@@ -567,12 +567,12 @@ Use the \texttt{cat} command to inspect the log. Make sure you replace \texttt{{
 cat slurm-[your-number-here].out
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_6}
+\includegraphics[width=1\linewidth]{resources/images/06-upload-download_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_6}
 
 \hypertarget{interactive-session}{%
 \chapter{Interactive Session}\label{interactive-session}}
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_275} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/07-interactive_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_275} \end{center}
 
 While using the cluster, you might need to build and test scripts interactively before running them. Luckily, you can work directly on the cluster by creating an interactive session. When you launch an interactive session, the cluster assigns you a portion of the networked computers called a ``node''. This node (or part of one) is dedicated to you for a period of time rather than using the Slurm job submission system.
 
@@ -611,11 +611,11 @@ RAM, or Random Access Memory, is often simply referred to as memory. This short 
 
 The \href{https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html}{GPU}, or Graphics Processing Unit, is similar to the CPU. The GPU was originally designed to quickly render graphics (such as for video games), but today can be used to run complex artificial intelligence applications or computationally intensive jobs.
 
-\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_26} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{resources/images/07-interactive_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_26} \end{center}
 
 You will see that you are now logged on to ``gizmo'' instead of ``rhino''. Remember that the part of the cluster where you log in is called \texttt{rhino}. The part of the cluster where jobs are run is called \texttt{gizmo}.
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_50}
+\includegraphics[width=1\linewidth]{resources/images/07-interactive_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_50}
 
 \hypertarget{running-interactive-commands}{%
 \section{Running Interactive Commands}\label{running-interactive-commands}}
@@ -626,7 +626,7 @@ You can start working on the node by running a similar command as we used in the
 echo "Hello, again!"
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_58}
+\includegraphics[width=1\linewidth]{resources/images/07-interactive_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_58}
 
 \hypertarget{using-pre-installed-software-modules}{%
 \section{Using Pre-installed Software Modules}\label{using-pre-installed-software-modules}}
@@ -643,7 +643,7 @@ Next, launch R:
 R
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_65}
+\includegraphics[width=1\linewidth]{resources/images/07-interactive_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_65}
 
 You can play around with R here. For example, you might run:
 
@@ -651,7 +651,7 @@ You can play around with R here. For example, you might run:
 head(mtcars)
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_72}
+\includegraphics[width=1\linewidth]{resources/images/07-interactive_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_72}
 
 Close the R session by typing:
 
@@ -667,7 +667,7 @@ Close the interactive node by typing:
 exit
 \end{verbatim}
 
-\includegraphics[width=1\linewidth]{resources/images/01-101_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_82}
+\includegraphics[width=1\linewidth]{resources/images/07-interactive_files/figure-latex//1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs_gff2211b72f_1_82}
 
 \texttt{grabnode}
 
@@ -938,7 +938,7 @@ Package Developers (\href{https://github.com/jhudsl/ottrpal}{ottrpal}) \href{htt
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-10-21                  
+##  date     2022-10-25                  
 ## 
 ## - Packages -------------------------------------------------------------------
 ##  package     * version    date       lib source                            
