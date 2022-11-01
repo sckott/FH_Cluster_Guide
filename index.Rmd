@@ -17,6 +17,8 @@ knitr::write_bib(c(
 ), "packages.bib")
 ```
 
+<div><img src="assets/course-logo/funfetti-dasl-hex-cluster101-web.png" style="width: 50%; padding-left: 15px; padding-top: 8px;"</div>
+
 # About this Course {-}
 
 Fred Hutch maintains a [high performance computing cluster](https://en.wikipedia.org/wiki/HPCC) specifically to support work that requires intensive computing. The Fred Hutch cluster (sometimes called "Rhino" and/or "Gizmo") allow you to do more than your average desktop computer can handle.
