@@ -61,8 +61,10 @@ jobs:
       - name: Run bookdown render
         id: bookdown
         run: |
-          Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all');
-          file.copy(from = 'assets', to = 'docs/assets', overwrite = TRUE)"
+          Rscript -e "remove.packages('xfun'); install.packages('https://cran.r-project.org/src/contrib/Archive/xfun/xfun_0.32.tar.gz', type = 'source'); install.packages('tinytex')"
+          Rscript -e "tinytex::install_tinytex(); update.packages(ask = FALSE, checkBuilt = TRUE); tinytex::tlmgr_update()"
+          Rscript -e "tinytex::reinstall_tinytex()"
+          Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all'); file.copy(from = 'assets', to = 'docs/assets', overwrite = TRUE)"
 
       # This checks on the steps before it and makes sure that they completed.
       # If the renders didn't complete we don't want to commit the file changes
@@ -163,7 +165,7 @@ jobs:
             render = FALSE, \
             chapt_img_key = 'resources/chapt_screen_images/chapter_urls.tsv', \
             make_book_txt = TRUE, \
-            quiz_dir = NULL)"
+            quiz_dir = 'quizzes')"
 
       - name: Run ottrpal::bookdown_to_embed_leanpub
         if: needs.yaml-check.outputs.toggle_quiz_check == 'yes'
