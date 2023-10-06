@@ -30,5 +30,3 @@ This course is available in [Bookdown](https://hutchdatascience.org/FH_Cluster_G
 ```{r, echo=FALSE, fig.alt='Pathway of chapters covered in this course.', out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BQxrVYdKZTbpCaF-i_q9w7s9x034lEXpQZDU-Sl09cs/edit#slide=id.gff2211b72f_1_88")
 ```
-
-
